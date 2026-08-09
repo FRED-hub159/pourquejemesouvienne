@@ -1,1 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Archives</title>
+
+<style>
+    body {
+        font-family: "Georgia", serif;
+        background: #f7f3e9;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        background: #fffdf7;
+        margin: 40px auto;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        line-height: 1.7;
+        border: 1px solid #e6dcc4;
+    }
+
+    nav {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    nav a {
+        color: #003366;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .active {
+        color: #7a6a55;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: default;
+        margin: 0 10px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 34px;
+        color: #5a4632;
+    }
+
+    h2 {
+        margin-top: 40px;
+        color: #5a4632;
+        border-left: 5px solid #c7b08a;
+        padding-left: 12px;
+        font-size: 26px;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 19px;
+        color: #4a3f35;
+    }
+
+    ul {
+        margin-top: 10px;
+        font-size: 19px;
+        color: #4a3f35;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 16px;
+        color: #7a6a55;
+        font-style: italic;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<nav>
+    <a href="index.html">Accueil</a> |
+    <a href="carrefour.html">Carrefour</a> |
+    <a href="apropos.html">À propos</a> |
+    <span class="active">Archives</span> |
+    <a href="https://admin.over-blog.com/561311/posts" target="_blank">Overblog</a> |
+    <a href="https://fred159.eklablog.com/" target="_blank">Eklablog</a>
+</nav>
+
+<h1>Archives</h1>
+
+<p>
+Cette page regroupe l’ensemble de mes archives : textes anciens, documents, photos, projets, souvenirs.  
+Elle évoluera au fil du temps, au rythme de mes ajouts et de mes découvertes.
+</p>
+
+<h2>Archives par années</h2>
+<ul>
+    <li>2024</li>
+    <li>2023</li>
+    <li>2022</li>
+    <li>2021</li>
+    <li>2020</li>
+    <li>2010–2019</li>
+    <li>2000–2009</li>
+    <li>Avant 2000</li>
+</ul>
+
+<h2>Archives par thèmes</h2>
+<ul>
+    <li>Écrits personnels</li>
+    <li>Documents anciens</li>
+    <li>Photos</li>
+    <li>Musique et archives sonores</li>
+    <li>Blogs historiques</li>
+    <li>Dossiers thématiques</li>
+</ul>
+
+<h2>À venir</h2>
+<p>
+De nouvelles sections apparaîtront progressivement :  
+dossiers complets, chronologies, documents rares, archives fusionnées entre Overblog et Eklablog .
+</p>
+
+<div class="footer">© Frédéric — Pour que je me souvienne</div>
+
+</div>
+
+</body>
+</html>
 
