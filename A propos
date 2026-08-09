@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>À propos</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        background: white;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        line-height: 1.6;
+    }
+
+    nav {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    nav a {
+        color: #0056d6;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 32px;
+        color: #333;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: #444;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<nav>
+    <a href="index.html">Accueil</a> |
+    <a href="carrefour.html">Carrefour</a> |
+    <a href="apropos.html">À propos</a>
+</nav>
+
+<h1>À propos</h1>
+
+<p>Ce site est un espace personnel où je rassemble mes écrits, mes archives, mes photos et mes projets publiés au fil des années sur différentes plateformes. Il me permet de centraliser, réorganiser et préserver tout ce contenu pour le rendre plus accessible.</p>
+
+<p>Au fil du temps, ce site évoluera avec de nouvelles pages, de nouveaux dossiers et des mises à jour régulières.</p>
+
+</div>
+
+</body>
+</html>
