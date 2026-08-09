@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Pour que je me souvienne</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f3e9;
+
+            /* ⭐⭐ TON FOND SÉPIA ⭐⭐ */
+            background-image: url('texture-sepia-carton_95678-89.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            /* ⭐⭐ LÉGER VOILE POUR NE PAS ÉCRASER LE TEXTE ⭐⭐ */
+            background-color: rgba(255, 255, 255, 0.85);
+            background-blend-mode: lighten;
         }
 
         nav {
@@ -25,7 +35,6 @@
 
         footer {
             margin-top: 40px;
-            
             text-align: center;
             font-size: 0.9em;
             color: #666;
@@ -35,31 +44,26 @@
 
 <body>
 
-    <!-- ⭐⭐ IMAGE SÉPIA EN HAUT ⭐⭐ -->
-    <img src="texture-sepia-carton_95678-89.jpg" alt="Image vintage sépia" style="display:block; margin:0 auto; max-width:100%; height:auto;">
-
-    
-
-    <!-- ⭐⭐ TITRE ⭐⭐ -->
+    <!-- ⭐⭐ TON TITRE TOUT EN HAUT ⭐⭐ -->
     <h1 style="text-align:center;">Bienvenue sur mon site privé</h1>
 
-    <!-- ⭐⭐ PORTRAIT ⭐⭐ -->
+    <!-- ⭐⭐ TON PORTRAIT ⭐⭐ -->
     <div style="text-align:center; margin:40px 0;">
         <img src="portrait-fred.png" alt="Portrait Frédéric"
              style="max-width:80%; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15);">
     </div>
 
-    <!-- ⭐⭐ MENU ⭐⭐ -->
+    <!-- ⭐⭐ TON MENU ⭐⭐ -->
     <nav>
         <a href="carrefour.html">Carrefour des blogs</a>
         <a href="archives.html">Archives</a>
         <a href="apropos.html">À propos</a>
     </nav>
 
-    <!-- ⭐⭐ TEXTE ⭐⭐ -->
+    <!-- ⭐⭐ TON TEXTE ⭐⭐ -->
     <p style="text-align:center;">Première page de test.</p>
 
-    <!-- ⭐⭐ FOOTER ⭐⭐ -->
+    <!-- ⭐⭐ TON FOOTER ⭐⭐ -->
     <footer>
         © 2026 — Pour que je me souvienne
     </footer>
