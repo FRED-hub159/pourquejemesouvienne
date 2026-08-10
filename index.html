@@ -6,63 +6,80 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Georgia", serif;
+            background-color: #f7f3e9;
+            color: #3d2f24;
             margin: 0;
             padding: 0;
-
-            /* ⭐⭐ TON FOND SÉPIA ⭐⭐ */
-            background-image: url('texture-sepia-carton_95678-89.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            /* ⭐⭐ LÉGER VOILE POUR NE PAS ÉCRASER LE TEXTE ⭐⭐ */
-            background-color: rgba(255, 255, 255, 0.85);
-            background-blend-mode: lighten;
-        }
-
-        nav {
             text-align: center;
-            margin: 20px 0;
         }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
+        h1 {
+            margin-top: 40px;
             color: #5a3e2b;
+            font-size: 2.2em;
+        }
+
+        img {
+            max-width: 60%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #5a3e2b;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        .menu {
+            max-width: 400px;
+            margin: 20px auto 40px;
+            padding: 20px;
+            background: #f7f3e9;
+            border: 2px solid #d2c4b2;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 10px;
+            font-size: 1.1em;
+            color: #5a3e2b;
+            text-decoration: none;
             font-weight: bold;
         }
 
         footer {
-            margin-top: 40px;
-            text-align: center;
+            margin: 40px 0 20px;
             font-size: 0.9em;
-            color: #666;
+            color: #7a6a5f;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- ⭐⭐ TON TITRE TOUT EN HAUT ⭐⭐ -->
-    <h1 style="text-align:center;">Bienvenue sur mon site privé</h1>
+    <!-- TITRE -->
+    <h1>Bienvenue sur mon site privé</h1>
 
-    <!-- ⭐⭐ TON PORTRAIT ⭐⭐ -->
-    <div style="text-align:center; margin:40px 0;">
-        <img src="portrait-fred.png" alt="Portrait Frédéric"
-             style="max-width:60%; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15);">
-    </div>
+    <!-- IMAGE PRINCIPALE -->
+    <img src="portrait-fred.png" alt="Portrait">
 
-    <!-- ⭐⭐ TON MENU ⭐⭐ -->
-    <nav>
+    <!-- SOUS-TITRE -->
+    <h2>Accès rapide</h2>
+
+    <!-- MENU AVEC CADRE ÉLÉGANT -->
+    <div class="menu">
         <a href="carrefour.html">Carrefour des blogs</a>
         <a href="archives.html">Archives</a>
         <a href="apropos.html">À propos</a>
-    </nav>
+    </div>
 
-   
-
-    <!-- ⭐⭐ TON FOOTER ⭐⭐ -->
+    <!-- FOOTER -->
     <footer>
         © 2026 — Pour que je me souvienne
     </footer>
