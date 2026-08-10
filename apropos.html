@@ -10,14 +10,13 @@
             background-color: #f7f3e9;
             color: #3d2f24;
             margin: 0;
-            padding: 20px;
-            line-height: 1.6;
+            padding: 0;
         }
 
         /* MENU */
         .menu {
             text-align: center;
-            margin-bottom: 30px;
+            padding: 20px;
             font-size: 1.1em;
             color: #5a3e2b;
         }
@@ -34,6 +33,7 @@
             text-align: center;
             color: #5a3e2b;
             margin-top: 10px;
+            font-size: 2.2em;
         }
 
         .decor {
@@ -44,14 +44,41 @@
             border-radius: 2px;
         }
 
+        /* CITATION */
+        .citation {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            font-style: italic;
+            color: #6a584b;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        /* CONTENU CENTRALISÉ + CADRE DOUX */
+        .content {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #f7f3e9;
+            padding: 25px 35px;
+            border: 2px solid #d2c4b2;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            line-height: 1.7;
+        }
+
         h2 {
             color: #5a3e2b;
             margin-top: 30px;
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 40px;
         }
 
         footer {
             text-align: center;
-            margin-top: 40px;
+            margin: 40px 0 20px;
             color: #7a6a5f;
         }
     </style>
@@ -71,44 +98,55 @@
     <h1>À propos</h1>
     <div class="decor"></div>
 
-    <!-- SECTION 1 -->
-    <h2>Qui je suis</h2>
-    <p>Ce site est un espace personnel où je rassemble mes écrits, mes archives, mes photos et mes projets publiés au fil des années sur différentes plateformes.</p>
-    <p>Il me permet de centraliser, réorganiser et préserver tout ce contenu pour le rendre plus accessible.</p>
+    <!-- CITATION PERSONNELLE -->
+    <div class="citation">
+        « Le bonheur total et permanent n'existe pas.  
+        Il se compose en réalité d'une suite de moments de joie simple,  
+        de calme et de partage qu'il faut apprendre à voir et à savourer  
+        au jour le jour. Ce que j'appelle mes petits moments de bonheur. »
+    </div>
 
-    <!-- SECTION 2 -->
-    <h2>Pourquoi ce site existe</h2>
-    <p>Au fil du temps, j’ai publié sur plusieurs blogs, chacun avec son style, ses thèmes et ses périodes.</p>
-    <p>Ce site a été créé pour centraliser tout cela :</p>
+    <!-- CONTENU PRINCIPAL -->
+    <div class="content">
 
-    <ul>
-        <li>mes textes anciens,</li>
-        <li>mes documents,</li>
-        <li>mes photos,</li>
-        <li>mes archives musicales,</li>
-        <li>mes projets personnels,</li>
-        <li>mes souvenirs.</li>
-    </ul>
+        <h2>Qui je suis</h2>
+        <p>Ce site est un espace personnel où je rassemble mes écrits, mes archives, mes photos et mes projets publiés au fil des années sur différentes plateformes.</p>
+        <p>Il me permet de préserver ce qui compte pour moi, de le réorganiser, et de le rendre plus accessible.</p>
 
-    <!-- SECTION 3 -->
-    <h2>Comment le site évolue</h2>
-    <p>Ce site n’est pas figé.</p>
-    <p>Il évolue au rythme de mes envies, de mes découvertes et de mes projets.</p>
+        <h2>Pourquoi ce site existe</h2>
+        <p>Au fil du temps, j’ai publié sur plusieurs blogs, chacun avec son style, ses thèmes et ses périodes.</p>
+        <p>Ce site a été créé pour centraliser tout cela :</p>
 
-    <p>De nouvelles pages apparaîtront au fil du temps :</p>
+        <ul>
+            <li>mes textes anciens,</li>
+            <li>mes documents,</li>
+            <li>mes photos,</li>
+            <li>mes archives musicales,</li>
+            <li>mes projets personnels,</li>
+            <li>mes souvenirs.</li>
+        </ul>
 
-    <ul>
-        <li>archives par années,</li>
-        <li>dossiers thématiques,</li>
-        <li>galerie photo,</li>
-        <li>documents anciens,</li>
-        <li>liens vers mes blogs historiques.</li>
-    </ul>
+        <p>C’est une manière de rassembler, de mettre de l’ordre, et de ne rien perdre.</p>
 
-    <!-- SECTION 4 -->
-    <h2>Un espace pour me souvenir</h2>
-    <p>Chaque page, chaque texte, chaque image est une pièce de mon histoire personnelle.</p>
-    <p>Ce site est un lieu où je peux revenir, relire, revoir, et me souvenir.</p>
+        <h2>Comment le site évolue</h2>
+        <p>Ce site n’est pas figé.</p>
+        <p>Il évolue au rythme de mes envies, de mes découvertes et de mes projets.</p>
+
+        <p>De nouvelles pages apparaîtront au fil du temps :</p>
+
+        <ul>
+            <li>archives par années,</li>
+            <li>dossiers thématiques,</li>
+            <li>galerie photo,</li>
+            <li>documents anciens,</li>
+            <li>liens vers mes blogs historiques.</li>
+        </ul>
+
+        <h2>Un espace pour me souvenir</h2>
+        <p>Chaque page, chaque texte, chaque image est une pièce de mon histoire personnelle.</p>
+        <p>Ce site est un lieu où je peux revenir, relire, revoir, et me souvenir.</p>
+
+    </div>
 
     <!-- FOOTER -->
     <footer>
@@ -117,3 +155,4 @@
 
 </body>
 </html>
+
