@@ -1,8 +1,4 @@
-body {
-    background-color: yellow;
-}
-
-/* Style général */
+/* Style général pour la page Archives */
 body {
     font-family: Arial, sans-serif;
     max-width: 900px;
@@ -18,15 +14,23 @@ h1 {
     margin-bottom: 30px;
 }
 
-h2 {
-    margin-top: 30px;
-    margin-bottom: 15px;
+/* Introduction sous le titre */
+.intro-archives {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
 }
 
-/* Paragraphes */
-p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+/* Sections (Années, Thèmes, À venir) */
+.section-archives {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 /* Listes */
@@ -57,30 +61,4 @@ nav ul {
     margin: 0;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Lien actif */
-nav ul li a.active {
-    color: #cc0000;
-}
-
-/* Container général */
-.container {
-    margin-top: 20px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #555;
 }
