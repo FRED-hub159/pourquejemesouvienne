@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,14 +13,16 @@
     font-weight: normal;
     color: white;
     text-align: center;
-    margin: 40px 0 60px 0; /* ← marge inférieure augmentée */
-    -webkit-box-reflect: below 2px
+
+    /* marges harmonisées pour tous les titres */
+    margin-top: 40px;
+    margin-bottom: 60px; /* espace sous le titre pour empêcher le reflet de toucher le texte */
+
+    /* reflet collé */
+    -webkit-box-reflect: below -2px
         linear-gradient(transparent, rgba(255,255,255,0.25));
 }
-
 </style>
-
-
 
 </head>
 <body>
@@ -41,10 +45,7 @@
     </div>
 
     <!-- TITRE CINÉMA -->
-    <div style="text-align:center;">
-       <div class="titre-reflet">Mon ciné !</div>
-
-    </div>
+    <div class="titre-reflet">Mon ciné !</div>
 
     <!-- AFFICHE -->
     <div style="text-align:center;">
@@ -52,69 +53,57 @@
     </div>
 
     <!-- SI VOUS AVEZ MANQUÉ LE DÉBUT -->
-    <div style="text-align:center;">
-       <div class="titre-reflet">Si vous avez manqué le début</div>
-
-    </div>
+    <div class="titre-reflet">Si vous avez manqué le début</div>
 
     <!-- TEXTE DU RÉSUMÉ -->
     <div style="text-align:center; font-size:18px; line-height:1.6; margin:20px 0;">
         <p>En l'an 1327, dans une abbaye bénédictine, des moines disparaissent.</p>
         <p>Un franciscain, Guillaume de Baskerville, aidé du jeune novice Adso von Melk, mène l'enquête.</p>
         <p>C'est l'époque où l'Église, en pleine crise, se voit disputer son pouvoir spirituel et temporel.</p>
-        <p>C'est aussi l'apogée de l'inquisition
+        <p>C'est aussi l'apogée de l'inquisition.</p>
+    </div>
 
-       <!-- SALLE DE CINÉMA AVEC VIDÉO SUPERPOSÉE (PLUS HAUT + PLUS LARGE) -->
-<div style="position:relative; text-align:center; margin:30px 0;">
-    
-<!-- SALLE DE CINÉMA AVEC VIDÉO SUPERPOSÉE (PLUS HAUT + PLUS LARGE + CENTRÉE) -->
-<div style="position:relative; text-align:center; margin:30px 0;">
-    
-    <!-- IMAGE DE LA SALLE DE CINÉMA -->
-    <img src="images/salle-de-cine.jpg" 
-         alt="Salle de cinéma" 
-         style="width:100%; border-radius:12px;">
-    
-    <!-- VIDÉO SUPERPOSÉE SUR L'ÉCRAN -->
-    <iframe width="390" height="219"
-            src="https://www.youtube.com/embed/fn_OFdvYzQI"
-            frameborder="0"
-            allowfullscreen
-            style="position:absolute; 
-                   top:46%; 
-                   left:50%; 
-                   transform:translate(-46%, -50%); 
-                   border:4px solid black; 
-                   border-radius:8px;">
-   
-    
-    </iframe>
+    <!-- SALLE DE CINÉMA AVEC VIDÉO SUPERPOSÉE -->
+    <div style="position:relative; text-align:center; margin:30px 0;">
+        
+        <!-- IMAGE DE LA SALLE DE CINÉMA -->
+        <img src="images/salle-de-cine.jpg" 
+             alt="Salle de cinéma" 
+             style="width:100%; border-radius:12px;">
+        
+        <!-- VIDÉO SUPERPOSÉE SUR L'ÉCRAN -->
+        <iframe width="390" height="219"
+                src="https://www.youtube.com/embed/fn_OFdvYzQI"
+                frameborder="0"
+                allowfullscreen
+                style="position:absolute; 
+                       top:46%; 
+                       left:50%; 
+                       transform:translate(-46%, -50%); 
+                       border:4px solid black; 
+                       border-radius:8px;">
+        </iframe>
 
-</div>
-<!-- IMAGE "QUELQUES-INFOS" CENTRÉE -->
-<div style="text-align:center; margin-top:40px;">
-   <div class="titre-reflet">Quelques infos</div>
+    </div>
 
-</div>
+    <!-- TITRE "QUELQUES INFOS" -->
+    <div class="titre-reflet">Quelques infos</div>
 
-<!-- 7 LIGNES DE TEXTE CENTRÉES -->
-<div style="text-align:center; margin:25px 0; font-size:20px; font-weight:bold; color:white;">
-    <p>Ligne 1 de texte à personnaliser</p>
-    <p>Ligne 2 de texte à personnaliser</p>
-    <p>Ligne 3 de texte à personnaliser</p>
-    <p>Ligne 4 de texte à personnaliser</p>
-    <p>Ligne 5 de texte à personnaliser</p>
-    <p>Ligne 6 de texte à personnaliser</p>
-    <p>Ligne 7 de texte à personnaliser</p>
-</div>
+    <!-- 7 LIGNES DE TEXTE CENTRÉES -->
+    <div style="text-align:center; margin:25px 0; font-size:20px; font-weight:bold; color:white;">
+        <p>Ligne 1 de texte à personnaliser</p>
+        <p>Ligne 2 de texte à personnaliser</p>
+        <p>Ligne 3 de texte à personnaliser</p>
+        <p>Ligne 4 de texte à personnaliser</p>
+        <p>Ligne 5 de texte à personnaliser</p>
+        <p>Ligne 6 de texte à personnaliser</p>
+        <p>Ligne 7 de texte à personnaliser</p>
+    </div>
 
-<!-- IMAGE "C-EST-UN-FILM-DE-MA-COLLECTION" CENTRÉE -->
-<div style="text-align:center; margin-top:30px; margin-bottom:40px;">
-   <div class="titre-reflet">C’est un film de ma collection</div>
+    <!-- TITRE "C'EST UN FILM DE MA COLLECTION" -->
+    <div class="titre-reflet">C’est un film de ma collection</div>
 
 </div>
-          
-</div>
+
 </body>
 </html>
-
