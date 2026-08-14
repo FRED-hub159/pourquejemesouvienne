@@ -7,26 +7,31 @@
 
     <style>
         body {
-            background-color: #ffffff; /* fond blanc autour du cadre */
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             color: #ffffff;
         }
 
-        .cadre-cinema {
-            width: 92%;
-            max-width: 750px; /* ⭐ largeur identique à modele-actrice */
+        /* ⭐ Cadre étoilé extérieur (identique à modele-actrice) */
+        .cadre-etoile {
+            width: 900px;
             margin: 40px auto;
-            padding: 25px;
-
-            /* ⭐ cadre scintillant identique à modele-actrice */
-            border: 25px solid transparent;
-            border-image: url("images/fond-etoile.gif") 40 round;
-
-            background-color: #000000;
-            box-shadow: 0 0 25px #555;
+            padding: 15px;
             border-radius: 12px;
+            border: 3px ridge #bdddec;
+            background-image: url('images/fond-etoile.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* ⭐ Cadre argenté intérieur (identique à modele-actrice) */
+        .cadre-argent {
+            border: 2px ridge #dcdcdc;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #000000;
         }
 
         h1 {
@@ -126,46 +131,48 @@
 
 <body>
 
-    <div class="cadre-cinema">
+    <div class="cadre-etoile">
+        <div class="cadre-argent">
 
-        <h1>Montgomery Clift</h1>
-        <div class="dates">(1920 - 1966)</div>
+            <h1>Montgomery Clift</h1>
+            <div class="dates">(1920 - 1966)</div>
 
-        <img src="images/montgomery-clift.jpg" alt="Montgomery Clift" class="portrait">
+            <img src="images/montgomery-clift.jpg" alt="Montgomery Clift" class="portrait">
 
-        <p class="bio">
-            Fils d'un financier de Wall Street, « Monty », comme on prend très tôt l'habitude de l'appeler, est un vrai citadin.
-            Il grandit dans un milieu privilégié, entouré de culture et d'exigence.
-            Très jeune, il se passionne pour le théâtre et s'impose rapidement comme un acteur talentueux, sensible et perfectionniste.
-            Sa carrière hollywoodienne est marquée par des rôles intenses, souvent sombres, où il incarne des personnages tourmentés avec une profondeur rare.
-            Sa beauté fragile, son regard mélancolique et son jeu intérieur révolutionnent le cinéma américain des années 50.
-        </p>
+            <p class="bio">
+                Fils d'un financier de Wall Street, « Monty », comme on prend très tôt l'habitude de l'appeler, est un vrai citadin.
+                Il grandit dans un milieu privilégié, entouré de culture et d'exigence.
+                Très jeune, il se passionne pour le théâtre et s'impose rapidement comme un acteur talentueux, sensible et perfectionniste.
+                Sa carrière hollywoodienne est marquée par des rôles intenses, souvent sombres, où il incarne des personnages tourmentés avec une profondeur rare.
+                Sa beauté fragile, son regard mélancolique et son jeu intérieur révolutionnent le cinéma américain des années 50.
+            </p>
 
-        <div class="signature">
-            @fred<br>
-            https://fred-hub159.github.io/pourquejemesouvienne
+            <div class="signature">
+                @fred<br>
+                https://fred-hub159.github.io/pourquejemesouvienne
+            </div>
+
+            <div class="comment-box">
+                <h2>Laisser un commentaire</h2>
+
+                <form action="https://formspree.io/f/xljrlnye" method="POST">
+                    <label>Votre nom :</label>
+                    <input type="text" name="nom" required>
+
+                    <label>Votre message :</label>
+                    <textarea name="message" required></textarea>
+
+                    <div style="text-align:center;">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="published-comments">
+                <h3>Commentaires publiés</h3>
+            </div>
+
         </div>
-
-        <div class="comment-box">
-            <h2>Laisser un commentaire</h2>
-
-            <form action="https://formspree.io/f/xljrlnye" method="POST">
-                <label>Votre nom :</label>
-                <input type="text" name="nom" required>
-
-                <label>Votre message :</label>
-                <textarea name="message" required></textarea>
-
-                <div style="text-align:center;">
-                    <button type="submit">Envoyer</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="published-comments">
-            <h3>Commentaires publiés</h3>
-        </div>
-
     </div>
 
 </body>
