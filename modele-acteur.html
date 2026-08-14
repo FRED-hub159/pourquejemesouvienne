@@ -7,29 +7,37 @@
 
     <style>
         body {
-            background-color: #000000; /* fond noir cinéma */
+            background-color: #ffffff; /* fond blanc autour du cadre */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            color: #ffffff; /* texte blanc */
+            color: #ffffff; /* texte blanc dans le cadre noir */
         }
 
         .cadre-cinema {
             width: 92%;
             max-width: 900px;
             margin: 40px auto;
-            padding: 20px;
-            border: 8px ridge #c0c0c0; /* cadre métallique argenté */
-            border-radius: 12px;
+            padding: 30px;
+            border: 16px ridge #c0c0c0; /* CADRE MÉTALLIQUE TRÈS ÉPAIS */
+            border-radius: 14px;
             background-color: #000000; /* fond noir interne */
-            box-shadow: 0 0 20px #444;
+            box-shadow: 0 0 30px #555; /* ombre plus forte */
         }
 
         h1 {
             text-align: center;
-            font-size: 36px;
-            margin-top: 0;
+            font-size: 38px;
+            margin: 0;
             color: #ffffff;
+        }
+
+        .sous-titre {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            color: #cccccc;
         }
 
         .portrait {
@@ -38,7 +46,7 @@
             width: 100%;
             max-width: 450px;
             border-radius: 10px;
-            box-shadow: 0 0 15px #888;
+            box-shadow: 0 0 20px #777; /* halo plus marqué */
         }
 
         .bio {
@@ -55,7 +63,6 @@
             color: #cccccc;
         }
 
-        /* Formulaire passe-partout */
         .comment-box {
             margin-top: 40px;
             padding: 20px;
@@ -91,7 +98,6 @@
             cursor: pointer;
         }
 
-        /* Module commentaires publiés */
         .published-comments {
             margin-top: 30px;
             padding: 20px;
@@ -119,6 +125,7 @@
     <div class="cadre-cinema">
 
         <h1>Montgomery Clift (1920 - 1966)</h1>
+        <div class="sous-titre">Acteur américain – Icône du cinéma des années 50</div>
 
         <img src="images/montgomery-clift.jpg" alt="Montgomery Clift" class="portrait">
 
@@ -135,12 +142,10 @@
             https://fred-hub159.github.io/pourquejemesouvienne
         </div>
 
-        <!-- FORMULAIRE -->
         <div class="comment-box">
             <h2>Laisser un commentaire</h2>
 
             <form action="https://formspree.io/f/xljrlnye" method="POST">
-
                 <label>Votre nom :</label>
                 <input type="text" name="nom" required>
 
@@ -150,18 +155,11 @@
                 <div style="text-align:center;">
                     <button type="submit">Envoyer</button>
                 </div>
-
             </form>
         </div>
 
-        <!-- COMMENTAIRES PUBLIÉS -->
         <div class="published-comments">
             <h3>Commentaires publiés</h3>
-
-            <!-- Exemple :
-            <p><strong>Magalou :</strong> C'est un bon début !</p>
-            -->
-
         </div>
 
     </div>
