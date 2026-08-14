@@ -4,142 +4,48 @@
     <meta charset="UTF-8">
     <title>Montgomery Clift (1920 - 1966)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-    <style>
-        body {
-            background-color: #ffffff;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            color: #ffffff;
-        }
+<body style="background-color:#ffffff; margin:0; padding:0; font-family:Arial, sans-serif; color:#ffffff;">
 
-        /* ⭐ Cadre étoilé extérieur — IDENTIQUE à modele-actrice */
-        .cadre-etoile {
-            width: 900px;
-            margin: 40px auto;
-            padding: 15px;
-            border-radius: 12px;
-            border: 3px ridge #bdddec;
-            background-image: url('images/fond-etoile.gif');
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+    <!-- ⭐ Cadre étoilé extérieur — même position que ACTRICE -->
+    <div style="
+        width: 900px;
+        margin: 40px auto;
+        padding: 15px;
+        border-radius: 12px;
+        border: 3px ridge #bdddec;
+        background-image: url('images/fond-etoile.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+    ">
 
-        /* ⭐ Cadre argenté intérieur — IDENTIQUE à modele-actrice */
-        .cadre-argent {
+        <!-- ⭐ Cadre argenté intérieur — même position que ACTRICE -->
+        <div style="
             border: 2px ridge #dcdcdc;
             border-radius: 10px;
             padding: 15px;
             background-color: #000000; /* noir pour acteur */
-        }
+        ">
 
-        h1 {
-            text-align: center;
-            font-size: 38px;
-            margin: 0;
-            color: #ffffff;
-        }
+            <h1 style="text-align:center; font-size:38px; margin:0; color:#ffffff;">
+                Montgomery Clift
+            </h1>
 
-        .dates {
-            text-align: center;
-            font-size: 26px;
-            margin-top: 5px;
-            margin-bottom: 20px;
-            color: #cccccc;
-        }
+            <div style="text-align:center; font-size:26px; margin-top:5px; margin-bottom:20px; color:#cccccc;">
+                (1920 - 1966)
+            </div>
 
-        .portrait {
-            display: block;
-            margin: 20px auto;
-            width: 100%;
-            max-width: 450px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #777;
-        }
+            <img src="images/montgomery-clift.jpg" alt="Montgomery Clift" style="
+                display:block;
+                margin:20px auto;
+                width:100%;
+                max-width:450px;
+                border-radius:10px;
+                box-shadow:0 0 20px #777;
+            ">
 
-        .bio {
-            font-size: 17px;
-            line-height: 1.6;
-            margin-top: 20px;
-            color: #ffffff;
-        }
-
-        .signature {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 15px;
-            color: #cccccc;
-        }
-
-        .comment-box {
-            margin-top: 40px;
-            padding: 20px;
-            background: #111111;
-            border-radius: 10px;
-            border: 2px solid #777;
-        }
-
-        .comment-box h2 {
-            text-align: center;
-            margin-top: 0;
-            color: #ffffff;
-        }
-
-        .comment-box input,
-        .comment-box textarea {
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            border: 1px solid #999;
-            margin-bottom: 15px;
-            background-color: #222;
-            color: #fff;
-        }
-
-        .comment-box button {
-            padding: 10px 20px;
-            background: #c0c0c0;
-            color: #000;
-            border: none;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .published-comments {
-            margin-top: 30px;
-            padding: 20px;
-            background: #111111;
-            border-radius: 10px;
-            border: 2px solid #777;
-        }
-
-        .published-comments h3 {
-            text-align: center;
-            margin-top: 0;
-            color: #ffffff;
-        }
-
-        .published-comments p {
-            font-size: 15px;
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="cadre-etoile">
-        <div class="cadre-argent">
-
-            <h1>Montgomery Clift</h1>
-            <div class="dates">(1920 - 1966)</div>
-
-            <img src="images/montgomery-clift.jpg" alt="Montgomery Clift" class="portrait">
-
-            <p class="bio">
+            <p style="font-size:17px; line-height:1.6; margin-top:20px; color:#ffffff;">
                 Fils d'un financier de Wall Street, « Monty », comme on prend très tôt l'habitude de l'appeler, est un vrai citadin.
                 Il grandit dans un milieu privilégié, entouré de culture et d'exigence.
                 Très jeune, il se passionne pour le théâtre et s'impose rapidement comme un acteur talentueux, sensible et perfectionniste.
@@ -147,29 +53,67 @@
                 Sa beauté fragile, son regard mélancolique et son jeu intérieur révolutionnent le cinéma américain des années 50.
             </p>
 
-            <div class="signature">
+            <div style="text-align:center; margin-top:30px; font-size:15px; color:#cccccc;">
                 @fred<br>
                 https://fred-hub159.github.io/pourquejemesouvienne
             </div>
 
-            <div class="comment-box">
-                <h2>Laisser un commentaire</h2>
+            <!-- Formulaire -->
+            <div style="
+                margin-top:40px;
+                padding:20px;
+                background:#111111;
+                border-radius:10px;
+                border:2px solid #777;
+            ">
+                <h2 style="text-align:center; margin-top:0; color:#ffffff;">Laisser un commentaire</h2>
 
                 <form action="https://formspree.io/f/xljrlnye" method="POST">
                     <label>Votre nom :</label>
-                    <input type="text" name="nom" required>
+                    <input type="text" name="nom" required style="
+                        width:100%;
+                        padding:10px;
+                        border-radius:8px;
+                        border:1px solid #999;
+                        margin-bottom:15px;
+                        background-color:#222;
+                        color:#fff;
+                    ">
 
                     <label>Votre message :</label>
-                    <textarea name="message" required></textarea>
+                    <textarea name="message" required style="
+                        width:100%;
+                        padding:10px;
+                        border-radius:8px;
+                        border:1px solid #999;
+                        margin-bottom:15px;
+                        background-color:#222;
+                        color:#fff;
+                    "></textarea>
 
                     <div style="text-align:center;">
-                        <button type="submit">Envoyer</button>
+                        <button type="submit" style="
+                            padding:10px 20px;
+                            background:#c0c0c0;
+                            color:#000;
+                            border:none;
+                            border-radius:8px;
+                            font-weight:bold;
+                            cursor:pointer;
+                        ">Envoyer</button>
                     </div>
                 </form>
             </div>
 
-            <div class="published-comments">
-                <h3>Commentaires publiés</h3>
+            <!-- Commentaires publiés -->
+            <div style="
+                margin-top:30px;
+                padding:20px;
+                background:#111111;
+                border-radius:10px;
+                border:2px solid #777;
+            ">
+                <h3 style="text-align:center; margin-top:0; color:#ffffff;">Commentaires publiés</h3>
             </div>
 
         </div>
