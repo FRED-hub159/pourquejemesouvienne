@@ -19,10 +19,14 @@
             max-width: 900px;
             margin: 40px auto;
             padding: 30px;
-            border: 16px ridge #c0c0c0; /* CADRE MÉTALLIQUE TRÈS ÉPAIS */
-            border-radius: 14px;
-            background-color: #000000; /* fond noir interne */
-            box-shadow: 0 0 30px #555; /* ombre plus forte */
+
+            /* ⭐⭐ CADRE ANIMÉ EXACTEMENT COMME AVANT ⭐⭐ */
+            border: 20px solid transparent;
+            border-image: url("images/fond-etoile.gif") 30 round;
+
+            background-color: #000000; /* intérieur noir */
+            box-shadow: 0 0 30px #555;
+            border-radius: 12px;
         }
 
         h1 {
@@ -32,9 +36,9 @@
             color: #ffffff;
         }
 
-        .sous-titre {
+        .dates {
             text-align: center;
-            font-size: 22px;
+            font-size: 26px;
             margin-top: 8px;
             margin-bottom: 20px;
             color: #cccccc;
@@ -46,7 +50,7 @@
             width: 100%;
             max-width: 450px;
             border-radius: 10px;
-            box-shadow: 0 0 20px #777; /* halo plus marqué */
+            box-shadow: 0 0 20px #777;
         }
 
         .bio {
@@ -124,8 +128,8 @@
 
     <div class="cadre-cinema">
 
-        <h1>Montgomery Clift (1920 - 1966)</h1>
-        <div class="sous-titre">Acteur américain – Icône du cinéma des années 50</div>
+        <h1>Montgomery Clift</h1>
+        <div class="dates">(1920 - 1966)</div>
 
         <img src="images/montgomery-clift.jpg" alt="Montgomery Clift" class="portrait">
 
@@ -166,4 +170,5 @@
 
 </body>
 </html>
+
 
