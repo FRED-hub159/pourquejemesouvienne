@@ -62,3 +62,53 @@ nav ul {
 }
 
 }
+
+/* Bloc du formulaire et des commentaires */
+.bloc-commentaire {
+    width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #111;
+    border: 3px ridge #bdddec;
+    border-radius: 12px;
+    color: white;
+    font-family: "Monotype Corsiva", cursive;
+}
+
+/* Titres */
+.bloc-commentaire h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Champs du formulaire */
+.bloc-commentaire input,
+.bloc-commentaire textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #777;
+    font-size: 18px;
+    font-family: "Monotype Corsiva", cursive;
+    background: #222;
+    color: white;
+}
+
+/* Bouton */
+.bloc-commentaire button {
+    padding: 10px 20px;
+    background: #bdddec;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Monotype Corsiva", cursive;
+    margin-top: 10px;
+}
+
+.bloc-commentaire button:hover {
+    background: white;
+}
+
