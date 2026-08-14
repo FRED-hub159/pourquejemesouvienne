@@ -1,146 +1,77 @@
-<!-- Cadre étoilé extérieur -->
-<div style="
-    width: 900px;
-    margin: 40px auto;
-    padding: 15px;
-    border-radius: 12px;
-    border: 3px ridge #bdddec;
-    background-image: url('images/fond-etoile.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Montgomery Clift</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
 
-    <!-- Cadre argenté fin -->
-    <div style="
-        border: 2px ridge #dcdcdc;
-        border-radius: 10px;
-        padding: 15px;
-        background-color: transparent;
-    ">
+<body>
 
-        <!-- Cadre intérieur noir profond (équivalent prune) -->
-        <div style="
-            background-color: #000000; /* noir profond pour acteur */
-            border-radius: 10px;
-            padding: 20px;
-            border: 2px ridge #333333;
-            box-shadow: inset 0px 0px 10px 10px #333333;
-        ">
+    <!-- Cadre étoilé extérieur -->
+    <div class="cadre-etoile">
 
-          <h1 style="
-    text-align:center;
-    font-size:44px; /* ⭐ légèrement plus grand = plus cinéma */
-    margin:0;
-    color:#ffffff;
-    font-family: 'Monotype Corsiva', cursive;
-    font-weight: normal; /* ⭐ évite l'effet gras */
-    letter-spacing: 1px; /* ⭐ donne de l'air, plus élégant */
-">
-    Montgomery Clift
-</h1>
+        <!-- Cadre argenté intérieur -->
+        <div class="cadre-argente">
 
-<div style="
-    text-align:center;
-    font-size:30px; /* ⭐ cohérent avec le titre */
-    margin-top:5px;
-    margin-bottom:20px;
-    color:#cccccc;
-    font-family: 'Monotype Corsiva', cursive;
-    font-weight: normal;
-    letter-spacing: 1px;
-">
-    (1920 - 1966)
-</div>
+            <!-- Cadre noir pour la biographie -->
+            <div class="cadre-noir">
+
+                <h1>Montgomery Clift (1920 - 1966)</h1>
+
+                <div class="photo-acteur">
+                    <img src="images/montgomery-clift.jpg" alt="Montgomery Clift">
+                </div>
+
+                <p class="bio-acteur">
+                    Montgomery Clift était un acteur américain, né en 1920 et décédé en 1966.
+                    Il est considéré comme l’un des acteurs les plus influents de sa génération,
+                    notamment pour ses rôles dans « Tant qu’il y aura des hommes »,
+                    « La Maison du Docteur Edwardes » et « Soudain l’été dernier ».
+                </p>
+
+                <p class="signature">
+                    @fred<br>
+                    https://fred-hub159.github.io/pourquejemesouvienne
+                </p>
+
+            </div> <!-- fin du cadre noir -->
+
+        </div> <!-- fin du cadre argenté -->
+
+    </div> <!-- fin du cadre étoilé -->
 
 
+    <!-- Formulaire en dehors du cadre noir -->
+    <div class="bloc-commentaire">
 
+        <h3>Laisser un commentaire</h3>
 
-            <img src="images/montgomery-clift.jpg" alt="Montgomery Clift" style="
-                display:block;
-                margin:20px auto;
-                width:100%;
-                max-width:450px;
-                border-radius:10px;
-                box-shadow:0 0 20px #777;
-            ">
+        <form action="https://formspree.io/f/xljrlnye" method="POST">
+            <label for="name">Votre nom :</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
-            <p style="font-size:17px; line-height:1.6; margin-top:20px; color:#ffffff;">
-                Fils d'un financier de Wall Street, « Monty », comme on prend très tôt l'habitude de l'appeler, est un vrai citadin.
-                Il grandit dans un milieu privilégié, entouré de culture et d'exigence.
-                Très jeune, il se passionne pour le théâtre et s'impose rapidement comme un acteur talentueux, sensible et perfectionniste.
-                Sa carrière hollywoodienne est marquée par des rôles intenses, souvent sombres, où il incarne des personnages tourmentés avec une profondeur rare.
-                Sa beauté fragile, son regard mélancolique et son jeu intérieur révolutionnent le cinéma américain des années 50.
-            </p>
+            <label for="message">Votre message :</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
 
-            <div style="text-align:center; margin-top:30px; font-size:15px; color:#cccccc;">
-                @fred<br>
-                https://fred-hub159.github.io/pourquejemesouvienne
-            </div>
+            <button type="submit">Envoyer</button>
+        </form>
 
-            <!-- Formulaire -->
-            <div style="
-                margin-top:40px;
-                padding:20px;
-                background:#111111;
-                border-radius:10px;
-                border:2px solid #777;
-            ">
-                <h2 style="text-align:center; margin-top:0; color:#ffffff;">Laisser un commentaire</h2>
-
-                <form action="https://formspree.io/f/xljrlnye" method="POST">
-                    <label>Votre nom :</label>
-                    <input type="text" name="nom" required style="
-                        width:100%;
-                        padding:10px;
-                        border-radius:8px;
-                        border:1px solid #999;
-                        margin-bottom:15px;
-                        background-color:#222;
-                        color:#fff;
-                    ">
-
-                    <label>Votre message :</label>
-                    <textarea name="message" required style="
-                        width:100%;
-                        padding:10px;
-                        border-radius:8px;
-                        border:1px solid #999;
-                        margin-bottom:15px;
-                        background-color:#222;
-                        color:#fff;
-                    "></textarea>
-
-                    <div style="text-align:center;">
-                        <button type="submit" style="
-                            padding:10px 20px;
-                            background:#c0c0c0;
-                            color:#000;
-                            border:none;
-                            border-radius:8px;
-                            font-weight:bold;
-                            cursor:pointer;
-                        ">Envoyer</button>
-                    </div>
-                </form>
-            </div>
-
-            <!-- Commentaires publiés -->
-            <div style="
-                margin-top:30px;
-                padding:20px;
-                background:#111111;
-                border-radius:10px;
-                border:2px solid #777;
-            ">
-                <h3 style="text-align:center; margin-top:0; color:#ffffff;">Commentaires publiés</h3>
-            </div>
-<p>
-    <strong>Magalou :</strong> C'est un bon début !
-</p>
-
-        </div>
     </div>
-</div>
 
+
+    <!-- Commentaires publiés en dehors du cadre noir -->
+    <div class="bloc-commentaire">
+
+        <h3>Commentaires publiés</h3>
+
+        <p>
+            <strong>Magalou :</strong> C’est un bon début !
+        </p>
+
+    </div>
+
+</body>
+</html>
 
 
