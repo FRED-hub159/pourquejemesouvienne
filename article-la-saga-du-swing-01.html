@@ -222,16 +222,17 @@
         © 2026 — Pour que je me souvienne
     </footer>
 
-<!-- FORMULAIRE (en dessous et en dehors du cadre) -->
+<!-- FORMULAIRE + COMMENTAIRES (en dessous et en dehors du cadre) -->
 <div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
 
     <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
 
     <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
 
-        <label style="display:block; margin-top:10px;">Votre nom :</label>
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
         <input type="text" name="nom" required
-               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;">
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
 
         <label style="display:block; margin-top:10px;">Votre message :</label>
         <textarea name="message" required
@@ -247,16 +248,13 @@
     </form>
 </div>
 
-<!-- COMMENTAIRES PUBLIÉS (en dessous et en dehors du cadre) -->
+<!-- COMMENTAIRES PUBLIÉS -->
 <div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
 
     <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
 
-    <p style="color:#000;">
-    <strong>Magalou :</strong> C’est un bon début !<br>
-    <span style="font-size: 85%; color:#555;">Posté le : 12/03/2021</span>
-</p>
-
-</div>
+    <!-- MODÈLE DE COMMENTAIRE À DUPLIQUER -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
 </body>
 </html>
