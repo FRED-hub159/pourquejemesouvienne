@@ -22,26 +22,52 @@
     </p>
 </div>
 
-<!-- FORMULAIRE D’INSCRIPTION -->
+<!-- FORMULAIRE D’INSCRIPTION (VERSION AMÉLIORÉE) -->
 <div style="margin:20px auto; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
     <h2 style="text-align:center; color:#000;">S’inscrire aux nouveautés</h2>
 
-    <form action="https://formspree.io/f/xljrlnye" method="POST" style="margin-top:20px; text-align:center;">
-        <label style="color:#000;">Votre email :</label><br>
-        <input type="email" name="email" required
-               style="padding:8px; width:90%; max-width:300px; margin-top:5px;"><br><br>
+    <form id="inscriptionForm" style="margin-top:20px; text-align:center;">
+        <label style="color:#000; font-size:95%;">Votre email :</label><br>
+        <input type="email" id="emailInput" name="email" required
+               style="padding:10px; width:90%; max-width:300px; margin-top:10px; border-radius:6px; border:1px solid #888;"><br><br>
 
         <button type="submit"
-                style="padding:8px 20px; background:#1DA1F2; color:white; border:none; border-radius:6px; cursor:pointer;">
+                style="padding:10px 25px; background:#1DA1F2; color:white; border:none; border-radius:6px; cursor:pointer; font-size:95%;">
             S’inscrire
         </button>
     </form>
+
+    <!-- Message de confirmation -->
+    <p id="confirmationMessage" style="display:none; margin-top:20px; color:#1DA1F2; font-weight:bold; text-align:center;">
+        Merci, votre inscription est envoyée !
+    </p>
 </div>
+
+<!-- SCRIPT POUR FORMULAIRE -->
+<script>
+document.getElementById("inscriptionForm").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page
+
+    const email = document.getElementById("emailInput").value;
+
+    // Envoi à Formspree
+    await fetch("https://formspree.io/f/xljrlnye", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email })
+    });
+
+    // Vide le champ
+    document.getElementById("emailInput").value = "";
+
+    // Affiche le message de confirmation
+    document.getElementById("confirmationMessage").style.display = "block";
+});
+</script>
 
 <!-- LISTE DES LECTEURS (ORDRE ALPHABÉTIQUE) -->
 <div style="margin:20px auto; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
     <h2 style="text-align:center; color:#000;">Lecteurs du site</h2>
-
 
     <!-- BABACMOI -->
     <div style="margin-bottom:25px;">
@@ -53,7 +79,6 @@
     </div>
 
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
 
     <!-- FLORENCEMARQUISE -->
     <div style="margin-bottom:25px;">
@@ -79,7 +104,6 @@
 
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
-
     <!-- MAGALOU -->
     <div style="margin-bottom:25px;">
         <strong style="color:#1DA1F2;">Magalou</strong><br>
@@ -87,7 +111,6 @@
     </div>
 
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
 
     <!-- MARISARAH -->
     <div style="margin-bottom:25px;">
@@ -102,7 +125,6 @@
 
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
-
     <!-- MONICA-BREIZ -->
     <div style="margin-bottom:25px;">
         <strong style="color:#1DA1F2;">Monica-breiz</strong><br>
@@ -116,7 +138,6 @@
 
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
-
     <!-- PIXELIE25 -->
     <div style="margin-bottom:25px;">
         <strong style="color:#1DA1F2;">Pixelie25</strong><br>
@@ -129,3 +150,4 @@
     </div>
 
 </div>
+
