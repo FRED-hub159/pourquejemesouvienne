@@ -8,6 +8,13 @@ body {
     background-color: #ffffff;
 }
 
+/* Cadre principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
 /* Titres */
 h1 {
     text-align: center;
