@@ -11,6 +11,95 @@
 
 <style>
 
+    /* --- Structure générale --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrage global */
+}
+
+/* --- Menu --- */
+.menu {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 18px;
+}
+
+.menu a {
+    color: #1DA1F2;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block; /* Centrage réel des liens */
+}
+
+/* --- Cadre principal --- */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+    text-align: center; /* Centrage du contenu */
+}
+
+/* --- Titres --- */
+h1, h2 {
+    text-align: center;
+}
+
+/* --- Listes principales --- */
+.archive-list {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centrage des listes */
+}
+
+.archive-item {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin: 8px auto; /* Centrage horizontal */
+    border-radius: 8px;
+    background: #fafafa;
+    width: fit-content; /* Ajuste la largeur au contenu */
+    position: relative;
+}
+
+/* --- Panneaux au survol --- */
+.archive-item:hover .panel {
+    display: block;
+}
+
+.panel {
+    display: none;
+    position: absolute;
+    left: 50%; /* Centrage du panneau */
+    transform: translateX(-50%);
+    top: 100%;
+    width: 250px;
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 10;
+}
+
+/* --- Mois --- */
+.month-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.month-list li {
+    padding: 3px 0;
+}
+
+
 /* --- Structure générale --- */
 body {
     font-family: Arial, sans-serif;
