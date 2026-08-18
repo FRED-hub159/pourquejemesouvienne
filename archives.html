@@ -53,13 +53,14 @@ h1, h2 {
 .archive-item {
     padding: 10px;
     border: 1px solid #e0e0e0;
-    margin: 8px 10px; /* ← petite marge horizontale */
+    margin: 8px 0; /* marge verticale pour les blocs */
     border-radius: 8px;
     background: #f7f3e9;
     position: relative;
-    display: inline-block; /* ← les blocs ne prennent plus 100% */
-    width: auto;           /* ← largeur naturelle */
+    display: block; /* ← pour que les blocs soient l’un sous l’autre */
+    width: 100%;    /* ← pour que les blocs soient bien larges */
 }
+
 
 
 .archive-item:hover .panel {
