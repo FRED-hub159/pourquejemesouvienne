@@ -47,16 +47,20 @@ h1, h2 {
 .archive-list {
     list-style: none;
     padding: 0;
+    text-align: center; /* ← CENTRE les éléments de la liste */
 }
 
 .archive-item {
     padding: 10px;
     border: 1px solid #e0e0e0;
-    margin: 8px 0;
+    margin: 8px 10px; /* ← petite marge horizontale */
     border-radius: 8px;
     background: #f7f3e9;
     position: relative;
+    display: inline-block; /* ← les blocs ne prennent plus 100% */
+    width: auto;           /* ← largeur naturelle */
 }
+
 
 .archive-item:hover .panel {
     display: block;
