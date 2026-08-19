@@ -1,120 +1,55 @@
-/* Style général pour la page Archives */
 body {
+    background-color: #f7f3e9;
     font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.6;
-    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
-/* Cadre principal */
-.container {
-    width: 90%;
+/* Conteneur principal */
+.archives-container {
+    max-width: 800px;
     margin: 0 auto;
-}
-
-
-/* Titres */
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-/* Introduction sous le titre */
-.intro-archives {
-    max-width: 700px;
-    margin: 0 auto 30px;
-    font-size: 1.1em;
-    line-height: 1.6;
-    text-align: center;
-}
-
-/* Sections (Années, Thèmes, À venir) */
-.section-archives {
-    max-width: 700px;
-    margin: 0 auto 40px;
     padding: 20px;
-    background-color: #f7f7f7;
+}
+
+/* Titres de sections */
+.archives-section {
+    font-size: 1.6em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Panneaux */
+.archives-panel {
+    background-color: white;
     border-radius: 8px;
-    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 /* Listes */
-ul {
-    margin-top: 10px;
+.archives-list {
+    list-style: none;
+    padding-left: 0;
     margin-bottom: 20px;
 }
 
+/* Items */
+.archives-item {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
 /* Liens */
-a {
+.archives-item a {
     color: #0066cc;
     text-decoration: none;
 }
 
-a:hover {
+.archives-item a:hover {
     text-decoration: underline;
-}
-
-/* Menu */
-nav {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-/* Bloc du formulaire et des commentaires */
-.bloc-commentaire {
-    width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #111;
-    border: 3px ridge #bdddec;
-    border-radius: 12px;
-    color: white;
-    font-family: "Monotype Corsiva", cursive;
-}
-
-/* Titres */
-.bloc-commentaire h3 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-/* Champs du formulaire */
-.bloc-commentaire input,
-.bloc-commentaire textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #777;
-    font-size: 18px;
-    font-family: "Monotype Corsiva", cursive;
-    background: #222;
-    color: white;
-}
-
-/* Bouton */
-.bloc-commentaire button {
-    padding: 10px 20px;
-    background: #bdddec;
-    color: black;
-    border: none;
-    border-radius: 8px;
-    font-size: 20px;
-    cursor: pointer;
-    font-family: "Monotype Corsiva", cursive;
-    margin-top: 10px;
-}
-
-.bloc-commentaire button:hover {
-    background: white;
 }
 
