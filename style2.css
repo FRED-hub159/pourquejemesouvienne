@@ -37,11 +37,14 @@ font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 20px;
 }
 
-/* Items */
+/* Items — style identique à archives.html */
 .archives-item {
     margin-bottom: 10px;
     font-size: 1.1em;
+    font-weight: 500;   /* semi-bold, comme dans archives.html */
+    line-height: 1.4;   /* hauteur de ligne plus élégante */
 }
+
 
 /* Liens */
 .archives-item a {
