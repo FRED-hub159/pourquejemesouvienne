@@ -69,11 +69,13 @@ body {
 }
 
 /* Style du titre des thèmes et années */
+/* Option A — style original */
 .archives-item {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 1em;
+    margin-bottom: 15px;
 }
+
 
 /* Espacement entre les panneaux */
 .archives-panel {
