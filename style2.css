@@ -53,3 +53,29 @@ body {
     text-decoration: underline;
 }
 
+/* Masquer les panneaux par défaut */
+.archives-panel {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+/* Afficher le panneau au survol */
+.archives-item:hover .archives-panel {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style du titre des thèmes et années */
+.archives-item {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Espacement entre les panneaux */
+.archives-panel {
+    margin-top: 10px;
+}
