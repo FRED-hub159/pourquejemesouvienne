@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Article – Pour que je me souvienne</title>
+    <title>Le temps d’avant ! – Pour que je me souvienne</title>
 
     <style>
         body {
@@ -16,17 +16,17 @@
 
         header {
             text-align: center;
-            padding: 40px 20px 20px;
+            padding: 40px 20px 10px;
         }
 
         header h1 {
-            font-size: 2.2em;
-            margin-bottom: 10px;
+            font-size: 2.4em;
+            margin-bottom: 8px;
             color: #5a3e2b;
         }
 
         header .date {
-            font-size: 0.9em;
+            font-size: 1em;
             color: #7a6a5f;
         }
 
@@ -45,32 +45,51 @@
             font-size: 0.9em;
             color: #7a6a5f;
         }
+
+        .sous-titre {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: 25px 0 10px;
+            text-align: center;
+            color: #5a3e2b;
+        }
+
+        .image-article {
+            display: block;
+            margin: 0 auto 30px;
+            max-width: 90%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- TITRE DE L’ARTICLE -->
+    <!-- TITRE ET DATE AU-DESSUS DU CADRE -->
     <header>
-        <h1>Le temps d’avant</h1>
-        <div class="date">Publié le : JJ/MM/AAAA</div>
+        <h1>Le temps d’avant !</h1>
+        <div class="date">Publié le : 29/01/2026</div>
     </header>
 
     <!-- CONTENU -->
     <div class="contenu">
 
-        <!-- ⭐⭐ MODÈLE COMPLET – STYLE EKLABLOG ⭐⭐ -->
+        <!-- ⭐⭐ CADRE EKLABLOG COMPLET ⭐⭐ -->
         <div style="
             width: 700px;
             margin: 0 auto;
             text-align: center;
+            border: 3px solid #d2b48c;
+            border-radius: 10px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
         ">
 
-            <!-- ⭐ HAUT : GIF animé -->
+            <!-- HAUT : GIF animé -->
             <img src="https://ekladata.com/R_jcB6ZTKgGi_WatNBpqq07Pwfk"
-                 style="width: 100%; display: block;">
+                 style="width: 100%; display: block; border-top-left-radius: 10px; border-top-right-radius: 10px;">
 
-            <!-- ⭐ MILIEU : fond extérieur (cover) -->
+            <!-- MILIEU : fond extérieur (cover) -->
             <div style="
                 background-image: url('https://ekladata.com/TkJ00BL2ZYJuQFREvripi5b9xVo.jpg');
                 background-size: cover;
@@ -82,16 +101,43 @@
                 line-height: 1.6;
             ">
 
-                <!-- ⭐ TON TEXTE ICI -->
-                <p></p>
+                <!-- ⭐ CONTENU DE L’ARTICLE ⭐ -->
+                <div class="sous-titre">Les métiers disparus – 2</div>
+
+                <div class="sous-titre">La colleuse d’affiches (XIXᵉ siècle)</div>
+                <img class="image-article"
+                     src="https://image.eklablog.com/fZx-24eeVBZRgUMeR9XypViwA5s=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_c6954e_d3e2239865bf0f6f9d1a6efd02319eda.jpg"
+                     alt="La colleuse d’affiches">
+
+                <div class="sous-titre">Le décrotteur (XVIIIᵉ siècle)</div>
+                <img class="image-article"
+                     src="https://image.eklablog.com/w6eUFfuwzNjYzF779_bJpvAoDUY=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_0c5504_52bd197bda5038a61d5fc87d3c91bc36.jpg"
+                     alt="Le décrotteur">
+
+                <div class="sous-titre">L’homme sandwich (XIXᵉ – XXᵉ siècle)</div>
+                <img class="image-article"
+                     src="https://image.eklablog.com/e4ccQPbV_j_3UEeUN5NBfyOw1nY=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_dcd6f3_ece46a48046aec223992b6cdc14a6d02.jpg"
+                     alt="L’homme sandwich">
+
+                <div class="sous-titre">Le rempailleur de chaises (XIXᵉ – XXᵉ siècle)</div>
+                <img class="image-article"
+                     src="https://image.eklablog.com/T_LuifKJn6Xm3XMhyD5mgDYjX-0=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_22ed24_6b11d24ed387c481cbd5c8920e349ed6.jpg"
+                     alt="Le rempailleur de chaises">
 
             </div>
 
-            <!-- ⭐ BAS : image décorative -->
+            <!-- BAS : image décorative -->
             <img src="https://ekladata.com/_zJ_SWHV3jUS-9sdORzCFA-LI-Y.png"
-                 style="width: 100%; display: block;">
+                 style="width: 100%; display: block; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
 
         </div>
 
     </div>
 
+    <!-- FOOTER -->
+    <footer>
+        © 2026 — Pour que je me souvienne
+    </footer>
+
+</body>
+</html>
