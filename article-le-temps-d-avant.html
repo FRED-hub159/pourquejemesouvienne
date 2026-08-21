@@ -108,13 +108,17 @@
         box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     }
 
-    .video-article {
+   .video-article {
     display: block;
-    margin: 20px auto; /* petit espace au-dessus et centré */
-    max-width: 90%;
+    margin: 20px auto; /* espace + centré */
+    width: 320px;      /* largeur vidéo verticale */
+    height: 568px;     /* hauteur vidéo verticale */
+    max-width: 90%;    /* sécurité responsive */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    object-fit: cover; /* évite les bandes noires */
 }
+
 
 
     /* ⭐ Texte centré juste au-dessus des images ⭐ */
@@ -145,11 +149,17 @@
 
 <div class="cadre-retro">
 
-    <div class="sous-titre">Les métiers disparus</div>
+  <div class="sous-titre">Les métiers disparus</div>
 
-    <video class="video-article" controls>
+<!-- ⭐ Vidéo verticale type TikTok ⭐ -->
+<video class="video-article" controls>
     <source src="videos/anciens-metiers.mp4" type="video/mp4">
 </video>
+
+<div class="texte-au-dessus">
+    L'homme sandwich (XIXè - XXè siècle)
+</div>
+
 
 <div class="texte-au-dessus">
     L'homme sandwich (XIXè - XXè siècle)
