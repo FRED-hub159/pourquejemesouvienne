@@ -13,6 +13,27 @@
         color: #ffffff; /* texte blanc dans le cadre */
     }
 
+    /* ⭐ MENU HAUT – même typographie que Archives, en noir ⭐ */
+    .menu-haut {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 110%;
+        font-family: "Georgia", serif; /* même caractère typographique que Archives */
+        font-weight: bold;
+        color: #000000; /* noir */
+    }
+
+    .menu-haut a {
+        color: #000000; /* noir */
+        text-decoration: none;
+        padding: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .menu-haut a:hover {
+        color: #5a3e2b; /* brun rétro au survol */
+    }
+
     header {
         text-align: center;
         padding: 40px 20px 10px;
@@ -92,27 +113,21 @@
     }
 
 </style>
-/* ⭐ MENU HAUT – même typographie que Archives, en noir ⭐ */
-.menu-haut {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 110%;
-    font-family: "Georgia", serif; /* même caractère typographique que Archives */
-    font-weight: bold;
-    color: #000000; /* noir */
-}
+</head>
 
-.menu-haut a {
-    color: #000000; /* noir */
-    text-decoration: none;
-    padding: 0 10px;
-    transition: color 0.3s ease;
-}
+<body>
 
-.menu-haut a:hover {
-    color: #5a3e2b; /* brun rétro au survol */
-}
+<div class="menu-haut">
+    <a href="index.html">Accueil</a> |
+    <a href="communaute.html">Communauté</a> |
+    <a href="apropos.html">À propos</a> |
+    <a href="archives.html">Archives</a>
+</div>
 
+<header>
+    <h1>Le temps d’avant !</h1>
+    <div class="date">Publié le : 29/01/2026</div>
+</header>
 
 <!-- ⭐ CADRE RÉTRO – TU INSÈRES TON TEXTE ET TES IMAGES ICI ⭐ -->
 <div class="cadre-retro">
@@ -154,3 +169,4 @@
 
 </body>
 </html>
+
