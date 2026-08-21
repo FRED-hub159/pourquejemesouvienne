@@ -34,28 +34,32 @@
         width: 900px;
         margin: 40px auto;
         padding: 40px;
-        border: 6px double #5a3e2b; /* bordure rétro */
+        border: 6px double #5a3e2b;
         border-radius: 12px;
         background-image: url('images/FOND-METIERS.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        box-shadow: 0 8px 25px rgba(0,0,0,0.35); /* ombre douce */
+        box-shadow: 0 8px 25px rgba(0,0,0,0.35);
         position: relative;
-        overflow: hidden;
+        overflow: hidden; /* ⭐ permet au cadre de s’agrandir proprement */
+
+        /* ⭐ Superposition beige douce pour calmer l’image */
+        background-color: rgba(247, 243, 233, 0.55);
+        background-blend-mode: overlay;
     }
 
-    /* ⭐ FLOU LÉGER SUR LE FOND ⭐ */
+    /* ⭐ FLOU DOUX + ÉLOIGNEMENT DES BOULONS ⭐ */
     .cadre-retro::before {
         content: "";
         position: absolute;
         inset: 0;
         background-image: inherit;
-        background-size: inherit;
-        background-position: inherit;
-        background-repeat: inherit;
-        filter: blur(4px); /* flou léger */
-        opacity: 0.75; /* adoucit le fond */
+        background-size: 130%; /* éloigne les boulons */
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(6px) brightness(0.85); /* flou doux + fond adouci */
+        opacity: 0.65; /* fond plus doux */
         z-index: 0;
     }
 
