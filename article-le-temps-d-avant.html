@@ -42,7 +42,7 @@
         background-repeat: no-repeat;
         box-shadow: 0 8px 25px rgba(0,0,0,0.35);
         position: relative;
-        overflow: hidden; /* ⭐ permet au cadre de s’agrandir proprement */
+        overflow: hidden;
 
         /* ⭐ Superposition beige douce pour calmer l’image */
         background-color: rgba(247, 243, 233, 0.55);
@@ -68,18 +68,19 @@
         position: relative;
         z-index: 1;
     }
-/* ⭐ Texte blanc dans le cadre ⭐ */
-.cadre-retro * {
-    color: #ffffff;
-}
+
+    /* ⭐ TEXTE BLANC DANS LE CADRE (CORRECTION FINALE) ⭐ */
+    .cadre-retro,
+    .cadre-retro * {
+        color: #ffffff !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
 
     .sous-titre {
         font-weight: bold;
         font-size: 1.6em;
         margin: 25px 0 10px;
         text-align: center;
-        color: #ffffff;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
 
     .image-article {
@@ -107,51 +108,36 @@
 
     <img class="image-article" src="images/ton-image.jpg" alt="">
 
-    <p>Ton texte ici…xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    <p>
+    Ton texte ici…xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     tttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
     ttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
     ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
-    
-    
-    pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-    pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-        
-        LLLLLLLL
-        
-        
-        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
-        
-        <img class="image-article" src="images/homme-sandwich.jpg" alt="Description de l’image">
 
-        
-        
-        OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-        kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
-        
-        uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuup</p>
-        <img class="image-article" src="images/rempailleur-de-chaises.jpg" alt="Description de l’image">
+    <img class="image-article" src="images/homme-sandwich.jpg" alt="Description de l’image">
 
+    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
 
-    qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq
-    zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-    xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    <img class="image-article" src="images/rempailleur-de-chaises.jpg" alt="Description de l’image">
+
     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-            <img class="image-article" src="images/décrotteur.jpg" alt="Description de l’image">
+    <img class="image-article" src="images/décrotteur.jpg" alt="Description de l’image">
 
-    rtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
-    oioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioi
     vbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-                <img class="image-article" src="images/colleuse-d-affiches.jpg" alt="Description de l’image">
+    <img class="image-article" src="images/colleuse-d-affiches.jpg" alt="Description de l’image">
 
+    </p>
 
 </div>
 
-    <div style="text-align:center; margin-top:40px; font-size:110%; color:#3d2f24;">
-    © Frédéric — Pour que je me souvienne</div>
-    
+<div style="text-align:center; margin-top:40px; font-size:110%; color:#3d2f24;">
+    © Frédéric — Pour que je me souvienne
+</div>
+
 </body>
 </html>
