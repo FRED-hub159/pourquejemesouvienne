@@ -1,1 +1,183 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Le temps d’avant ! – Pour que je me souvienne</title>
+
+<style>
+    body {
+        background-color: #f7f3e9; /* fond beige */
+        font-family: "Georgia", serif;
+        margin: 0;
+        padding: 0;
+        color: #ffffff; /* texte blanc dans le cadre */
+    }
+
+    /* ⭐ MENU HAUT – même typographie que Archives, en noir ⭐ */
+    .menu-haut {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 110%;
+        font-family: "Georgia", serif;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .menu-haut a {
+        color: #000000;
+        text-decoration: none;
+        padding: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .menu-haut a:hover {
+        color: #5a3e2b;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px 10px;
+        color: #5a3e2b;
+    }
+
+    header h1 {
+        font-size: 2.4em;
+        margin-bottom: 8px;
+    }
+
+    header .date {
+        font-size: 1em;
+        color: #7a6a5f;
+    }
+
+    /* ⭐ CADRE RÉTRO ⭐ */
+    .cadre-retro {
+        width: 900px;
+        margin: 40px auto;
+        padding: 40px;
+        border: 6px double #5a3e2b;
+        border-radius: 12px;
+        background-image: url('images/FOND-METIERS.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(247, 243, 233, 0.55);
+        background-blend-mode: overlay;
+    }
+
+    .cadre-retro::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: inherit;
+        background-size: 130%;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(6px) brightness(0.85);
+        opacity: 0.65;
+        z-index: 0;
+    }
+
+    .cadre-retro > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* ⭐ TEXTE BLANC DANS LE CADRE ⭐ */
+    .cadre-retro,
+    .cadre-retro * {
+        color: #ffffff !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .sous-titre {
+        font-weight: bold;
+        font-size: 1.6em;
+        margin: 25px 0 10px;
+        text-align: center;
+    }
+
+    .image-article {
+        display: block;
+        margin: 0 auto 30px;
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+   .video-article {
+    display: block;
+    margin: 20px auto; /* espace + centré */
+    width: 320px;      /* largeur vidéo verticale */
+    height: 568px;     /* hauteur vidéo verticale */
+    max-width: 90%;    /* sécurité responsive */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    object-fit: cover; /* évite les bandes noires */
+}
+
+
+
+    /* ⭐ Texte centré juste au-dessus des images ⭐ */
+    .texte-au-dessus {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: #ffffff;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="menu-haut">
+    <a href="index.html">Accueil</a> |
+    <a href="communaute.html">Communauté</a> |
+    <a href="apropos.html">À propos</a> |
+    <a href="archives.html">Archives</a>
+</div>
+
+<header>
+    <h1>Le temps d’avant !</h1>
+    <div class="date">Publié le : 29/01/2026</div>
+</header>
+
+<div class="cadre-retro">
+
+  <div class="sous-titre">Les métiers disparus - 2</div>
+
+<!-- ⭐ Vidéo verticale type TikTok ⭐ -->
+<video class="video-article" controls>
+    <source src="videos/anciens-metiers.mp4" type="video/mp4">
+</video>
+
+
+
+
+    <!-- ⭐ Exemple propre : texte + image ⭐ -->
+    <div class="texte-au-dessus">L'homme sandwich (XIXè - XXè siècle)</div>
+    <img class="image-article" src="images/homme-sandwich.jpg" alt="">
+
+    <div class="texte-au-dessus">Le rempailleur de chaises (XIXè - XXè siècle)</div>
+    <img class="image-article" src="images/rempailleur-de-chaises.jpg" alt="">
+
+    <div class="texte-au-dessus">Le décrotteur (XVIIIè siècle)</div>
+    <img class="image-article" src="images/décrotteur.jpg" alt="">
+
+    <div class="texte-au-dessus">La colleuse d'affiches (XIXè siècle)</div>
+    <img class="image-article" src="images/colleuse-d-affiches.jpg" alt="">
+
+</div>
+
+<div style="text-align:center; margin-top:40px; font-size:110%; color:#3d2f24;">
+    © Frédéric — Pour que je me souvienne
+</div>
+
+</body>
+</html>
