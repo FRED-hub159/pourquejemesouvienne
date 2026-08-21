@@ -18,20 +18,20 @@
         text-align: center;
         margin-top: 20px;
         font-size: 110%;
-        font-family: "Georgia", serif; /* même caractère typographique que Archives */
+        font-family: "Georgia", serif;
         font-weight: bold;
-        color: #000000; /* noir */
+        color: #000000;
     }
 
     .menu-haut a {
-        color: #000000; /* noir */
+        color: #000000;
         text-decoration: none;
         padding: 0 10px;
         transition: color 0.3s ease;
     }
 
     .menu-haut a:hover {
-        color: #5a3e2b; /* brun rétro au survol */
+        color: #5a3e2b;
     }
 
     header {
@@ -50,7 +50,7 @@
         color: #7a6a5f;
     }
 
-    /* ⭐ CADRE RÉTRO VIEUX MÉTIERS ⭐ */
+    /* ⭐ CADRE RÉTRO ⭐ */
     .cadre-retro {
         width: 900px;
         margin: 40px auto;
@@ -64,33 +64,29 @@
         box-shadow: 0 8px 25px rgba(0,0,0,0.35);
         position: relative;
         overflow: hidden;
-
-        /* ⭐ Superposition beige douce pour calmer l’image */
         background-color: rgba(247, 243, 233, 0.55);
         background-blend-mode: overlay;
     }
 
-    /* ⭐ FLOU DOUX + ÉLOIGNEMENT DES BOULONS ⭐ */
     .cadre-retro::before {
         content: "";
         position: absolute;
         inset: 0;
         background-image: inherit;
-        background-size: 130%; /* éloigne les boulons */
+        background-size: 130%;
         background-position: center;
         background-repeat: no-repeat;
-        filter: blur(6px) brightness(0.85); /* flou doux + fond adouci */
-        opacity: 0.65; /* fond plus doux */
+        filter: blur(6px) brightness(0.85);
+        opacity: 0.65;
         z-index: 0;
     }
 
-    /* ⭐ CONTENU PAR-DESSUS LE FLOU ⭐ */
     .cadre-retro > * {
         position: relative;
         z-index: 1;
     }
 
-    /* ⭐ TEXTE BLANC DANS LE CADRE (CORRECTION FINALE) ⭐ */
+    /* ⭐ TEXTE BLANC DANS LE CADRE ⭐ */
     .cadre-retro,
     .cadre-retro * {
         color: #ffffff !important;
@@ -112,17 +108,16 @@
         box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     }
 
-</style>
-/* ⭐ Texte centré juste au-dessus de l’image ⭐ */
-.texte-au-dessus {
-    text-align: center;
-    margin-bottom: 15px; /* petit espace avant l’image */
-    font-size: 1.2em;
-    color: #ffffff; /* blanc comme le reste du cadre */
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
-}
+    /* ⭐ Texte centré juste au-dessus des images ⭐ */
+    .texte-au-dessus {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: #ffffff;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
 
-    
+</style>
 </head>
 
 <body>
@@ -139,34 +134,22 @@
     <div class="date">Publié le : 29/01/2026</div>
 </header>
 
-<!-- ⭐ CADRE RÉTRO – TU INSÈRES TON TEXTE ET TES IMAGES ICI ⭐ -->
 <div class="cadre-retro">
 
     <div class="sous-titre">Les métiers disparus</div>
 
-    <img class="image-article" src="images/ton-image.jpg" alt="">
+    <!-- ⭐ Exemple propre : texte + image ⭐ -->
+    <div class="texte-au-dessus">L'homme sandwich (XIXè - XXè siècle)</div>
+    <img class="image-article" src="images/homme-sandwich.jpg" alt="">
 
-    <p>
-       <div class="texte-au-dessus">
-    L'homme sandwich (XIXè - XXè siècle)
-       </div>
+    <div class="texte-au-dessus">Le rempailleur de chaises (XIXè - XXè siècle)</div>
+    <img class="image-article" src="images/rempailleur-de-chaises.jpg" alt="">
 
-    <img class="image-article" src="images/homme-sandwich.jpg" alt="Description de l’image">
+    <div class="texte-au-dessus">Le décrotteur (XVIIIè siècle)</div>
+    <img class="image-article" src="images/décrotteur.jpg" alt="">
 
-    Le rempailleur de chaises (XIXè - XXè siècle)
-
-    <img class="image-article" src="images/rempailleur-de-chaises.jpg" alt="Description de l’image">
-
-    Le décrotteur (XVIIIè siècle)
-
-    <img class="image-article" src="images/décrotteur.jpg" alt="Description de l’image">
-
-La colleuse d'affiches (XIXè siècle)
-    <img class="image-article" src="images/colleuse-d-affiches.jpg" alt="Description de l’image">
-
-        
-
-    </p>
+    <div class="texte-au-dessus">La colleuse d'affiches (XIXè siècle)</div>
+    <img class="image-article" src="images/colleuse-d-affiches.jpg" alt="">
 
 </div>
 
@@ -176,4 +159,3 @@ La colleuse d'affiches (XIXè siècle)
 
 </body>
 </html>
-
