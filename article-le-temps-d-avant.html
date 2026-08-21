@@ -1,143 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Le temps d’avant ! – Pour que je me souvienne</title>
+<meta charset="UTF-8">
+<title>Article rétro – Pour que je me souvienne</title>
 
-    <style>
-        body {
-            font-family: "Georgia", serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f3e9;
-            color: #3d2f24;
-            line-height: 1.6;
-        }
+<style>
+    body {
+        background-color: #f7f3e9; /* ton fond beige */
+        font-family: "Georgia", serif;
+        margin: 0;
+        padding: 0;
+        color: #3d2f24;
+    }
 
-        header {
-            text-align: center;
-            padding: 40px 20px 10px;
-        }
+    header {
+        text-align: center;
+        padding: 40px 20px 10px;
+    }
 
-        header h1 {
-            font-size: 2.4em;
-            margin-bottom: 8px;
-            color: #5a3e2b;
-        }
+    header h1 {
+        font-size: 2.4em;
+        margin-bottom: 8px;
+        color: #5a3e2b;
+    }
 
-        header .date {
-            font-size: 1em;
-            color: #7a6a5f;
-        }
+    header .date {
+        font-size: 1em;
+        color: #7a6a5f;
+    }
 
-        .contenu {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
+    /* ⭐ CADRE RÉTRO MODULABLE ⭐ */
+    .cadre-retro {
+        width: 900px;
+        margin: 40px auto;
+        padding: 40px;
+        border: 4px double #5a3e2b; /* bordure rétro années 50 */
+        border-radius: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    }
 
-        footer {
-            text-align: center;
-            margin: 40px 0 20px;
-            font-size: 0.9em;
-            color: #7a6a5f;
-        }
+    .sous-titre {
+        font-weight: bold;
+        font-size: 1.4em;
+        margin: 25px 0 10px;
+        text-align: center;
+        color: #5a3e2b;
+    }
 
-        .sous-titre {
-            font-weight: bold;
-            font-size: 1.3em;
-            margin: 25px 0 10px;
-            text-align: center;
-            color: #5a3e2b;
-        }
+    .image-article {
+        display: block;
+        margin: 0 auto 30px;
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
 
-        .image-article {
-            display: block;
-            margin: 0 auto 30px;
-            max-width: 90%;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        }
-    </style>
+    footer {
+        text-align: center;
+        margin: 40px 0 20px;
+        font-size: 0.9em;
+        color: #7a6a5f;
+    }
+</style>
 </head>
 
 <body>
 
-    <!-- TITRE ET DATE AU-DESSUS DU CADRE -->
-    <header>
-        <h1>Le temps d’avant !</h1>
-        <div class="date">Publié le : 29/01/2026</div>
-    </header>
+<header>
+    <h1>Titre de ton article</h1>
+    <div class="date">Publié le : 21/08/2026</div>
+</header>
 
-    <!-- CONTENU -->
-    <div class="contenu">
+<!-- ⭐ CHOIX DU FOND INTÉRIEUR ⭐ -->
+<!-- Pour l'école autrefois : -->
+<!-- <div class="cadre-retro" style="background-image: url('images/FOND-ECOLE.png');"> -->
 
-        <!-- ⭐⭐ CADRE EKLABLOG COMPLET ⭐⭐ -->
-        <div style="
-            width: 700px;
-            margin: 0 auto;
-            text-align: center;
-            border: 3px solid #d2b48c;
-            border-radius: 10px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-        ">
+<!-- Pour les vieux métiers : -->
+<div class="cadre-retro" style="background-image: url('images/FOND-METIERS.jpg');">
 
-            <!-- HAUT : GIF animé -->
-            <img src="https://ekladata.com/R_jcB6ZTKgGi_WatNBpqq07Pwfk"
-                 style="width: 100%; display: block; border-top-left-radius: 10px; border-top-right-radius: 10px;">
+    <div class="sous-titre">Sous-titre de section</div>
+    <p>Ton texte ici…</p>
 
-            <!-- MILIEU : fond extérieur (cover) -->
-            <div style="
-                background-image: url('https://ekladata.com/TkJ00BL2ZYJuQFREvripi5b9xVo.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                padding: 30px;
-                text-align: left;
-                color: #3d2f24;
-                font-family: Georgia, serif;
-                line-height: 1.6;
-            ">
+    <img class="image-article" src="images/ton-image.jpg" alt="Illustration">
 
-                <!-- ⭐ CONTENU DE L’ARTICLE ⭐ -->
-                <div class="sous-titre">Les métiers disparus – 2</div>
+    <div class="sous-titre">Autre section</div>
+    <p>Ton texte ici…</p>
 
-                <div class="sous-titre">La colleuse d’affiches (XIXᵉ siècle)</div>
-                <img class="image-article"
-                     src="https://image.eklablog.com/fZx-24eeVBZRgUMeR9XypViwA5s=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_c6954e_d3e2239865bf0f6f9d1a6efd02319eda.jpg"
-                     alt="La colleuse d’affiches">
+</div>
 
-                <div class="sous-titre">Le décrotteur (XVIIIᵉ siècle)</div>
-                <img class="image-article"
-                     src="https://image.eklablog.com/w6eUFfuwzNjYzF779_bJpvAoDUY=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_0c5504_52bd197bda5038a61d5fc87d3c91bc36.jpg"
-                     alt="Le décrotteur">
-
-                <div class="sous-titre">L’homme sandwich (XIXᵉ – XXᵉ siècle)</div>
-                <img class="image-article"
-                     src="https://image.eklablog.com/e4ccQPbV_j_3UEeUN5NBfyOw1nY=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_dcd6f3_ece46a48046aec223992b6cdc14a6d02.jpg"
-                     alt="L’homme sandwich">
-
-                <div class="sous-titre">Le rempailleur de chaises (XIXᵉ – XXᵉ siècle)</div>
-                <img class="image-article"
-                     src="https://image.eklablog.com/T_LuifKJn6Xm3XMhyD5mgDYjX-0=/filters:no_upscale()/image%2F1223892%2F20250801%2Fob_22ed24_6b11d24ed387c481cbd5c8920e349ed6.jpg"
-                     alt="Le rempailleur de chaises">
-
-            </div>
-
-            <!-- BAS : image décorative -->
-            <img src="https://ekladata.com/_zJ_SWHV3jUS-9sdORzCFA-LI-Y.png"
-                 style="width: 100%; display: block; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
-
-        </div>
-
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-        © 2026 — Pour que je me souvienne
-    </footer>
+<footer>
+    © 2026 — Pour que je me souvienne
+</footer>
 
 </body>
 </html>
