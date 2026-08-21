@@ -10,18 +10,18 @@
         font-family: "Georgia", serif;
         margin: 0;
         padding: 0;
-        color: #3d2f24;
+        color: #ffffff; /* texte blanc */
     }
 
     header {
         text-align: center;
         padding: 40px 20px 10px;
+        color: #5a3e2b;
     }
 
     header h1 {
         font-size: 2.4em;
         margin-bottom: 8px;
-        color: #5a3e2b;
     }
 
     header .date {
@@ -29,25 +29,49 @@
         color: #7a6a5f;
     }
 
-    /* ⭐ CADRE RÉTRO MODULABLE ⭐ */
+    /* ⭐ CADRE RÉTRO AVEC FLOU LÉGER ⭐ */
     .cadre-retro {
         width: 900px;
         margin: 40px auto;
         padding: 40px;
-        border: 4px double #5a3e2b; /* bordure rétro années 50 */
+        border: 6px double #5a3e2b; /* bordure rétro années 50 */
         border-radius: 12px;
+        background-image: url('images/FOND-METIERS.jpg');
         background-size: cover;
-        background-repeat: no-repeat;
         background-position: center;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+        background-repeat: no-repeat;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* ⭐ FLOU LÉGER SUR LE FOND ⭐ */
+    .cadre-retro::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: inherit;
+        background-size: inherit;
+        background-position: inherit;
+        background-repeat: inherit;
+        filter: blur(4px); /* flou léger */
+        opacity: 0.75; /* adoucit le fond */
+        z-index: 0;
+    }
+
+    /* ⭐ CONTENU PAR-DESSUS LE FLOU ⭐ */
+    .cadre-retro > * {
+        position: relative;
+        z-index: 1;
     }
 
     .sous-titre {
         font-weight: bold;
-        font-size: 1.4em;
+        font-size: 1.6em;
         margin: 25px 0 10px;
         text-align: center;
-        color: #5a3e2b;
+        color: #ffffff; /* blanc */
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
 
     .image-article {
@@ -55,7 +79,7 @@
         margin: 0 auto 30px;
         max-width: 90%;
         border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     }
 
     footer {
@@ -74,12 +98,7 @@
     <div class="date">Publié le : 21/08/2026</div>
 </header>
 
-<!-- ⭐ CHOIX DU FOND INTÉRIEUR ⭐ -->
-<!-- Pour l'école autrefois : -->
-<!-- <div class="cadre-retro" style="background-image: url('images/FOND-ECOLE.png');"> -->
-
-<!-- Pour les vieux métiers : -->
-<div class="cadre-retro" style="background-image: url('images/FOND-METIERS.jpg');">
+<div class="cadre-retro">
 
     <div class="sous-titre">Sous-titre de section</div>
     <p>Ton texte ici…</p>
