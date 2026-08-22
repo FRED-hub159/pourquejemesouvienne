@@ -70,3 +70,153 @@ style="padding:10px; width:90%; max-width:300px; margin-top:10px; border-radius:
 
         <button type="submit"
                 style="padding:10px 25px; background:#1DA1F2; color:white
+
+             </button>
+    </form>
+
+    <p id="confirmationMessage" style="display:none; margin-top:20px; color:#1DA1F2; font-weight:bold; text-align:center;">
+        Merci, votre inscription est envoyée !
+    </p>
+</div>
+
+<script>
+document.getElementById("inscriptionForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+    const email = document.getElementById("emailInput").value;
+
+    await fetch("https://formspree.io/f/xljrlnye", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email })
+    });
+
+    document.getElementById("emailInput").value = "";
+    document.getElementById("confirmationMessage").style.display = "block";
+});
+</script>
+
+            <!-- LISTE DES LECTEURS -->
+<div style="margin:20px auto; background:#f7f3e9; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
+    <h2 style="text-align:center; color:#000;">Lecteurs du site</h2>
+
+    <!-- BABACMOI -->
+    <div class="membre">
+        <img src="images/header-BABACMOI.jpg" alt="babacmoi">
+        <div><strong style="color:#1DA1F2;">babacmoi</strong></div>
+        <a href="https://blogababa.eklablog.com" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://blogababa.eklablog.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+    <!-- CAPT MARINETTE -->
+    <div class="membre">
+        <img src="images/header-CAPTMARINETTE.png" alt="Capt Marinette">
+        <div><strong style="color:#1DA1F2;">Capt Marinette</strong></div>
+        <a href="https://marinette_11.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://marinette_11.eklablog.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+     <!-- CONGOBO -->
+    <div class="membre">
+        <img src="images/header-CONGOBO.png" alt="CONGOBO">
+        <div><strong style="color:#1DA1F2;">CONGOBO</strong></div>
+        <a href="https://janocongobo.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://janocongobo.eklablog.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+    <!-- FLORENCEMARQUISE -->
+    <div class="membre">
+        <img src="images/header-FLORENCEMARQUISE.jpg" alt="FlorenceMarquise">
+        <div><strong style="color:#1DA1F2;">FlorenceMarquise</strong></div>
+        <a href="https://florence-marquise.vefblog.net" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            Mon Royaume enchanteur
+        </a><br><br>
+        <img src="images/header-FLORENCEMARQUISE2.jpg" alt="Univers Gothique">
+        <a href="http://gothsanctuary.vefblog.net" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            L’Univers Gothique
+        </a>
+    </div>
+    <div class="separator"></div>
+
+     <!-- MAGALOU -->
+    <div class="membre">
+        <img src="images/header-MAGALOU.jpg" alt="Magalou">
+        <div><strong style="color:#1DA1F2;">Magalou</strong></div>
+        <em style="color:#555;">Pas de blog</em>
+    </div>
+    <div class="separator"></div>
+
+    <!-- MAMYVEL-CREATIONS -->
+    <div class="membre">
+        <img src="images/header-MAMYVEL-CREATIONS.png" alt="MAMYVEL-CREATIONS">
+        <div><strong style="color:#1DA1F2;">MAMYVEL-CREATIONS</strong></div>
+        <a href="https://mamyvel-creations.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://mamyvel-creations.eklablog.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+    <!-- MARISARAH -->
+    <div class="membre">
+        <img src="images/header-MARISARAH.jpg" alt="Marisarah">
+        <div><strong style="color:#1DA1F2;">Marisarah</strong></div>
+        <a href="https://naturaimer.eklablog.com" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://naturaimer.eklablog.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+     <!-- MONICA-BREIZ -->
+    <div class="membre">
+        <img src="images/header-MONICA-BREIZ.jpg" alt="Monica-breiz">
+        <div><strong style="color:#1DA1F2;">Monica-breiz</strong></div>
+        <a href="https://monica-breiz.eklablog.fr" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://monica-breiz.eklablog.fr
+        </a>
+    </div>
+    <div class="separator"></div>
+
+    <!-- PETITS BONHEURS -->
+    <div class="membre">
+        <img src="images/header-PETITSBONHEURS.png" alt="Petits Bonheurs">
+        <div><strong style="color:#1DA1F2;">Petits Bonheurs</strong></div>
+        <a href="https://www.elisagilbert-photography.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://www.elisagilbert-photography.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+    <!-- PIXELIE25 -->
+    <div class="membre">
+        <img src="images/header-PIXELIE25.jpg" alt="Pixelie25">
+        <div><strong style="color:#1DA1F2;">Pixelie25</strong></div>
+        <a href="https://musik-stories.blogspot.com" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://musik-stories.blogspot.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+ <!-- POURQUOIPAS -->
+    <div class="membre">
+        <img src="images/header-POURQUOIPAS732.png" alt="pourquoipas">
+        <div><strong style="color:#1DA1F2;">pourquoipas</strong></div>
+        <a href="https://changement26.blogspot.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+            https://changement26.blogspot.com
+        </a>
+    </div>
+    <div class="separator"></div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="text-align:center; margin-top:40px; color:#3d2f24;">
+    © Frédéric — Pour que je me souvienne
+</footer>
+
+</body>
+</html>    
