@@ -13,13 +13,27 @@
         padding: 0;
         font-size: 100%;
     }
+    .membre {
+        text-align:center;
+        margin-bottom:40px;
+    }
+    .membre img {
+        width:160px;
+        height:auto;
+        border-radius:12px;
+        margin:10px 0;
+    }
+    .separator {
+        width:60%;
+        height:1px;
+        background:#ccc;
+        margin:20px auto;
+    }
 </style>
 
 </head>
 
 <body>
-
-
 
 <!-- MENU -->
 <div style="text-align:center; margin-top:20px; font-size:110%; font-weight:bold; color:#000;">
@@ -31,9 +45,6 @@
     &nbsp;|&nbsp;
     <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
 </div>
-
-
-
 
 <!-- TITRE -->
 <h1 style="text-align:center; margin-top:30px; color:#000;">Communauté</h1>
@@ -48,11 +59,7 @@
     <p>Vous pouvez également vous inscrire pour être prévenu lors de la publication d’un nouvel article.</p>
 </div>
 
-
-
-
-
-<!-- FORMULAIRE D’INSCRIPTION (VERSION AMÉLIORÉE) -->
+<!-- FORMULAIRE D’INSCRIPTION -->
 <div style="margin:20px auto; background:#f7f3e9; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
     <h2 style="text-align:center; color:#000;">S’inscrire aux nouveautés</h2>
 
@@ -62,204 +69,4 @@
 style="padding:10px; width:90%; max-width:300px; margin-top:10px; border-radius:6px; border:1px solid #888; background:#ffffff;">
 
         <button type="submit"
-                style="padding:10px 25px; background:#1DA1F2; color:white; border:none; border-radius:6px; cursor:pointer; font-size:95%;">
-            S’inscrire
-        </button>
-    </form>
-
-    <!-- Message de confirmation -->
-    <p id="confirmationMessage" style="display:none; margin-top:20px; color:#1DA1F2; font-weight:bold; text-align:center;">
-        Merci, votre inscription est envoyée !
-    </p>
-</div>
-
-<!-- SCRIPT POUR FORMULAIRE -->
-<script>
-document.getElementById("inscriptionForm").addEventListener("submit", async function(event) {
-    event.preventDefault(); // Empêche le rechargement de la page
-
-    const email = document.getElementById("emailInput").value;
-
-    // Envoi à Formspree
-    await fetch("https://formspree.io/f/xljrlnye", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email })
-    });
-
-    // Vide le champ
-    document.getElementById("emailInput").value = "";
-
-    // Affiche le message de confirmation
-    document.getElementById("confirmationMessage").style.display = "block";
-});
-</script>
-
-<!-- LISTE DES LECTEURS (ORDRE ALPHABÉTIQUE) -->
-<div style="margin:20px auto; background:#f7f3e9; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
-    <h2 style="text-align:center; color:#000;">Lecteurs du site</h2>
-
-    <!-- BABACMOI -->
-    <div style="margin-bottom:25px;">
-        <strong style="color:#1DA1F2;">babacmoi</strong><br>
-        <img src="images/header-BABACMOI.jpg" alt="babacmoi" style="width:120px; border-radius:6px; margin:10px 0;"><br>
-        <a href="https://blogababa.eklablog.com" target="_blank" style="color:#1DA1F2; text-decoration:none;">
-            https://blogababa.eklablog.com
-        </a>
-    </div>
-
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <div style="text-align:center; margin-bottom:40px;">
-    <img src="images/header-CAPTMARINETTE.png" 
-         alt="Capt Marinette" 
-         style="width:260px; height:auto; border-radius:12px;">
-    <div style="margin-top:10px;">
-        <a href="https://marinette_11.eklablog.com/" 
-           target="_blank" 
-           style="color:#1DA1F2; font-size:20px; text-decoration:none;">
-           Capt Marinette
-        </a>
-    </div>
-</div>
-<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-<div style="text-align:center; margin-bottom:40px;">
-    <img src="images/header-CONGOBO.png" 
-         alt="CONGOBO" 
-         style="width:260px; height:auto; border-radius:12px;">
-    <div style="margin-top:10px;">
-        <a href="https://janocongobo.eklablog.com/" 
-           target="_blank" 
-           style="color:#1DA1F2; font-size:20px; text-decoration:none;">
-           CONGOBO
-        </a>
-    </div>
-</div>
-<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- FLORENCEMARQUISE -->
-    <div style="margin-bottom:25px;">
-        <strong style="color:#1DA1F2;">FlorenceMarquise</strong><br>
-
-        <!-- Mon Royaume enchanteur -->
-        <img src="images/header-FLORENCEMARQUISE.jpg" alt="Mon Royaume enchanteur"
-             style="width:120px; border-radius:6px; margin:10px 0;"><br>
-        <a href="https://florence-marquise.vefblog.net" target="_blank"
-           style="color:#1DA1F2; text-decoration:none;">
-           Mon Royaume enchanteur
-        </a>
-        <br><br>
-
-        <!-- L’Univers Gothique -->
-        <img src="images/header-FLORENCEMARQUISE2.jpg" alt="L’Univers Gothique"
-             style="width:120px; border-radius:6px; margin:10px 0;"><br>
-        <a href="http://gothsanctuary.vefblog.net" target="_blank"
-           style="color:#1DA1F2; text-decoration:none;">
-           L’Univers Gothique
-        </a>
-    </div>
-
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- MAGALOU -->
-    <div style="margin-bottom:25px;">
-        <strong style="color:#1DA1F2;">Magalou</strong><br>
-        <em style="color:#555;">Pas de blog</em>
-    </div>
-
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <div style="text-align:center; margin-bottom:40px;">
-    <img src="images/header-MAMYVEL-CREATIONS.png" 
-         alt="MAMYVEL-CREATIONS" 
-         style="width:260px; height:auto; border-radius:12px;">
-    <div style="margin-top:10px;">
-        <a href="https://mamyvel-creations.eklablog.com/" 
-           target="_blank" 
-           style="color:#1DA1F2; font-size:20px; text-decoration:none;">
-           MAMYVEL-CREATIONS
-        </a>
-    </div>
-</div>
-<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-
-    <!-- MARISARAH -->
-    <div style="margin-bottom:25px;">
-        <strong style="color:#1DA1F2;">Marisarah</strong><br>
-        <img src="images/header-MARISARAH.jpg" alt="Marisarah"
-             style="width:120px; border-radius:6px; margin:10px 0;"><br>
-        <a href="https://naturaimer.eklablog.com" target="_blank"
-           style="color:#1DA1F2; text-decoration:none;">
-           https://naturaimer.eklablog.com
-        </a>
-    </div>
-
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- MONICA-BREIZ -->
-    <div style="margin-bottom:25px;">
-        <strong style="color:#1DA1F2;">Monica-breiz</strong><br>
-        <img src="images/header-MONICA-BREIZ.jpg" alt="Monica-breiz"
-             style="width:120px; border-radius:6px; margin:10px 0;"><br>
-        <a href="https://monica-breiz.eklablog.fr" target="_blank"
-           style="color:#1DA1F2; text-decoration:none;">
-           https://monica-breiz.eklablog.fr
-        </a>
-    </div>
-
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <div style="text-align:center; margin-bottom:40px;">
-    <img src="images/header-PETITSBONHEURS.png" 
-         alt="Petits Bonheurs" 
-         style="width:260px; height:auto; border-radius:12px;">
-    <div style="margin-top:10px;">
-        <a href="https://www.elisagilbert-photography.com/" 
-           target="_blank" 
-           style="color:#1DA1F2; font-size:20px; text-decoration:none;">
-           Petits Bonheurs
-        </a>
-    </div>
-</div>
-<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-
-    <!-- PIXELIE25 -->
-    <div style="margin-bottom:25px;">
-        <strong style="color:#1DA1F2;">Pixelie25</strong><br>
-        <img src="images/header-PIXELIE25.jpg" alt="Pixelie25"
-             style="width:120px; border-radius:6px; margin:10px 0;"><br>
-        <a href="https://musik-stories.blogspot.com" target="_blank"
-           style="color:#1DA1F2; text-decoration:none;">
-           https://musik-stories.blogspot.com
-        </a>
-    </div>
-
-</div>
-
-<div style="text-align:center; margin-top:40px; font-size:110%; color:#3d2f24;">
-
-    <div style="text-align:center; margin-bottom:40px;">
-    <img src="images/header-POURQUOIPAS732.png" 
-         alt="pourquoipas" 
-         style="width:260px; height:auto; border-radius:12px;">
-    <div style="margin-top:10px;">
-        <a href="https://changement26.blogspot.com/" 
-           target="_blank" 
-           style="color:#1DA1F2; font-size:20px; text-decoration:none;">
-           pourquoipas
-        </a>
-    </div>
-</div>
-<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    © Frédéric — Pour que je me souvienne
-</div>
-
-
-    
-</body>
-</html>
-
+                style="padding:10px 25px; background:#1DA1F2; color:white
