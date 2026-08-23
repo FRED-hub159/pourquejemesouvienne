@@ -99,11 +99,12 @@ document.getElementById("inscriptionForm").addEventListener("submit", async func
     event.preventDefault();
     const email = document.getElementById("emailInput").value;
 
-    await fetch("https://formspree.io/f/xljrlnye", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: email })
-    });
+   await fetch("https://hooks.zapier.com/hooks/catch/TON_ID/TON_CODE/", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: email })
+});
+
 
     document.getElementById("emailInput").value = "";
     document.getElementById("confirmationMessage").style.display = "block";
