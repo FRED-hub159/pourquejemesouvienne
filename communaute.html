@@ -235,11 +235,7 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         const email = document.getElementById("emailInput").value;
 
-        await fetch("https://hooks.zapier.com/hooks/catch/28628501/4tgesc8/", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ email: email })
-        });
+       
 
         document.getElementById("emailInput").value = "";
         document.getElementById("confirmationMessage").style.display = "block";
