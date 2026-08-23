@@ -33,6 +33,7 @@
 
 </head>
 
+   
 <body>
 
 <!-- MENU -->
@@ -92,23 +93,8 @@
     Merci, votre inscription est envoyée !
 </div>
 
-<script>
-document.getElementById("inscriptionForm").addEventListener("submit", async function(event) {
-    event.preventDefault();
-    const email = document.getElementById("emailInput").value;
 
-   await fetch("https://hooks.zapier.com/hooks/catch/28628501/4tgesc8/", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email: email })
-});
-
-
-    document.getElementById("emailInput").value = "";
-    document.getElementById("confirmationMessage").style.display = "block";
-});
-</script>
-        </div>
+        
 
             <!-- LISTE DES LECTEURS -->
 <div style="margin:20px auto; background:#f7f3e9; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
@@ -241,5 +227,21 @@ document.getElementById("inscriptionForm").addEventListener("submit", async func
     © Frédéric — Pour que je me souvienne
 </footer>
 
+<script>
+document.getElementById("inscriptionForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+    const email = document.getElementById("emailInput").value;
+
+    await fetch("https://hooks.zapier.com/hooks/catch/28628501/4tgesc8/", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email })
+    });
+
+    document.getElementById("emailInput").value = "";
+    document.getElementById("confirmationMessage").style.display = "block";
+});
+</script>
+        
 </body>
 </html>    
