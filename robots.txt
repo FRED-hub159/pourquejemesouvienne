@@ -1,1 +1,5 @@
 
+User-agent: *
+Allow: /
+
+Sitemap: https://fred-hub159.github.io/pourquejemesouvienne/sitemap.xml
