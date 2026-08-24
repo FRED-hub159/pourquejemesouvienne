@@ -1,1 +1,55 @@
 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/</loc>
+  </url>
+
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/index.html</loc>
+  </url>
+
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/archives.html</loc>
+  </url>
+
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/apropos.html</loc>
+  </url>
+
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/communaute.html</loc>
+  </url>
+
+  <!-- Articles Swing -->
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/article-la-saga-du-swing-01.html</loc>
+  </url>
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/article-la-saga-du-swing-02.html</loc>
+  </url>
+
+  <!-- Modèles -->
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/modele-actrice.html</loc>
+  </url>
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/modele-actrice2.html</loc>
+  </url>
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/modele-acteur.html</loc>
+  </url>
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/modele-film.html</loc>
+  </url>
+
+  <!-- Le temps d'avant -->
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/article-le-temps-d-avant-modele-ecole.html</loc>
+  </url>
+  <url>
+    <loc>https://fred-hub159.github.io/pourquejemesouvienne/article-le-temps-d-avant-modele-metiers.html</loc>
+  </url>
+
+</urlset>
