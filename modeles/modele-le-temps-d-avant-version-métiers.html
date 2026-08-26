@@ -1,1 +1,445 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Le temps d’avant ! – Pour que je me souvienne</title>
+<meta name="description" content="Article sur les métiers disparus, souvenirs anciens et cartes postales rétro.">
+
+    
+<style>
+    body {
+        background-color: #f7f3e9; /* fond beige */
+        font-family: "Georgia", serif;
+        margin: 0;
+        padding: 0;
+        color: #ffffff; /* texte blanc dans le cadre */
+    }
+
+    /* ⭐ MENU HAUT – même typographie que Archives, en noir ⭐ */
+    .menu-haut {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 110%;
+        font-family: "Georgia", serif;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .menu-haut a {
+        color: #000000;
+        text-decoration: none;
+        padding: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .menu-haut a:hover {
+        color: #5a3e2b;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px 10px;
+        color: #5a3e2b;
+    }
+
+    header h1 {
+        font-size: 2.4em;
+        margin-bottom: 8px;
+    }
+
+    header .date {
+        font-size: 1em;
+        color: #7a6a5f;
+    }
+
+    /* ⭐ CADRE RÉTRO ⭐ */
+    .cadre-retro {
+        width: 900px;
+        margin: 40px auto;
+        padding: 40px;
+        border: 6px double #5a3e2b;
+        border-radius: 12px;
+        background-image: url('images/FOND-METIERS.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(247, 243, 233, 0.55);
+        background-blend-mode: overlay;
+    }
+
+    .cadre-retro::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: inherit;
+        background-size: 130%;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(6px) brightness(0.85);
+        opacity: 0.65;
+        z-index: 0;
+    }
+
+    .cadre-retro > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* ⭐ TEXTE BLANC DANS LE CADRE ⭐ */
+    .cadre-retro,
+    .cadre-retro * {
+        color: #ffffff !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .sous-titre {
+        font-weight: bold;
+        font-size: 1.6em;
+        margin: 25px 0 10px;
+        text-align: center;
+    }
+
+    .image-article {
+        display: block;
+        margin: 0 auto 30px;
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+   .video-article {
+    display: block;
+    margin: 20px auto; /* espace + centré */
+    width: 320px;      /* largeur vidéo verticale */
+    height: 568px;     /* hauteur vidéo verticale */
+    max-width: 90%;    /* sécurité responsive */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    object-fit: cover; /* évite les bandes noires */
+}
+
+
+
+    /* ⭐ Texte centré juste au-dessus des images ⭐ */
+    .texte-au-dessus {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: #ffffff;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="menu-haut">
+    <a href="index.html">Accueil</a> |
+    <a href="communaute.html">Communauté</a> |
+    <a href="apropos.html">À propos</a> |
+    <a href="archives.html">Archives</a>
+</div>
+
+<header>
+    <h1>Le temps d’avant !</h1>
+    <div class="date">Publié le : 29/01/2026</div>
+</header>
+
+<div class="cadre-retro">
+
+  <div class="sous-titre">Les métiers disparus - 2</div>
+
+<!-- ⭐ Vidéo verticale type TikTok ⭐ -->
+<video class="video-article" controls title="Vidéo : métiers disparus">
+    <source src="videos/anciens-metiers.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+    <!-- ⭐ Exemple propre : texte + image ⭐ -->
+    <div class="texte-au-dessus">L'homme sandwich (XIXè - XXè siècle)</div>
+    <img class="image-article" src="images/homme-sandwich.jpg" alt="Ancien métier : homme sandwich dans la rue">
+
+    <div class="texte-au-dessus">Le rempailleur de chaises (XIXè - XXè siècle)</div>
+    <img class="image-article" src="images/rempailleur-de-chaises.jpg" alt="Ancien métier : rempailleur de chaises">
+
+    <div class="texte-au-dessus">Le décrotteur (XVIIIè siècle)</div>
+    <img class="image-article" src="images/décrotteur.jpg" alt="Ancien métier : décrotteur dans la rue">
+
+    <div class="texte-au-dessus">La colleuse d'affiches (XIXè siècle)</div>
+    <img class="image-article" src="images/colleuse-d-affiches.jpg" alt="Ancien métier : colleuse d'affiches dans la rue">
+
+ <!-- Signature -->
+    <p style="text-align: center; margin-top: 25px;">
+        <span style="
+            font-family: Yellowtail;
+            color: #3d2f24;
+            font-size: 26px;
+            text-shadow: 1px 1px 1px #bfbfbf;
+        ">
+            @fred
+        </span>
+        <br>
+        <a href="https://fred-hub159.github.io/pourquejemesouvienne"
+           style="color:#1DA1F2; font-size:14px; text-decoration:none;">
+            https://fred-hub159.github.io/pourquejemesouvienne
+        </a>
+    </p>
+    
+</div>
+
+       
+
+</div> <!-- fin du cadre .contenu -->
+
+
+<div style="text-align:center; margin-top:40px; font-size:110%; color:#3d2f24;">
+  
+</div>
+<!-- FORMULAIRE + COMMENTAIRES -->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+    <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+        <!-- Champ caché pour identifier l'article -->
+        <input type="hidden" name="article" value="Article – Le temps d’avant (Métiers)">
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+
+
+
+
+    
+<!-- COMMENTAIRES PUBLIÉS -->
+<div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+    <!-- COMMENTAIRE 1 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Magalou</strong><br>
+        C’est un bon début !<br>
+        <span style="font-size:85%; color:#555;">Posté le : 14/08/2026</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 2 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="https://musik-stories.blogspot.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Pixelie25
+            </a>
+        </strong><br><br>
+
+        Hello Fred ! Bonjour Fred ! Retour encore timide après une nouvelle période de creux et me voici plongée dans une sorte de nostalgie.<br><br>
+
+        J'aime beaucoup ces vieilles cartes postales, témoins des temps que nous n'avons pas vécus. Je pense que certains de ces métiers existent encore. Les colleurs d'affiches par exemple dont la dextérité émerveillait la petite fille que j'étais. Le décrotteur... j'ai d'abord été surprise par cette appellation mais c'est vrai qu'à une époque le crottin de cheval était plus fréquent que les particules fines ! Mais il y a toujours des cireurs de pompes... surtout chez les politiques et ceux-là sont... indécrottables ! 😆<br><br>
+
+        Les rempailleurs sont toujours là mais ils n'arpentent plus les rues et doivent être plus rares.<br><br>
+
+        Quand j'étais petite fille, je me rappelle ces petits métiers ambulants qui étaient comme de petits spectacles aux pieds des immeubles. Je me rappelle tout particulièrement un gars qui me paraissait géant, avec des biscotos qui ne devaient rien à la gonflette. Il poussait sa carriole en beuglant : "Couteaux ! Ciseaux ! Rémouleur ! Rémouleur ! Rasoirs comme neuf ! Rémouleur ! Rémouleur !" (on utilisait encore le rasoir coupe-chou). On dévalait les escaliers pour aller admirer les étincelles qui explosaient dans le crissement de sa meule en pierre.<br><br>
+
+        Mais la grande vedette, c'était le joueur d'orgue de barbarie avec son petit singe facétieux habillé en matelot ! On piochait dans nos tirelires pour lui donner la pièce et acheter un petit paquet de pralines et c'était une ou deux heures de spectacle joyeux !<br><br>
+
+        Bisous mon cher Fred<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 03/03/2026 à 11:44</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 3 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="http://florence-marquise.vefblog.net/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Florence-marquise
+            </a>
+        </strong><br><br>
+
+        Bonjour cher Fred,<br><br>
+        Petit coucou pour te souhaiter une bonne journée.<br>
+        Bisous amicaux<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 04/02/2026 à 06:40</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 4 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="https://mamyvel-creations.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                mamyvel
+            </a>
+        </strong><br><br>
+
+        Re-bonjour Fred, ah oui, j'aime beaucoup voir "ce temps d'avant", j'avais acheté un livre sur tous ces métiers d'avant, je ne l'ai plus je l'ai donné à l'un de mes neveux. Bonne journée ! Bisous<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 02/02/2026 à 08:55</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 5 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="http://florence-marquise.vefblog.net/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Florence-marquise
+            </a>
+        </strong><br><br>
+
+        Bonjour cher Fred,<br>
+        C'est cool, tu as réussi à valider les commentaires ! Contente pour toi.<br>
+        Mon coucou amical pour te souhaiter une bonne journée et une agréable semaine, bisous.<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 02/02/2026 à 06:34</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 6 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="https://www.elisagilbert-photography.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Petits Bonheurs
+            </a>
+        </strong><br><br>
+
+        Un petit coucou en ce dimanche soir.<br>
+        Ces vieux métiers avaient toute leur importance.<br><br>
+
+        Le rempailleur de chaise est pour moi la personne qui me manque le plus aujourd'hui. J'ai une très vieille chaise que j'aime beaucoup et qui me vient de mon arrière-grand-père. Je n'ose plus m'asseoir dessus. Elle est là dans le coin d'une pièce servant juste de décoration.<br><br>
+
+        Je te souhaite une belle nouvelle semaine.<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 01/02/2026 à 18:07</span>
+    </div>
+
+
+        <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 7 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="https://changement26.blogspot.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                pourquoipas
+            </a>
+        </strong><br><br>
+
+        Bonjour Frédéric.
+Je vois que je vieillis car j'en ai connu de ces vieux métiers, à part les colleuses d'affiches mais avec les ramoneurs.
+Nous avons vu le soleil et c'est bon pour le moral.
+Gilbert et Bernadette<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 01/02/2026 à 16:00</span>
+    </div>
+
+     <!-- COMMENTAIRE 8 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="https://marinette_11.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Capt Marinette
+            </a>
+        </strong><br><br>
+
+        Coucou Fred,
+Tout d'abord je ne reçois jamais de mails de notifications te concernant..
+Hooo oui, il est passé où tout ce temps où la vie était peut-être plus dure,
+mais tellement plus joyeuse en même temps.
+Super ton article.
+Bonne journée.
+Bizouillettes d’Marinette et caresses à Cannelle 🐕<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 01/02/2026 à 11:04</span>
+    </div>
+
+ <!-- COMMENTAIRE 9 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="http://florence-marquise.vefblog.net/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Florence-marquise
+            </a>
+        </strong><br><br>
+
+        Bonjour cher Fred,<br>
+        Mon coucou amical pour te souhaiter une bonne journée et un agréable week-end, bisous.
+Florence<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 30/0/2026 à 06:58</span>
+    </div>
+
+ <!-- COMMENTAIRE 10 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="http://florence-marquise.vefblog.net/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Florence-marquise
+            </a>
+        </strong><br><br>
+
+        Bonsoir cher Fred,<br>
+J'avais laissé un commentaire l'autre jour mais il n'y ait pas, bug d'Eklablog ? J'en remet un alors.
+Intéressant ton article sur les métiers d'autrefois, j'aime bien les vieilles photos ou cartes postales. Bravo pour tes recherches.
+Passe une bonne soirée, bisous.
+Florence<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 29/01/2026 à 17:19</span>
+    </div>
+
+<!-- COMMENTAIRE 11 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong>
+            <a href="https://janocongobo.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                CONGOBO
+            </a>
+        </strong><br><br>
+
+       Bonjour mon très cher FRED<br>
+Que de beaux rappels photographiques du TEMPS D'AVANT
+Bravo pour ces coups des Yeux et en Rappel l'on devrait s'en souvenir
+Merci pour ton commentaire sur
+ACADABRA QUELQUES CHANSONS DE L'ABLBUM de Francis Cabrel
+Je te souhaite un bon Jeudi en ce 29 Janvier (déjà le 29 Janvier)
+Avec toute mon Amitié
+Jean
+https//janocongobo.eklablog.com<br><br>
+
+        <span style="font-size:85%; color:#555;">Posté le : 29/01/2026 à 08:34</span>
+    </div>
+    
+  <!-- FOOTER -->
+ <footer style="text-align:center; margin-top:20px;">
+    © 2026 — Pour que je me souvienne
+</footer>
+
+
+</body>
+</html>
