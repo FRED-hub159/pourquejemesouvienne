@@ -1,4 +1,132 @@
+<!-- =============================== -->
+<!-- <span style="color:red; font-weight:bold;">📄 DÉBUT DU FICHIER — STRUCTURE GÉNÉRALE</span> -->
+<!-- =============================== -->
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Archives du site Pour que je me souvienne : années, thèmes, documents, photos, textes et souvenirs classés.">
+
+<title>Archives – Pour que je me souvienne</title>
+<meta name="description" content="Archives du site Pour que je me souvienne : années, thèmes, documents, photos, textes et souvenirs classés.">
+<link rel="stylesheet" href="style2.css">
+
+
+<style>
+
+body {
+    font-family: "Georgia", serif;
+    background-color: #f7f3e9;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    padding: 15px;
+    background-color: #f7f3e9;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 18px;
+}
+
+.menu a {
+    color: #5a4632;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: #f7f3e9;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+}
+
+h1, h2 {
+    text-align: left;
+}
+
+.archive-list {
+    list-style: none;
+    padding: 0;
+       text-align: left; /* ← AJOUTER CETTE LIGNE EXACTEMENT ICI */
+}
+
+.archive-item {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin: 8px 0; /* marge verticale pour les blocs */
+    border-radius: 8px;
+    background: #f7f3e9;
+    position: relative;
+    display: block; /* ← pour que les blocs soient l’un sous l’autre */
+    width: 100%;    /* ← pour que les blocs soient bien larges */
+}
+
+
+
+.archive-item:hover .panel {
+    display: block;
+}
+
+.panel {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 700px;
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 10;
+}
+
+.month-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.month-list li {
+    padding: 3px 0;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- =============================== -->
+<!-- <span style="color:red; font-weight:bold;">📄 DÉBUT DU CONTENU — MENU + INTRODUCTION</span> -->
+<!-- =============================== -->
+
+<!-- MENU -->
+  
+     
+    <div class="container">
+
+    <div style="text-align:center;">
+       <div class="menu" style="font-weight:bold; font-size:110%; text-align:center;">
+    <a href="index.html" style="color:#000; text-decoration:none;">Accueil</a> |
+    <a href="communaute.html" style="color:#000; text-decoration:none;">Communauté</a> |
+    <a href="apropos.html" style="color:#000; text-decoration:none;">À propos</a> |
+    <span style="color:#000; font-weight:bold;">Archives</span>
+</div>
+
+    </div>
+<div class="container">
+    <h1>Archives</h1>
+
+
+<!-- INTRODUCTION SUR DEUX LIGNES -->
+<p>Cette page regroupe l'ensemble de mes archives.<br>
+Elle évoluera au rythme de mes ajouts.</p>
+<!-- =============================== -->
+<!-- <span style="color:red; font-weight:bold;">📅 SECTION — ARCHIVES PAR ANNÉES — DÉBUT</span> -->
+<!-- =============================== -->
 <h2 class="section-title">Archives par années</h2>
 <ul class="archive-list">
 
