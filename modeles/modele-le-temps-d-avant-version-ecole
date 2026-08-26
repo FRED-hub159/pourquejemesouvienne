@@ -1,1 +1,222 @@
 
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Le temps d’avant ! – Pour que je me souvienne</title>
+<meta name="description" content="Souvenirs de l’école d’autrefois : matériel scolaire ancien, ambiance des classes, images rétro et évocation du temps d’avant pour se rappeler l’école comme elle était.">
+
+<style>
+    body {
+        background-color: #f7f3e9; /* fond beige */
+        font-family: "Georgia", serif;
+        margin: 0;
+        padding: 0;
+        color: #ffffff; /* texte blanc dans le cadre */
+    }
+
+    .menu-haut {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 110%;
+        font-family: "Georgia", serif;
+        font-weight: bold;
+        color: #000000;
+    }
+
+    .menu-haut a {
+        color: #000000;
+        text-decoration: none;
+        padding: 0 10px;
+        transition: color 0.3s ease;
+    }
+
+    .menu-haut a:hover {
+        color: #5a3e2b;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px 10px;
+        color: #5a3e2b;
+    }
+
+    header h1 {
+        font-size: 2.4em;
+        margin-bottom: 8px;
+    }
+
+    header .date {
+        font-size: 1em;
+        color: #7a6a5f;
+    }
+
+    .cadre-retro {
+        width: 900px;
+        margin: 40px auto;
+        padding: 40px;
+        border: 6px double #5a3e2b;
+        border-radius: 12px;
+        background-image: url('images/FOND-ECOLE.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+        position: relative;
+        overflow: hidden;
+        background-color: rgba(247, 243, 233, 0.55);
+        background-blend-mode: overlay;
+    }
+
+    .cadre-retro::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('images/FOND-ECOLE.jpg');
+        background-size: 130%;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(6px) brightness(0.85);
+        opacity: 0.65;
+        z-index: 0;
+    }
+
+    .cadre-retro > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .cadre-retro,
+    .cadre-retro * {
+        color: #ffffff !important;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    .sous-titre {
+        font-weight: bold;
+        font-size: 1.6em;
+        margin: 25px 0 10px;
+        text-align: center;
+    }
+
+    .image-article {
+        display: block;
+        margin: 0 auto 30px;
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+
+    .video-article {
+        display: block;
+        margin: 20px auto;
+        width: 320px;
+        height: 568px;
+        max-width: 90%;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+        object-fit: cover;
+    }
+
+    .texte-au-dessus {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        color: #ffffff;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="menu-haut">
+    <a href="index.html">Accueil</a> |
+    <a href="communaute.html">Communauté</a> |
+    <a href="apropos.html">À propos</a> |
+    <a href="archives.html">Archives</a>
+</div>
+
+<header>
+    <h1>Le temps d’avant !</h1>
+    <div class="date">Publié le : 29/01/2026</div>
+</header>
+
+<div class="cadre-retro">
+
+  <div class="sous-titre">Les métiers disparus - 2</div>
+
+  <video class="video-article" controls>
+      <source src="videos/anciens-metiers.mp4" type="video/mp4">
+  </video>
+
+  <div class="texte-au-dessus">L'homme sandwich (XIXè - XXè siècle)</div>
+<img class="image-article" src="images/homme-sandwich.jpg" alt="Description de l’image : homme sandwich portant des panneaux publicitaires">
+
+  <div class="texte-au-dessus">Le rempailleur de chaises (XIXè - XXè siècle)</div>
+<img class="image-article" src="images/rempailleur-de-chaises.jpg" alt="Description de l’image : rempailleur de chaises en train de réparer un siège">
+
+  <div class="texte-au-dessus">Le décrotteur (XVIIIè siècle)</div>
+<img class="image-article" src="images/décrotteur.jpg" alt="Description de l’image : décrotteur nettoyant les chaussures dans la rue">
+
+  <div class="texte-au-dessus">La colleuse d'affiches (XIXè siècle)</div>
+<img class="image-article" src="images/colleuse-d-affiches.jpg" alt="Description de l’image : colleuse d’affiches travaillant sur un mur">
+
+<!-- Signature -->
+<p style="text-align: center; margin-top: 25px;">
+    <span style="
+        font-family: Yellowtail;
+        color: #3d2f24;
+        font-size: 26px;
+        text-shadow: 1px 1px 1px #bfbfbf;
+    ">
+        @fred
+    </span>
+    <br>
+    <a href="https://fred-hub159.github.io/pourquejemesouvienne"
+       style="color:#1DA1F2; font-size:14px; text-decoration:none;">
+        https://fred-hub159.github.io/pourquejemesouvienne
+    </a>
+</p>
+
+    
+</div>
+
+<!-- ⭐ FORMULAIRE AJOUTÉ ICI ⭐ -->
+<div style="margin-top:50px; padding:20px; display:flex; justify-content:center;">
+    <div style="background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
+
+        <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+        <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
+
+            <label style="display:block; margin-top:10px;">Votre nom :</label>
+            <input type="text" name="nom" required
+                   style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;">
+
+            <label style="display:block; margin-top:10px;">Votre message :</label>
+            <textarea name="message" required
+                      style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+            <!-- ⭐ PHRASE CACHÉE AJOUTÉE ⭐ -->
+            <input type="hidden" name="article" value="Article – Le temps d’avant (Modèle école)">
+
+            <div style="text-align:center; margin-top:10px;">
+                <button type="submit"
+                        style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                    Envoyer
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<div style="text-align:center; margin-top:40px; font-size:110%; color:#3d2f24;">
+    © Frédéric — Pour que je me souvienne
+</div>
+
+</body>
+</html>
