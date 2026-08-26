@@ -214,6 +214,54 @@
     </div>
 </div>
 
+<!-- COMMENTAIRES PUBLIÉS -->
+<div style="margin-top:40px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+    <!-- COMMENTAIRE 1 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo1</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 2 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo2</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 3 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo3</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 4 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo4</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 5 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo5</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+</div>
+
+
 <div style="text-align:center; margin-top:40px; font-size:110%; color:#3d2f24;">
     © Frédéric — Pour que je me souvienne
 </div>
