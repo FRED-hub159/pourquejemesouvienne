@@ -42,14 +42,15 @@
         box-sizing:border-box;
     }
 
-    /* Images */
+    /* Image du thème */
     .theme-img {
-        width:110px;
+        width:110px;                /* petite image */
         display:block;
         margin:0 auto 15px auto;
         border-radius:8px;
     }
 
+    /* Image du sujet */
     .sujet-img {
         width:100%;
         max-width:450px;
@@ -60,18 +61,11 @@
 
     /* Bloc “Vous aimerez aussi” */
     .suite {
-        margin-top:35px;
+        width:92%;
+        max-width:700px;
+        margin:20px auto;
         padding-top:15px;
         border-top:1px solid #ccc;
-    }
-
-    .suite a {
-        color:#1DA1F2;
-        text-decoration:none;
-    }
-
-    .suite a:hover {
-        text-decoration:underline;
     }
 
     footer {
@@ -96,9 +90,8 @@
 <!-- CONTENU -->
 <div class="contenu">
 
-    <!-- IMAGE DU THÈME -->
+    <!-- IMAGE DU THÈME (petite) -->
     <img src="images/ChatGPT-Image-DEFI.png" alt="Thème du défi" class="theme-img">
-
 
     <h2 style="text-align:center; margin-top:0;">
         Défi chez Cathy Rose – Épisode X
@@ -110,41 +103,44 @@
     </p>
 
     <!-- IMAGE DU SUJET -->
-    <img src="images/ChatGPT-Image-DEFI.png" alt="Photo du sujet" class="sujet-img">
+    <img src="images/sujet-mois.jpg" alt="Photo du sujet" class="sujet-img">
 
     <p>
         Ici tu ajoutes ton texte : description de la photo, anecdote,
         explication historique, ou commentaire personnel.
     </p>
 
-   </div> <!-- FIN DU CADRE BLANC -->
+</div> <!-- FIN DU CADRE BLANC -->
 
 <!-- BLOC “VOUS AIMEREZ AUSSI” EN DEHORS DU CADRE BLANC -->
-<div class="suite" style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
+<div class="suite">
 
     <strong>Vous aimerez aussi :</strong><br><br>
 
-<!-- Épisode précédent -->
-<a href="episode-X-1.html" style="color:#1DA1F2; text-decoration:none;">
-    <img src="images/defi-releve.jpg" alt="" 
-         style="width:80px; border-radius:6px; vertical-align:middle;">
-    &nbsp;Épisode précédent
-</a>
+    <div style="display:flex; gap:40px; align-items:center; justify-content:center;">
 
-<br><br>
+        <!-- Épisode précédent -->
+        <a href="episode-X-1.html" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+            <img src="images/ChatGPT-Image-DEFI.png" alt="" 
+                 style="width:80px; border-radius:6px; display:block; margin:auto;">
+            <div style="margin-top:8px;">Épisode précédent</div>
+        </a>
 
-<!-- Épisode suivant -->
-<a href="episode-X+1.html" style="color:#1DA1F2; text-decoration:none;">
-    <img src="images/defi-releve.jpg" alt="" 
-         style="width:80px; border-radius:6px; vertical-align:middle;">
-    &nbsp;Épisode suivant
-</a>
+        <!-- Épisode suivant -->
+        <a href="episode-X+1.html" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+            <img src="images/ChatGPT-Image-DEFI.png" alt="" 
+                 style="width:80px; border-radius:6px; display:block; margin:auto;">
+            <div style="margin-top:8px;">Épisode suivant</div>
+        </a>
 
+    </div>
 
 </div>
 
 <!-- FOOTER -->
-<footer style="text-align:center; margin-top:40px; color:#000;">
+<footer>
     © Frédéric — Pour que je me souvienne
 </footer>
 
+</body>
+</html>
