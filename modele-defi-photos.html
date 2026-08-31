@@ -1,107 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
 <title>Mon article – Pour que je me souvienne</title>
-
-<!-- STYLE GLOBAL DU SITE -->
 <style>
     body {
-        background:#1a1a1a;       /* ton fond sombre */
-        color:#eaeaea;            /* texte gris clair */
-        font-family:Georgia, serif;
         margin:0;
         padding:0;
+        font-family:Georgia, serif;
+        background-color:#f7f3e9;
+        color:#000;
     }
 
-    a {
-        color:#1DA1F2;            /* ton bleu clair */
+    .nav {
+        text-align:center;
+        padding:10px 0;
+        font-size:90%;
+    }
+
+    .nav a {
+        color:#1DA1F2;
         text-decoration:none;
+        margin:0 8px;
     }
 
-    a:hover {
+    .nav a:hover {
         text-decoration:underline;
     }
 
-    /* Conteneur principal */
     .contenu {
         background:#ffffff;
-        color:#000;
         width:92%;
         max-width:700px;
-        margin:40px auto;
+        margin:30px auto;
         padding:25px;
         border-radius:12px;
         border:2px solid #999;
         box-sizing:border-box;
     }
 
-    /* Image du thème (petite) */
-    .theme-img {
-        width:120px;
-        display:block;
-        margin:0 auto 20px auto;
-        border-radius:8px;
-    }
-
-    /* Image du sujet (moyenne) */
-    .sujet-img {
-        width:100%;
-        max-width:450px;
-        display:block;
-        margin:20px auto;
-        border-radius:10px;
-    }
-
     footer {
         text-align:center;
         margin-top:40px;
-        padding:12px 0;
-        color:#fff;               /* texte blanc */
+        color:#fff;
         font-size:90%;
     }
 </style>
 </head>
-
 <body>
 
-<!-- CONTENU DE L’ARTICLE -->
-<div class="contenu">
-
-    <!-- IMAGE DU THÈME (petite) -->
-    <img src="images/theme.jpg" alt="Thème" class="theme-img">
-
-    <h2 style="text-align:center; margin-top:0;">
-        Titre de mon article
-    </h2>
-
-    <p>
-        Voici quelques lignes de texte pour présenter le sujet de l’article.
-        Tu peux écrire ici une petite introduction, un commentaire personnel,
-        ou une description du thème du jour.
-    </p>
-
-    <!-- IMAGE DU SUJET (moyenne) -->
-    <img src="images/sujet.jpg" alt="Sujet" class="sujet-img">
-
-    <p>
-        Ici tu peux ajouter quelques lignes supplémentaires pour expliquer la photo,
-        raconter une anecdote, ou donner des informations historiques.
-    </p>
-
-    <p style="text-align:center; margin-top:30px;">
-        ➤ Voir aussi : 
-        <a href="https://exemple-de-blog.com" target="_blank">
-            Le blog de Cathy Rose
-        </a>
-    </p>
-
+<div class="nav">
+    <a href="index.html">Accueil</a> |
+    <a href="communaute.html">Communauté</a> |
+    <a href="apropos.html">À propos</a> |
+    <a href="archives.html">Archives</a>
 </div>
 
-<!-- FOOTER -->
+<div class="contenu">
+    <!-- ton texte + tes images ici -->
+</div>
+
 <footer>
-    © 2026 — Pour que je me souvienne
+    © Frédéric — Pour que je me souvienne
 </footer>
 
 </body>
