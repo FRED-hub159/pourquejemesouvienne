@@ -88,3 +88,27 @@ font-family: 'Inter', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 .archives-panel {
     margin-top: 10px;
 }
+
+.reponse-officielle {
+    margin-left: 55px;                 /* décalage élégant à droite */
+    padding: 14px 20px 14px 55px;      /* espace intérieur + place pour la plume */
+    background-color: #f7f3e9;         /* ton crème de ton site */
+    border-left: 5px solid #b08a5c;    /* barre verticale dorée */
+    border-radius: 10px;               /* coins arrondis */
+    font-family: "Georgia", serif;     /* cohérence totale */
+    color: #5a4632;                    /* brun élégant */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* ombre douce */
+    font-style: italic;                /* ton affectueux */
+    position: relative;                /* pour placer l’icône */
+}
+
+/* ⭐ Petite plume dorée */
+.reponse-officielle::before {
+    content: "✒";                      /* icône plume */
+    color: #b08a5c;                    /* doré doux */
+    font-size: 22px;                   /* taille élégante */
+    position: absolute;
+    left: 18px;                        /* position à gauche */
+    top: 50%;
+    transform: translateY(-50%);       /* centrage vertical */
+}
