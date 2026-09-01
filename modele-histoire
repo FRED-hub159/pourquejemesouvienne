@@ -1,1 +1,251 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Défi chez Cathy Rose du 24 août2026</title>
+
+<style>
+    body {
+        margin:0;
+        padding:0;
+        font-family:Georgia, serif;
+        background-color:#f7f3e9;   /* couleur de ton site */
+        color:#000;
+    }
+
+    /* Barre de navigation */
+    .nav {
+        text-align:center;
+        padding:12px 0;
+        font-size:90%;
+    }
+
+    .nav a {
+        color:#1DA1F2;              /* ton bleu clair */
+        text-decoration:none;
+        margin:0 8px;
+    }
+
+    .nav a:hover {
+        text-decoration:underline;
+    }
+
+    /* Bloc blanc de l’article */
+    .contenu {
+        background:#ffffff;
+        width:92%;
+        max-width:700px;
+        margin:30px auto;
+        padding:25px;
+        border-radius:12px;
+        border:2px solid #999;
+        box-sizing:border-box;
+    }
+
+    /* Image du thème */
+    .theme-img {
+        width:110px;                /* petite image */
+        display:block;
+        margin:0 auto 15px auto;
+        border-radius:8px;
+    }
+
+    /* Image du sujet */
+    .sujet-img {
+        width:100%;
+        max-width:450px;
+        display:block;
+        margin:20px auto;
+        border-radius:10px;
+    }
+
+    /* Bloc “Vous aimerez aussi” */
+    .suite {
+        width:92%;
+        max-width:700px;
+        margin:20px auto;
+        padding-top:15px;
+        border-top:1px solid #ccc;
+    }
+
+    footer {
+        text-align:center;
+        margin-top:40px;
+        color:#000;                 /* texte noir */
+        font-size:90%;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div style="text-align:center; margin-top:35px; margin-bottom:-5px; font-family:Georgia, serif; font-size:120%; font-weight:bold;">
+  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
+  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
+  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
+  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
+</div>
+
+<!-- CONTENU -->
+<div class="contenu">
+
+    <!-- IMAGE DU THÈME (petite) -->
+    <img src="images/ChatGPT-Image-DEFI.png" alt="Thème du défi" class="theme-img">
+
+    <h2 style="text-align:center; margin-top:0;">
+        Défi chez Cathy Rose du 24 août 2026
+    </h2>
+
+    <!-- Texte d’introduction centré -->
+    <p style="text-align:center; margin-top:25px; margin-bottom:8px; font-size:110%;">
+        Voici ma participation aux collections de Cathy sur le blog :<br>
+        <a href="https://1jourphoto.canalblog.com" 
+           style="font-size:115%; font-weight:bold; color:#1DA1F2; text-decoration:none;">
+           Aux gré de mes balades
+        </a>
+    </p>
+
+    <!-- IMAGE DU SUJET -->
+    <img src="images/chateau-de-trazegnies.png" alt="Photo du sujet" class="sujet-img">
+
+    <!-- Texte sous l’image du château, centré -->
+    <p style="text-align:center; margin-top:15px;">
+        Château-Forteresse de Trazegnies (Belgique – Courcelles) – XIᵉ siècle<br>
+        Thème du jour : Mairies ou châteaux<br>
+    </p>
+
+</div> <!-- FIN DU CADRE BLANC -->
+
+
+<!-- BLOC “VOUS AIMEREZ AUSSI” EN DEHORS DU CADRE BLANC -->
+<div class="suite">
+
+    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
+
+    <div style="display:flex; gap:40px; align-items:center; justify-content:center;">
+
+        <!-- Épisode précédent -->
+<a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+            <img src="images/ChatGPT-Image-DEFI.png" alt="" 
+                 style="width:80px; border-radius:6px; display:block; margin:auto;">
+            <div style="margin-top:8px;">Épisode précédent</div>
+        </a>
+
+        <!-- Épisode suivant -->
+<a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+            <img src="images/ChatGPT-Image-DEFI.png" alt="" 
+                 style="width:80px; border-radius:6px; display:block; margin:auto;">
+            <div style="margin-top:8px;">Épisode suivant</div>
+        </a>
+
+    </div>
+
+</div> <!-- FIN DU BLOC “VOUS AIMEREZ AUSSI” -->
+
+
+<!-- FORMULAIRE DE COMMENTAIRES (RECTANGLE BLANC SÉPARÉ) -->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+    <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+        <input type="hidden" name="article" value="Acteur – Montgomery Clift">
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+
+<!-- COMMENTAIRES PUBLIES (AUTRE RECTANGLE BLANC SÉPARÉ) -->
+<div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="http://gothsanctuary.vefblog.net/" style="color:#1DA1F2; text-decoration:none;">
+                FlorenceMarquise
+            </a>
+        </strong><br>
+        Bonjour cher Fred,<br>
+        Ce château-forteresse est superbe ! J'adore les châteaux et aussi les manoirs.<br>
+        Bravo pour ta participation à ce défi.<br>
+        Bonne journée, bisous.<br>
+        Florence<br>
+        <span style="font-size:85%; color:#555;">Posté le : 01/09/2026 à 04:51</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+    
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://1jourphoto.canalblog.com/" style="color:#1DA1F2; text-decoration:none;">
+                CathyRose
+            </a>
+        </strong><br>
+        Merci beaucoup pour ta jolie participation aux Collections.<br>
+        Belle soirée<br>
+        Cathy<br>
+        <span style="font-size:85%; color:#555;">Posté le : 26/08/2026 à 20:10</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://albert-danielle.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+                Bébert du 33
+            </a>
+        </strong><br>
+        Bonjour Fred merci pour la photo de ce château magnifique j'aime belle semaine à+<br>
+        <span style="font-size:85%; color:#555;">Posté le : 26/08/2026 à 10:33</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://blogababa.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+                baba
+            </a>
+        </strong><br>
+        cette bâtisse est pour le moins originale et un relevé bien relevé<br>
+        Merci du partage<br>
+        Bon mercredi<br>
+        <span style="font-size:85%; color:#555;">Posté le : 26/08/2021 à 09:03</span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+</div> <!-- FIN DU GRAND RECTANGLE BLANC DES COMMENTAIRES -->
+
+
+<!-- ESPACE POUR DÉCOLLER LE FOOTER DU RECTANGLE BLANC -->
+<div style="margin-top:40px;"></div>
+
+<!-- FOOTER SUR LE FOND BEIGE -->
+<div style="text-align:center; margin-top:0; font-size:110%; color:#3d2f24;">
+    © Frédéric — Pour que je me souvienne
+</div>
+
+</body>
+</html>
