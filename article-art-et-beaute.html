@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,24 +10,27 @@
         font-family:Arial, sans-serif;
         margin:0;
         padding:0;
+        color:#000;
     }
 
+    /* Barre du haut version A */
     .top-links {
         text-align:center;
         padding:15px 0;
         font-size:18px;
+        color:#000;
     }
 
     .top-links a {
-        color:#1DA1F2;
+        color:#000;
         text-decoration:none;
-        margin:0 15px;
-        font-weight:bold;
+        margin:0 10px;
     }
 
+    /* Cadre principal */
     .container {
         width:90%;
-        max-width:900px;
+        max-width:750px;
         margin:30px auto;
         background:#fff;
         padding:25px;
@@ -36,27 +38,39 @@
         border:1px solid #ccc;
     }
 
+    /* Bannière avec vignette */
     .banner {
         background:#fff;
         border:1px solid #ccc;
         padding:25px;
         border-radius:10px;
-        text-align:center;
         margin-bottom:30px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
     }
 
-    .banner h1 {
-        margin:0;
+    .banner-title {
         font-size:32px;
+        font-weight:bold;
         color:#000;
     }
 
-    .banner p {
-        margin-top:10px;
+    .banner-subtitle {
         font-size:18px;
         color:#555;
+        margin-top:8px;
     }
 
+    .banner-image {
+        background:#fff;
+        border:1px solid #ccc;
+        padding:5px;
+        border-radius:8px;
+        height:180px; /* Taille M */
+    }
+
+    /* Sous-titres bleus */
     .section-title {
         color:#1DA1F2;
         font-size:26px;
@@ -64,6 +78,7 @@
         margin-bottom:15px;
     }
 
+    /* Bloc œuvre */
     .art-block {
         background:#fff;
         border:1px solid #ccc;
@@ -80,6 +95,7 @@
         border-radius:10px;
     }
 
+    /* Galerie */
     .gallery {
         display:flex;
         flex-wrap:wrap;
@@ -98,6 +114,7 @@
         border:1px solid #ccc;
     }
 
+    /* Signature */
     .signature {
         text-align:center;
         font-weight:bold;
@@ -105,6 +122,7 @@
         font-size:20px;
     }
 
+    /* Visuel neutre */
     .visuel-neutre {
         background:#fff;
         border:1px solid #ccc;
@@ -120,6 +138,24 @@
         width:80%;
         margin:10px auto;
     }
+
+    /* Boutons épisode précédent / suivant */
+    .episode-buttons {
+        text-align:center;
+        margin:30px 0;
+    }
+
+    .episode-buttons a {
+        display:inline-block;
+        background:#1DA1F2;
+        color:#fff;
+        padding:10px 20px;
+        border-radius:8px;
+        text-decoration:none;
+        margin:10px;
+        font-weight:bold;
+    }
+
 </style>
 </head>
 
@@ -127,17 +163,23 @@
 
 <!-- BARRE DU HAUT -->
 <div class="top-links">
-    <a href="index.html">Vers l’index</a>
-    <a href="communaute.html">Vers la communauté</a>
-    <a href="episodes.html">Épisodes précédents</a>
+    <a href="index.html">Accueil</a> |
+    <a href="communaute.html">Communauté</a> |
+    <a href="apropos.html">À propos</a> |
+    <a href="archives.html">Archives</a>
 </div>
 
 <div class="container">
 
-    <!-- BANNIÈRE A -->
+    <!-- BANNIÈRE AVEC VIGNETTE -->
     <div class="banner">
-        <h1>ART ET BEAUTÉ</h1>
-        <p>Coups de cœur visuels</p>
+        <div>
+            <div class="banner-title">ART ET BEAUTÉ</div>
+            <div class="banner-subtitle">Coups de cœur visuels</div>
+        </div>
+
+        <!-- Vignette Art et Beauté -->
+        <img src="images/art-et-beaute.png" alt="Vignette Art et Beauté" class="banner-image">
     </div>
 
     <!-- INTRODUCTION -->
@@ -165,17 +207,16 @@
         </p>
     </div>
 
-    <!-- VISUEL NEUTRE C -->
+    <!-- VISUEL NEUTRE -->
     <div class="visuel-neutre">
         <div style="font-size:22px; font-weight:bold;">ART ET BEAUTÉ</div>
         <div class="line"></div>
     </div>
 
-    <!-- GALERIE COMPLÉMENTAIRE -->
+    <!-- GALERIE -->
     <h2 class="section-title">Galerie complémentaire</h2>
 
     <div class="gallery">
-
         <div class="gallery-item">
             <img src="images/art1.jpg" alt="Art 1">
             <div style="margin-top:8px;">Titre ou artiste</div>
@@ -190,10 +231,17 @@
             <img src="images/art3.jpg" alt="Art 3">
             <div style="margin-top:8px;">Titre ou artiste</div>
         </div>
-
     </div>
 
-    <!-- SIGNATURE PERSONNELLE -->
+    <!-- VOUS AIMEREZ AUSSI -->
+    <h2 class="section-title">Vous aimerez aussi :</h2>
+
+    <div class="episode-buttons">
+        <a href="episode-precedent.html">Épisode précédent</a>
+        <a href="episode-suivant.html">Épisode suivant</a>
+    </div>
+
+    <!-- SIGNATURE -->
     <p class="signature">
         @ FRED<br>
         https://fred-hub159.github.io/pourquejemesouvienne/
@@ -211,10 +259,8 @@
         <textarea name="message" required
                   style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
 
-        <!-- Champ article -->
         <input type="hidden" name="article" value="Art et Beauté">
 
-        <!-- Ligne magique -->
         <input type="hidden" name="page" id="pageField">
         <script>
             document.getElementById("pageField").value = window.location.href;
@@ -229,8 +275,7 @@
 
     </form>
 
-    <!-- COMMENTAIRES (MODÈLE À REMPLIR) -->
-
+    <!-- COMMENTAIRES -->
     <!-- COMMENTAIRE 1 -->
     <div style="margin-bottom:15px; color:#000;">
         <strong style="color:#1DA1F2;">Pseudo1</strong><br>
@@ -250,22 +295,6 @@
     <!-- COMMENTAIRE 3 -->
     <div style="margin-bottom:15px; color:#000;">
         <strong style="color:#1DA1F2;">Pseudo3</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- COMMENTAIRE 4 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo4</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- COMMENTAIRE 5 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo5</strong><br>
         Votre commentaire ici…<br>
         <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
     </div>
