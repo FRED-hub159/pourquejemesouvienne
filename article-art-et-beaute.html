@@ -50,24 +50,12 @@
         align-items:center;
     }
 
-    .banner-title {
-        font-size:32px;
-        font-weight:bold;
-        color:#000;
-    }
-
-    .banner-subtitle {
-        font-size:18px;
-        color:#555;
-        margin-top:8px;
-    }
-
     .banner-image {
         background:#fff;
         border:1px solid #ccc;
         padding:5px;
         border-radius:8px;
-        height:180px; /* Taille M */
+        height:180px;
     }
 
     /* Sous-titres bleus */
@@ -95,65 +83,12 @@
         border-radius:10px;
     }
 
-    /* Galerie */
-    .gallery {
-        display:flex;
-        flex-wrap:wrap;
-        gap:20px;
-        margin-top:20px;
-    }
-
-    .gallery-item {
-        width:200px;
-        text-align:center;
-    }
-
-    .gallery-item img {
-        width:100%;
-        border-radius:10px;
-        border:1px solid #ccc;
-    }
-
     /* Signature */
     .signature {
         text-align:center;
         font-weight:bold;
         margin-top:40px;
         font-size:20px;
-    }
-
-    /* Visuel neutre */
-    .visuel-neutre {
-        background:#fff;
-        border:1px solid #ccc;
-        padding:20px;
-        border-radius:10px;
-        text-align:center;
-        margin:40px 0;
-    }
-
-    .visuel-neutre .line {
-        height:1px;
-        background:#000;
-        width:80%;
-        margin:10px auto;
-    }
-
-    /* Boutons épisode précédent / suivant */
-    .episode-buttons {
-        text-align:center;
-        margin:30px 0;
-    }
-
-    .episode-buttons a {
-        display:inline-block;
-        background:#1DA1F2;
-        color:#fff;
-        padding:10px 20px;
-        border-radius:8px;
-        text-decoration:none;
-        margin:10px;
-        font-weight:bold;
     }
 
 </style>
@@ -190,11 +125,8 @@
     <img src="images/art-et-beaute.png"
          alt="Vignette Art et Beauté"
          class="banner-image"
-         style="background:#fff; border:1px solid #ccc; padding:5px; border-radius:8px; height:180px; margin-left:20px;">
+         style="margin-left:20px;">
 </div>
-
-
-
 
     <!-- INTRODUCTION -->
     <p style="font-size:110%; line-height:1.6;">
@@ -221,7 +153,39 @@
         </p>
     </div>
 
-   </div> <!-- FIN DU CADRE BLANC -->
+    <!-- ⭐ FORMULAIRE DANS LE CADRE BLANC ⭐ -->
+    <form action="https://formspree.io/f/xljrlnye" method="POST" 
+          style="color:#000; margin-top:30px;">
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; 
+                      box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; 
+                         margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+        <input type="hidden" name="article" value="Art et Beauté">
+
+        <input type="hidden" name="page" id="pageField">
+        <script>
+            document.getElementById("pageField").value = window.location.href;
+        </script>
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; 
+                           border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+</div> <!-- FIN DU CADRE BLANC -->
 
 <!-- BLOC “VOUS AIMEREZ AUSSI” EN DEHORS DU CADRE BLANC -->
 <div class="suite" style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
@@ -248,67 +212,11 @@
 
 </div>
 
-
-    <!-- SIGNATURE -->
-    <p class="signature">
-        @ FRED<br>
-        https://fred-hub159.github.io/pourquejemesouvienne/
-    </p>
-
-    <!-- FORMULAIRE -->
-    <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
-
-        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
-        <input type="text" name="nom" required
-               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
-               placeholder="Ex : Marie, Magalou, https://monblog.com">
-
-        <label style="display:block; margin-top:10px;">Votre message :</label>
-        <textarea name="message" required
-                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
-
-        <input type="hidden" name="article" value="Art et Beauté">
-
-        <input type="hidden" name="page" id="pageField">
-        <script>
-            document.getElementById("pageField").value = window.location.href;
-        </script>
-
-        <div style="text-align:center; margin-top:10px;">
-            <button type="submit"
-                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
-                Envoyer
-            </button>
-        </div>
-
-    </form>
-
-    <!-- COMMENTAIRES -->
-    <!-- COMMENTAIRE 1 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo1</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- COMMENTAIRE 2 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo2</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- COMMENTAIRE 3 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo3</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-</div>
+<!-- SIGNATURE -->
+<p class="signature">
+    @ FRED<br>
+    https://fred-hub159.github.io/pourquejemesouvienne/
+</p>
 
 <!-- FOOTER -->
 <footer style="text-align:center; margin-top:40px; color:#555;">
