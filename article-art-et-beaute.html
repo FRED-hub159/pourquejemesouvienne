@@ -13,22 +13,10 @@
         color:#000;
     }
 
-    /* Barre du haut version A */
-    .top-links {
-        text-align:center;
-        padding:15px 0;
-        font-size:18px;
-        color:#000;
-    }
-
-    .top-links a {
-        color:#000;
-        text-decoration:none;
-        margin:0 10px;
-    }
-
-    /* Cadre principal */
-    .container {
+    /* Cadres blancs */
+    .container,
+    .comment-form,
+    .comments-box {
         width:90%;
         max-width:750px;
         margin:30px auto;
@@ -36,18 +24,18 @@
         padding:25px;
         border-radius:10px;
         border:1px solid #ccc;
+        box-sizing:border-box;
     }
 
     /* Bannière */
     .banner {
-        background:#fff;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
         border:1px solid #ccc;
         padding:25px;
         border-radius:10px;
         margin-bottom:30px;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
     }
 
     .banner-image {
@@ -83,19 +71,6 @@
         border-radius:10px;
     }
 
-    /* Commentaires publiés */
-    .comment {
-        margin-bottom:15px;
-        color:#000;
-    }
-
-    .separator {
-        width:60%;
-        height:1px;
-        background:#ccc;
-        margin:20px auto;
-    }
-
     /* Signature */
     .signature {
         text-align:center;
@@ -104,12 +79,19 @@
         font-size:20px;
     }
 
+    /* Séparateurs */
+    .separator {
+        width:60%;
+        height:1px;
+        background:#ccc;
+        margin:20px auto;
+    }
 </style>
 </head>
 
 <body>
 
-<!-- ⭐ MENU HAUT ⭐ -->
+<!-- MENU HAUT -->
 <div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
   <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
   <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
@@ -117,39 +99,29 @@
   <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
 </div>
 
+<!-- ⭐ CADRE BLANC 1 : ARTICLE ⭐ -->
 <div class="container">
 
- <!-- BANNIÈRE AVEC VIGNETTE -->
-<div class="banner" style="display:flex; align-items:center;">
+    <!-- Bannière -->
+    <div class="banner">
+        <div style="flex:1; text-align:center;">
+            <h2 style="margin:0; color:#000; line-height:1.4;">
+                <span style="display:block; font-size:30px; font-weight:600;">Art et Beauté</span>
+                <span style="display:block; font-size:20px; font-weight:600;">Coups de cœur visuels</span>
+            </h2>
+        </div>
 
-    <!-- Bloc titre centré -->
-    <div style="flex:1; text-align:center;">
-        <h2 style="margin-top:0; margin-bottom:0; color:#000; line-height:1.4;">
-            <span style="display:block; font-size:30px; font-weight:600;">
-                Art et Beauté
-            </span>
-            <span style="display:block; font-size:20px; font-weight:600;">
-                Coups de cœur visuels
-            </span>
-        </h2>
+        <img src="images/art-et-beaute.png" class="banner-image">
     </div>
 
-    <!-- Vignette à droite -->
-    <img src="images/art-et-beaute.png"
-         alt="Vignette Art et Beauté"
-         class="banner-image"
-         style="margin-left:20px;">
-</div>
-
-    <!-- INTRODUCTION -->
+    <!-- Introduction -->
     <p style="font-size:110%; line-height:1.6;">
         Dans cette collection, je partage mes coups de cœur artistiques :
         peintures, dessins, sculptures, créations visuelles découvertes sur Facebook,
-        sur Internet ou ailleurs. Une manière de mettre en lumière des artistes,
-        des univers et des émotions qui m’ont touché.
+        sur Internet ou ailleurs.
     </p>
 
-    <!-- ŒUVRE DU JOUR -->
+    <!-- Œuvre du jour -->
     <h2 class="section-title">Œuvre du jour</h2>
 
     <div class="art-block">
@@ -166,80 +138,91 @@
         </p>
     </div>
 
-    <!-- ⭐ FORMULAIRE DANS LE CADRE BLANC ⭐ -->
-    <form action="https://formspree.io/f/xljrlnye" method="POST" 
-          style="color:#000; margin-top:30px;">
+    <!-- ⭐ Signature FRED à la fin du premier cadre ⭐ -->
+    <p class="signature">@ FRED</p>
 
-        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+</div>
+<!-- ⭐ FIN CADRE BLANC 1 ⭐ -->
+
+<!-- ⭐ ÉPISODES (fond beige) ⭐ -->
+<div style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
+
+    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
+
+    <div style="display:flex; gap:40px; justify-content:center;">
+
+        <a href="#" style="text-align:center; color:#1DA1F2; text-decoration:none;">
+            <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
+            <div>Épisode précédent</div>
+        </a>
+
+        <a href="#" style="text-align:center; color:#1DA1F2; text-decoration:none;">
+            <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
+            <div>Épisode suivant</div>
+        </a>
+
+    </div>
+</div>
+
+<!-- ⭐ CADRE BLANC 2 : FORMULAIRE COMMENTAIRES ⭐ -->
+<div class="comment-form">
+
+    <h2 style="text-align:center; margin-top:0;">Laisser un commentaire</h2>
+
+    <form action="https://formspree.io/f/xljrlnye" method="POST">
+
+        <label>Votre nom, pseudo ou URL :</label>
         <input type="text" name="nom" required
-               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; 
-                      box-sizing:border-box; border:1px solid #999;"
-               placeholder="Ex : Marie, Magalou, https://monblog.com">
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; border:1px solid #999;">
 
-        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <label>Votre message :</label>
         <textarea name="message" required
-                  style="width:100%; height:150px; padding:10px; border-radius:8px; 
-                         margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; border:1px solid #999;"></textarea>
 
         <input type="hidden" name="article" value="Art et Beauté">
 
-        <input type="hidden" name="page" id="pageField">
-        <script>
-            document.getElementById("pageField").value = window.location.href;
-        </script>
-
-        <div style="text-align:center; margin-top:10px;">
+        <div style="text-align:center;">
             <button type="submit"
-                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; 
-                           border-radius:8px; font-weight:bold; cursor:pointer;">
+                    style="padding:10px 20px; background:#e0e0e0; border:none; border-radius:8px; font-weight:bold;">
                 Envoyer
             </button>
         </div>
 
     </form>
 
-    <!-- ⭐ COMMENTAIRES PUBLIÉS ⭐ -->
-    <h2 class="section-title" style="text-align:center;">Commentaires publiés</h2>
+</div>
+<!-- ⭐ FIN CADRE BLANC 2 ⭐ -->
 
-    <div class="comment">
-        <strong style="color:#1DA1F2;">Aucun commentaire pour le moment</strong><br>
-        <span style="font-size:85%; color:#555;">Les futurs commentaires apparaîtront ici</span>
+<!-- ⭐ CADRE BLANC 3 : COMMENTAIRES PUBLIÉS ⭐ -->
+<div class="comments-box">
+
+    <h2 style="text-align:center; margin-top:0;">Commentaires publiés</h2>
+
+    <!-- Exemple de commentaire -->
+    <div style="margin-bottom:15px;">
+        <strong style="color:#1DA1F2;">Pseudo1</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
     </div>
 
-</div> <!-- FIN DU CADRE BLANC -->
+    <div class="separator"></div>
 
-<!-- BLOC “VOUS AIMEREZ AUSSI” EN DEHORS DU CADRE BLANC -->
-<div class="suite" style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
-
-    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
-
-    <div style="display:flex; gap:40px; align-items:center; justify-content:center;">
-
-        <!-- Épisode précédent -->
-        <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
-            <img src="images/art-et-beaute.png" alt="" 
-                 style="width:80px; border-radius:6px; display:block; margin:auto;">
-            <div style="margin-top:8px;">Épisode précédent</div>
-        </a>
-
-        <!-- Épisode suivant -->
-        <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
-            <img src="images/art-et-beaute.png" alt="" 
-                 style="width:80px; border-radius:6px; display:block; margin:auto;">
-            <div style="margin-top:8px;">Épisode suivant</div>
-        </a>
-
+    <div style="margin-bottom:15px;">
+        <strong style="color:#1DA1F2;">Pseudo2</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
     </div>
 
 </div>
+<!-- ⭐ FIN CADRE BLANC 3 ⭐ -->
 
-<!-- SIGNATURE -->
+<!-- Signature finale -->
 <p class="signature">
     @ FRED<br>
     https://fred-hub159.github.io/pourquejemesouvienne/
 </p>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer style="text-align:center; margin-top:40px; color:#555;">
     © 2026 — Pour que je me souvienne
 </footer>
