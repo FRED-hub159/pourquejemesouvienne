@@ -1,1 +1,282 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Art et Beauté – Coups de cœur visuels</title>
+
+<style>
+    body {
+        background-color:#f7f3e9;
+        font-family:Arial, sans-serif;
+        margin:0;
+        padding:0;
+    }
+
+    .top-links {
+        text-align:center;
+        padding:15px 0;
+        font-size:18px;
+    }
+
+    .top-links a {
+        color:#1DA1F2;
+        text-decoration:none;
+        margin:0 15px;
+        font-weight:bold;
+    }
+
+    .container {
+        width:90%;
+        max-width:900px;
+        margin:30px auto;
+        background:#fff;
+        padding:25px;
+        border-radius:10px;
+        border:1px solid #ccc;
+    }
+
+    .banner {
+        background:#fff;
+        border:1px solid #ccc;
+        padding:25px;
+        border-radius:10px;
+        text-align:center;
+        margin-bottom:30px;
+    }
+
+    .banner h1 {
+        margin:0;
+        font-size:32px;
+        color:#000;
+    }
+
+    .banner p {
+        margin-top:10px;
+        font-size:18px;
+        color:#555;
+    }
+
+    .section-title {
+        color:#1DA1F2;
+        font-size:26px;
+        margin-top:30px;
+        margin-bottom:15px;
+    }
+
+    .art-block {
+        background:#fff;
+        border:1px solid #ccc;
+        padding:20px;
+        border-radius:10px;
+        margin-bottom:30px;
+    }
+
+    .art-block img {
+        width:100%;
+        max-width:600px;
+        display:block;
+        margin:auto;
+        border-radius:10px;
+    }
+
+    .gallery {
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+        margin-top:20px;
+    }
+
+    .gallery-item {
+        width:200px;
+        text-align:center;
+    }
+
+    .gallery-item img {
+        width:100%;
+        border-radius:10px;
+        border:1px solid #ccc;
+    }
+
+    .signature {
+        text-align:center;
+        font-weight:bold;
+        margin-top:40px;
+        font-size:20px;
+    }
+
+    .visuel-neutre {
+        background:#fff;
+        border:1px solid #ccc;
+        padding:20px;
+        border-radius:10px;
+        text-align:center;
+        margin:40px 0;
+    }
+
+    .visuel-neutre .line {
+        height:1px;
+        background:#000;
+        width:80%;
+        margin:10px auto;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- BARRE DU HAUT -->
+<div class="top-links">
+    <a href="index.html">Vers l’index</a>
+    <a href="communaute.html">Vers la communauté</a>
+    <a href="episodes.html">Épisodes précédents</a>
+</div>
+
+<div class="container">
+
+    <!-- BANNIÈRE A -->
+    <div class="banner">
+        <h1>ART ET BEAUTÉ</h1>
+        <p>Coups de cœur visuels</p>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <p style="font-size:110%; line-height:1.6;">
+        Dans cette collection, je partage mes coups de cœur artistiques :
+        peintures, dessins, sculptures, créations visuelles découvertes sur Facebook,
+        sur Internet ou ailleurs. Une manière de mettre en lumière des artistes,
+        des univers et des émotions qui m’ont touché.
+    </p>
+
+    <!-- ŒUVRE DU JOUR -->
+    <h2 class="section-title">Œuvre du jour</h2>
+
+    <div class="art-block">
+        <img src="images/art-exemple.jpg" alt="Œuvre du jour">
+        <p style="margin-top:15px; font-size:105%; line-height:1.6;">
+            <strong>Artiste :</strong> Nom de l’artiste<br>
+            <strong>Technique :</strong> Peinture / Dessin / Sculpture / Numérique<br>
+            <strong>Source :</strong> Facebook / Site / Galerie / Autre<br>
+        </p>
+
+        <p style="font-size:105%; line-height:1.6;">
+            <em>Mon coup de cœur :</em><br>
+            Quelques lignes où tu expliques pourquoi cette œuvre t’a touché.
+        </p>
+    </div>
+
+    <!-- VISUEL NEUTRE C -->
+    <div class="visuel-neutre">
+        <div style="font-size:22px; font-weight:bold;">ART ET BEAUTÉ</div>
+        <div class="line"></div>
+    </div>
+
+    <!-- GALERIE COMPLÉMENTAIRE -->
+    <h2 class="section-title">Galerie complémentaire</h2>
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+            <img src="images/art1.jpg" alt="Art 1">
+            <div style="margin-top:8px;">Titre ou artiste</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/art2.jpg" alt="Art 2">
+            <div style="margin-top:8px;">Titre ou artiste</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="images/art3.jpg" alt="Art 3">
+            <div style="margin-top:8px;">Titre ou artiste</div>
+        </div>
+
+    </div>
+
+    <!-- SIGNATURE PERSONNELLE -->
+    <p class="signature">
+        @ FRED<br>
+        https://fred-hub159.github.io/pourquejemesouvienne/
+    </p>
+
+    <!-- FORMULAIRE -->
+    <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+        <!-- Champ article -->
+        <input type="hidden" name="article" value="Art et Beauté">
+
+        <!-- Ligne magique -->
+        <input type="hidden" name="page" id="pageField">
+        <script>
+            document.getElementById("pageField").value = window.location.href;
+        </script>
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+    <!-- COMMENTAIRES (MODÈLE À REMPLIR) -->
+
+    <!-- COMMENTAIRE 1 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo1</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 2 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo2</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 3 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo3</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 4 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo4</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- COMMENTAIRE 5 -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">Pseudo5</strong><br>
+        Votre commentaire ici…<br>
+        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+    </div>
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+</div>
+
+<!-- FOOTER -->
+<footer style="text-align:center; margin-top:40px; color:#555;">
+    © 2026 — Pour que je me souvienne
+</footer>
+
+</body>
+</html>
