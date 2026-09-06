@@ -4,6 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Art et Beauté – Coups de cœur visuels</title>
+    
+<meta name="description" content="Collection Art et Beauté – Coups de cœur visuels, œuvres du jour, inspirations artistiques.">
 
 <style>
     body {
@@ -118,7 +120,7 @@
 
 
     <!-- Vignette à droite -->
-    <img src="images/art-et-beaute.png" class="banner-image">
+<img src="images/art-et-beaute.png" class="banner-image" alt="Bannière Art et Beauté">
 
 </div>
 
@@ -135,35 +137,28 @@
     <h2 class="section-title">Œuvre du jour</h2>
 
     <div class="art-block">
-        <img src="images/art-exemple.jpg" alt="Œuvre du jour">
+        <img src="images/peinture.png" alt="Œuvre du jour représentant le visage d'une jeune femme par la peintre Polonaise Dorota Piotrowiak">
         <p style="margin-top:15px; font-size:105%; line-height:1.6;">
-            <strong>Artiste :</strong> Nom de l’artiste<br>
-            <strong>Technique :</strong> Peinture / Dessin / Sculpture / Numérique<br>
-            <strong>Source :</strong> Facebook / Site / Galerie / Autre<br>
+            <strong>Artiste :</strong> Dorota Piotrowiak (Peintre Polonaise)<br>
+            <strong>Technique :</strong> Peinture<br>
+            <strong>Source :</strong> Facebook<br>
         </p>
 
-        <p style="font-size:105%; line-height:1.6;">
-            <em>Mon coup de cœur :</em><br>
-            Quelques lignes où tu expliques pourquoi cette œuvre t’a touché.
-        </p>
+        
     </div>
 
-   <!-- Signature -->
-     <p style="text-align: center; margin-top: 25px;">
-        <span style="
-            font-family: Yellowtail;
-            color: #3d2f24;
-            font-size: 26px;
-            text-shadow: 1px 1px 1px #bfbfbf;
-        ">
-            @fred
-        </span>
-        <br>
-        <a href="https://fred-hub159.github.io/pourquejemesouvienne"
-           style="color:#1DA1F2; font-size:14px; text-decoration:none;">
-            https://fred-hub159.github.io/pourquejemesouvienne
-        </a>
-    </p>
+  <!-- Signature -->
+<p style="text-align: center; margin-top: 25px;">
+    <span style="
+        font-family: Yellowtail;
+        color: #3d2f24;
+        font-size: 16px;
+        text-shadow: 1px 1px 1px #bfbfbf;
+    ">
+        @fred — https://fred-hub159.github.io/pourquejemesouvienne
+    </span>
+</p>
+
 
 </div>
 <!-- ⭐ FIN CADRE BLANC 1 ⭐ -->
@@ -176,21 +171,24 @@
 
     <div style="display:flex; gap:40px; justify-content:center;">
 
-        <a href="#" style="text-align:center; color:#1DA1F2; text-decoration:none;">
-            <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
-            <div>Épisode précédent</div>
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
+    <div>Coeur de coeur précédent</div>
+</a>
+
         </a>
 
-        <a href="#" style="text-align:center; color:#1DA1F2; text-decoration:none;">
-            <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
-            <div>Épisode suivant</div>
-        </a>
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
+    <div>Coeur de coeur suivant</div>
+</a>
+
 
     </div>
 </div>
 
 <!-- ⭐ CADRE BLANC 2 : FORMULAIRE COMMENTAIRES ⭐ -->
-<div class="comment-form">
+<div class="comment-form" style="padding:20px; background:#ffffff; border:1px solid #dcdcdc; border-radius:6px;">
 
     <h2 style="text-align:center; margin-top:0;">Laisser un commentaire</h2>
 
@@ -206,6 +204,13 @@
 
         <input type="hidden" name="article" value="Art et Beauté">
 
+        <!-- ⭐ Envoie automatiquement l’URL de la page ⭐ -->
+        <input type="hidden" name="page" id="pageField">
+
+        <script>
+            document.getElementById("pageField").value = window.location.href;
+        </script>
+
         <div style="text-align:center;">
             <button type="submit"
                     style="padding:10px 20px; background:#e0e0e0; border:none; border-radius:8px; font-weight:bold;">
@@ -218,24 +223,47 @@
 </div>
 <!-- ⭐ FIN CADRE BLANC 2 ⭐ -->
 
+
 <!-- ⭐ CADRE BLANC 3 : COMMENTAIRES PUBLIÉS ⭐ -->
 <div class="comments-box">
 
-    <h2 style="text-align:center; margin-top:0;">Commentaires publiés</h2>
+   <!--⭐ <h2 style="text-align:center; margin-top:0;">Commentaires publiés</h2> ⭐ -->
 
     <!-- Exemple de commentaire -->
-    <div style="margin-bottom:15px;">
-        <strong style="color:#1DA1F2;">Pseudo1</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
+    <div style="margin-bottom:15px; color:#000;">
+    <strong style="color:#1DA1F2;">
+        <a href="https://albert-danielle.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+            bebert33
+        </a>
+    </strong><br>
 
-    <div class="separator"></div>
+    pb ?????<br>
+        impossible sur l'autre article ? l'oeuvre est superbe ici !!!<br>
+        bonjour Fred , ah oui ça moi c'est Boney M , j'adore ce groupe et leur version +++ ! merci pour les 3 versions que j'ai écouté ! bon dimanche a+<br>
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 06/09/2021 à 08:16
+    </span>
+
+</div>
+     <div class="reponse-officielle">
+    <span style="font-weight:bold; color:#b08a5c;">
+        ✒ Réponse de l’auteur — mise à jour le 06 septembre 2026
+    </span><br><br>
+
+    Chère bebert33,<br>
+    Merci de m'avoir averti. A présent, c'est opérationel car j'ai corrigé le code.<br>
+    
+</div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+  <!-- ⭐  <div class="separator"></div> <!-- ⭐
 
     <div style="margin-bottom:15px;">
         <strong style="color:#1DA1F2;">Pseudo2</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <!-- ⭐  Votre commentaire ici…<br> <!-- ⭐
+         <!-- ⭐ <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span> <!-- ⭐
     </div>
 
 </div>
