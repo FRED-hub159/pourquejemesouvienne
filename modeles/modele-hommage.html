@@ -1,1 +1,272 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Cinéma - Hommage</title>
+
+    <meta name="description" content="Collection article hommage à des stars du cinéma ou de la chanson">
+
+    <!-- Police Yellowtail -->
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+
+<body style="background-color:#f7f3e9; margin:0; padding:0; font-family:Verdana;">
+
+<!-- ⭐ MENU HAUT ⭐ -->
+<div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
+  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
+  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
+  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
+  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
+</div>
+
+ <!-- ⭐ Partie CSS ⭐ -->
+    
+<style>
+
+/* ⭐ Cadre extérieur élargi */
+.cadre-vertical {
+    background-color: black;
+    border: 14px solid #cc99ff;        /* Bordure extérieure violette plus large */
+    box-shadow: 0 0 0 22px #663399;    /* Bordure intérieure violette */
+    width: 680px;                      /* Format portrait */
+    margin: 40px auto;
+    padding: 35px;                     /* Espace noir entre les deux cadres */
+    border-radius: 28px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ⭐ Étoiles très fines, plus denses, dans l’espace noir entre les deux cadres */
+.cadre-vertical::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    /* Trois couches d’étoiles fines pour plus de densité */
+    background-image:
+        radial-gradient(#ffffff 1px, transparent 2px),
+        radial-gradient(#cc99ff 1px, transparent 2px),
+        radial-gradient(#ffffff 1px, transparent 2px);
+
+    /* Tailles différentes pour un effet plus riche */
+    background-size:
+        90px 90px,
+        140px 140px,
+        60px 60px;
+
+    /* Animation douce */
+    animation: etoiles 14s linear infinite;
+
+    opacity: 0.45; /* Plus visible mais toujours élégant */
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* ⭐ Animation des étoiles fines */
+@keyframes etoiles {
+    0%   { transform: translate(0, 0); }
+    50%  { transform: translate(-40px, -20px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* ⭐ Cadre intérieur */
+.cadre-interieur {
+    background-color: black;           /* Fond noir uni */
+    border: 6px solid #cc99ff;         /* Bordure intérieure violette */
+    border-radius: 18px;
+    padding: 30px;
+
+    width: 620px;          /* ← FIXE LA LARGEUR = cadre vertical */
+    margin: 0 auto;        /* ← centre le cadre intérieur */
+    box-sizing: border-box;
+    
+    position: relative;
+    z-index: 1;                        /* Devant les étoiles */
+}
+
+/* ⭐ Lignes scintillantes internes */
+.ligne-etoiles {
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #f2d9ff,
+        #cc99ff,
+        #f2d9ff,
+        transparent
+    );
+    animation: scintille 2s linear infinite;
+    margin: 15px 0;
+    position: relative;
+    z-index: 2;
+}
+
+/* ⭐ Animation scintillante des lignes */
+@keyframes scintille {
+    0%   { opacity: 0.3; }
+    50%  { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+</style>
+
+
+
+ <!-- ⭐ Partie HTML ⭐ -->
+
+
+
+<div class="cadre-vertical">
+
+    <div class="cadre-interieur">
+
+        <!-- Ligne scintillante au-dessus du titre -->
+        <div class="ligne-etoiles"></div>
+
+        <!-- Titre -->
+        <div style="color:#cc99ff; font-size:28px; font-weight:bold; text-align:center;">
+            BRIGITTE BARDOT
+        </div>
+
+        <!-- Sous-titre -->
+        <div style="color:#f2d9ff; font-size:20px; text-align:center; margin-bottom:15px;">
+            (28 septembre 1934 - 28 décembre 2025)
+        </div>
+
+        <!-- Ligne scintillante sous le titre -->
+        <div class="ligne-etoiles"></div>
+
+        <!-- Ton image verticale -->
+         <img src="images/photo-noir-blanc-brigitte-bardot.jpg"
+     alt="Description de l’image : Brigitte Bardot en noir et blanc"
+     style="max-width:100%; border-radius:12px; margin:25px 0; position:relative; z-index:2;">
+
+
+        <!-- Ligne scintillante 3 -->
+        <div class="ligne-etoiles"></div>
+
+        <!-- Ligne scintillante 4 -->
+        <div class="ligne-etoiles"></div>
+
+    </div>
+
+</div>
+
+    <div style="background:black; border:6px solid #cc99ff; padding:20px; border-radius:12px; width:560px; margin:20px auto;">
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/XklCdtqtwL4?si=phx205jjs35BYXc_"
+            frameborder="0"
+            allowfullscreen
+            style="border-radius:8px;">
+    </iframe>
+</div>
+
+
+<!-- ⭐ BLOC HOMMAGE PRÉCÉDENT / HOMMAGE SUIVANT ⭐ -->
+<div style="display:flex; justify-content:space-around; margin:30px auto; max-width:600px;">
+
+    <!-- Choix précédent -->
+    <div style="text-align:center;">
+        <img src="images/Gemini-Hommage.png"
+             alt="Hommage précédent"
+             style="width:80px; height:auto; border-radius:12px; box-shadow:3px 3px 6px rgba(0,0,0,0.30);">
+        <div style="margin-top:8px; color:#1DA1F2;">Hommage précédent</div>
+    </div>
+
+    <!-- Choix suivant -->
+    <div style="text-align:center;">
+        <img src="images/Gemini-Hommage.png"
+             alt="Hommage suivant"
+             style="width:80px; height:auto; border-radius:12px; box-shadow:3px 3px 6px rgba(0,0,0,0.30);">
+        <div style="margin-top:8px; color:#1DA1F2;">Hommage suivant</div>
+    </div>
+
+</div>
+<!-- ⭐ FIN DU BLOC ⭐ -->
+
+
+ <!-- ⭐ TU COLLES ICI LES AUTRES BLOCS ⭐ -->
+
+  <div style="
+    background:#ffffff;
+    padding:25px;
+    margin:40px auto;
+    width:92%;
+    max-width:750px;
+    border-radius:12px;
+    border:1px solid #000;
+">
+    <form action="https://formspree.io/f/XXXXX" method="POST">
+
+        <label>Votre nom, pseudo ou URL :</label>
+        <input type="text" name="name" required
+               style="width:100%; padding:10px; border-radius:8px; border:1px solid #999; margin-bottom:15px;">
+
+        <label>Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; border:1px solid #999; margin-bottom:15px;"></textarea>
+
+        <input type="hidden" name="article" value="Musique — Versions diverses">
+
+        <!-- ⭐ Ligne magique -->
+        <input type="hidden" name="page" id="pageField">
+        <script>
+            document.getElementById("pageField").value = window.location.href;
+        </script>
+
+        <div style="text-align:center;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; border:none; border-radius:8px; font-weight:bold;">
+                Envoyer
+            </button>
+        </div>
+    </form>
+</div>
+
+      <!-- ⭐ TU COLLES ICI LES AUTRES BLOCS ⭐ -->
+
+ <div style="
+    background:#ffffff;
+    padding:25px;
+    margin:40px auto;
+    width:92%;
+    max-width:750px;
+    border-radius:12px;
+    border:1px solid #000;
+">
+    <!-- ⭐<h3 style="font-family:Georgia, serif;">Commentaires publiés</h3>⭐ -->
+
+   <!-- ⭐ CADRE BLANC 3 : COMMENTAIRES PUBLIÉS ⭐ -->
+<div class="comments-box">
+
+   <!--⭐ <h2 style="text-align:center; margin-top:0;">Commentaires publiés</h2> ⭐ -->
+
+    <!-- Exemple de commentaire -->
+    <div style="margin-bottom:15px;">
+        <!--⭐ <strong style="color:#1DA1F2;">Pseudo1</strong><br> ⭐ -->
+        <!-- ⭐ Votre commentaire ici…<br>⭐ -->
+       <!-- ⭐ <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>⭐ -->
+    </div>
+
+  <!-- ⭐  <div class="separator"></div> <!-- ⭐
+
+    <div style="margin-bottom:15px;">
+        <strong style="color:#1DA1F2;">Pseudo2</strong><br>
+        <!-- ⭐  Votre commentaire ici…<br> <!-- ⭐
+         <!-- ⭐ <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span> <!-- ⭐
+    </div>
+
+</div>
+<!-- ⭐ FIN CADRE BLANC 3 ⭐ -->
+
+<!-- Footer -->
+<footer style="text-align:center; margin-top:40px; color:#555;">
+    © 2026 — Pour que je me souvienne
+</footer>
+
+</body>
+</html>
