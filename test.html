@@ -15,17 +15,28 @@
     text-align: center;
 }
 
-/* ⭐ Étoiles très fines dans l’espace noir entre les deux cadres */
+/* ⭐ Étoiles très fines, plus denses, dans l’espace noir entre les deux cadres */
 .cadre-vertical::before {
     content: "";
     position: absolute;
     inset: 0;
+
+    /* Trois couches d’étoiles fines pour plus de densité */
     background-image:
         radial-gradient(#ffffff 1px, transparent 2px),
-        radial-gradient(#cc99ff 1px, transparent 2px);
-    background-size: 120px 120px, 180px 180px;
-    animation: etoiles 12s linear infinite;
-    opacity: 0.35;                     /* Très fin, très discret */
+        radial-gradient(#cc99ff 1px, transparent 2px),
+        radial-gradient(#ffffff 1px, transparent 2px);
+
+    /* Tailles différentes pour un effet plus riche */
+    background-size:
+        90px 90px,
+        140px 140px,
+        60px 60px;
+
+    /* Animation douce */
+    animation: etoiles 14s linear infinite;
+
+    opacity: 0.45; /* Plus visible mais toujours élégant */
     pointer-events: none;
     z-index: 0;
 }
@@ -78,8 +89,10 @@
 
 
 
+
 <div class="cadre-vertical">
 
+    <!-- ⭐ Encadrement intérieur (petit cadre) -->
     <div class="cadre-interieur">
 
         <!-- Ligne scintillante 1 -->
@@ -102,6 +115,7 @@
     </div>
 
 </div>
+
 
 
 
