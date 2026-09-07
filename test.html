@@ -1,41 +1,51 @@
 
 <style>
 
-/* ⭐ Cadre vertical avec double bordure violette */
+/* ⭐ Cadre extérieur élargi */
 .cadre-vertical {
     background-color: black;
-    border: 8px solid #cc99ff;        /* Bordure extérieure violette */
-    box-shadow: 0 0 0 12px #663399;   /* Bordure intérieure violette */
-    width: 600px;                     /* Plus étroit */
+    border: 12px solid #cc99ff;        /* Bordure extérieure violette élargie */
+    box-shadow: 0 0 0 18px #663399;    /* Bordure intérieure violette */
+    width: 600px;                      /* Plus étroit = format portrait */
     margin: 40px auto;
-    padding: 40px;
-    border-radius: 20px;
+    padding: 50px;                     /* Plus d'espace pour la zone noire */
+    border-radius: 24px;
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
-/* ⭐ Scintillement interne façon Eklablog (traits lumineux) */
+/* ⭐ Scintillement violet entre les deux bordures */
 .cadre-vertical::before {
     content: "";
     position: absolute;
     inset: 0;
     background: repeating-linear-gradient(
         90deg,
-        rgba(204,153,255,0.15) 0px,
-        rgba(204,153,255,0.15) 2px,
-        transparent 4px,
-        transparent 6px
+        rgba(204,153,255,0.25) 0px,
+        rgba(204,153,255,0.25) 3px,
+        transparent 6px,
+        transparent 9px
     );
     animation: scintillement 3s linear infinite;
     pointer-events: none;
     z-index: 0;
 }
 
-/* ⭐ Animation du scintillement (déplacement horizontal) */
+/* ⭐ Animation du scintillement */
 @keyframes scintillement {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(-40px); }
+    100% { transform: translateX(-50px); }
+}
+
+/* ⭐ Encadrement intérieur (2ᵉ cadre) */
+.cadre-interieur {
+    background-color: black;           /* Zone noire entre les deux cadres */
+    border: 6px solid #cc99ff;         /* Bordure intérieure violette */
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;                        /* Devant le scintillement */
 }
 
 /* ⭐ Lignes scintillantes internes */
@@ -52,7 +62,7 @@
     animation: scintille 2s linear infinite;
     margin: 15px 0;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* ⭐ Animation scintillante des lignes */
@@ -67,26 +77,32 @@
 
 
 
+
 <div class="cadre-vertical">
 
-    <!-- Ligne scintillante 1 -->
-    <div class="ligne-etoiles"></div>
+    <div class="cadre-interieur">
 
-    <!-- Ligne scintillante 2 -->
-    <div class="ligne-etoiles"></div>
+        <!-- Ligne scintillante 1 -->
+        <div class="ligne-etoiles"></div>
 
-    <!-- Ton image verticale -->
-    <img src="https://picsum.photos/500/700"
-         alt="Image test"
-         style="max-width:100%; border-radius:12px; margin:25px 0; position:relative; z-index:1;">
+        <!-- Ligne scintillante 2 -->
+        <div class="ligne-etoiles"></div>
 
-    <!-- Ligne scintillante 3 -->
-    <div class="ligne-etoiles"></div>
+        <!-- Ton image verticale -->
+        <img src="https://picsum.photos/500/700"
+             alt="Image test"
+             style="max-width:100%; border-radius:12px; margin:25px 0; position:relative; z-index:2;">
 
-    <!-- Ligne scintillante 4 -->
-    <div class="ligne-etoiles"></div>
+        <!-- Ligne scintillante 3 -->
+        <div class="ligne-etoiles"></div>
+
+        <!-- Ligne scintillante 4 -->
+        <div class="ligne-etoiles"></div>
+
+    </div>
 
 </div>
+
 
 
 
