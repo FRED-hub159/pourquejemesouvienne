@@ -1,47 +1,44 @@
 
 <style>
-/* Cadre plein, double bordure violette */
-.cadre-galaxie {
+
+/* ⭐ Cadre vertical avec double bordure violette */
+.cadre-vertical {
     background-color: black;
-    border: 6px solid #cc99ff;          /* 1ère bordure violette */
-    box-shadow: 0 0 0 10px #663399;     /* 2ème bordure violette (ombre fixe) */
-    width: 750px;
+    border: 8px solid #cc99ff;        /* Bordure extérieure violette */
+    box-shadow: 0 0 0 12px #663399;   /* Bordure intérieure violette */
+    width: 600px;                     /* Plus étroit */
     margin: 40px auto;
-    padding: 30px;
-    border-radius: 18px;
+    padding: 40px;
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
-/* Étoiles animées autour du cadre */
-.cadre-galaxie::before,
-.cadre-galaxie::after {
+/* ⭐ Scintillement interne façon Eklablog (traits lumineux) */
+.cadre-vertical::before {
     content: "";
     position: absolute;
-    inset: -40px;
-    background-image:
-        radial-gradient(#ffffff 1px, transparent 3px),
-        radial-gradient(#cc99ff 1px, transparent 3px);
-    background-size: 80px 80px, 120px 120px;
-    animation: etoiles 12s linear infinite;
-    opacity: 0.6;
+    inset: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(204,153,255,0.15) 0px,
+        rgba(204,153,255,0.15) 2px,
+        transparent 4px,
+        transparent 6px
+    );
+    animation: scintillement 3s linear infinite;
     pointer-events: none;
+    z-index: 0;
 }
 
-.cadre-galaxie::after {
-    animation-direction: reverse;
-    opacity: 0.4;
+/* ⭐ Animation du scintillement (déplacement horizontal) */
+@keyframes scintillement {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-40px); }
 }
 
-/* Animation des étoiles */
-@keyframes etoiles {
-    0%   { transform: translate(0, 0); }
-    50%  { transform: translate(-40px, -20px); }
-    100% { transform: translate(0, 0); }
-}
-
-/* Lignes scintillantes internes */
+/* ⭐ Lignes scintillantes internes */
 .ligne-etoiles {
     height: 4px;
     background: linear-gradient(
@@ -53,38 +50,44 @@
         transparent
     );
     animation: scintille 2s linear infinite;
-    margin: 12px 0;
+    margin: 15px 0;
+    position: relative;
+    z-index: 1;
 }
 
+/* ⭐ Animation scintillante des lignes */
 @keyframes scintille {
     0%   { opacity: 0.3; }
     50%  { opacity: 1; }
     100% { opacity: 0.3; }
 }
+
 </style>
 
 
 
-<div class="cadre-galaxie">
 
-    <!-- Ligne 1 -->
+<div class="cadre-vertical">
+
+    <!-- Ligne scintillante 1 -->
     <div class="ligne-etoiles"></div>
 
-    <!-- Ligne 2 -->
+    <!-- Ligne scintillante 2 -->
     <div class="ligne-etoiles"></div>
 
-    <!-- Ton image ou ton thème -->
-    <img src="https://picsum.photos/600/350"
+    <!-- Ton image verticale -->
+    <img src="https://picsum.photos/500/700"
          alt="Image test"
          style="max-width:100%; border-radius:12px; margin:25px 0; position:relative; z-index:1;">
 
-    <!-- Ligne 3 -->
+    <!-- Ligne scintillante 3 -->
     <div class="ligne-etoiles"></div>
 
-    <!-- Ligne 4 -->
+    <!-- Ligne scintillante 4 -->
     <div class="ligne-etoiles"></div>
 
 </div>
+
 
 
 
