@@ -1,20 +1,54 @@
 
-<table cellpadding="0" cellspacing="0" 
-       style="background-color: black; 
-              border: 3px groove #cc99ff; 
-              width: 634px; 
-              padding: 10px; 
-              border-radius: 8px; 
-              margin: auto;">
-  <tbody>
-    <tr>
-      <td align="center" style="padding: 15px; color:#cc99ff;">
+<style>
+.cadre-scintillant {
+    background-color: black;
+    border: 4px groove gold;
+    width: 700px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+}
 
-        <!-- ⭐ Mets ton image ici ⭐ -->
+/* ⭐ Lignes scintillantes dorées */
+.ligne-etoiles {
+    height: 4px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #fff8c6,
+        gold,
+        #fff8c6,
+        transparent
+    );
+    animation: scintille 2s linear infinite;
+    margin: 10px 0;
+}
 
-      </td>
-    </tr>
-  </tbody>
-</table>
+/* ⭐ Animation scintillante */
+@keyframes scintille {
+    0%   { opacity: 0.3; }
+    50%  { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+</style>
+<div class="cadre-scintillant">
 
+    <!-- Ligne scintillante 1 -->
+    <div class="ligne-etoiles"></div>
 
+    <!-- Ligne scintillante 2 -->
+    <div class="ligne-etoiles"></div>
+
+    <!-- Ton image -->
+    <img src="https://picsum.photos/600/350"
+         alt="Image test"
+         style="max-width:100%; border-radius:10px; margin:25px 0;">
+
+    <!-- Ligne scintillante 3 -->
+    <div class="ligne-etoiles"></div>
+
+    <!-- Ligne scintillante 4 -->
+    <div class="ligne-etoiles"></div>
+
+</div>
