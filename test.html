@@ -4,48 +4,47 @@
 /* ⭐ Cadre extérieur élargi */
 .cadre-vertical {
     background-color: black;
-    border: 12px solid #cc99ff;        /* Bordure extérieure violette élargie */
-    box-shadow: 0 0 0 18px #663399;    /* Bordure intérieure violette */
-    width: 600px;                      /* Plus étroit = format portrait */
+    border: 14px solid #cc99ff;        /* Bordure extérieure violette plus large */
+    box-shadow: 0 0 0 22px #663399;    /* Bordure intérieure violette */
+    width: 600px;                      /* Format portrait */
     margin: 40px auto;
-    padding: 50px;                     /* Plus d'espace pour la zone noire */
-    border-radius: 24px;
+    padding: 60px;                     /* Espace noir entre les deux cadres */
+    border-radius: 28px;
     position: relative;
     overflow: hidden;
     text-align: center;
 }
 
-/* ⭐ Scintillement violet entre les deux bordures */
+/* ⭐ Étoiles très fines dans l’espace noir entre les deux cadres */
 .cadre-vertical::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: repeating-linear-gradient(
-        90deg,
-        rgba(204,153,255,0.25) 0px,
-        rgba(204,153,255,0.25) 3px,
-        transparent 6px,
-        transparent 9px
-    );
-    animation: scintillement 3s linear infinite;
+    background-image:
+        radial-gradient(#ffffff 1px, transparent 2px),
+        radial-gradient(#cc99ff 1px, transparent 2px);
+    background-size: 120px 120px, 180px 180px;
+    animation: etoiles 12s linear infinite;
+    opacity: 0.35;                     /* Très fin, très discret */
     pointer-events: none;
     z-index: 0;
 }
 
-/* ⭐ Animation du scintillement */
-@keyframes scintillement {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50px); }
+/* ⭐ Animation des étoiles fines */
+@keyframes etoiles {
+    0%   { transform: translate(0, 0); }
+    50%  { transform: translate(-40px, -20px); }
+    100% { transform: translate(0, 0); }
 }
 
-/* ⭐ Encadrement intérieur (2ᵉ cadre) */
+/* ⭐ Cadre intérieur */
 .cadre-interieur {
-    background-color: black;           /* Zone noire entre les deux cadres */
+    background-color: black;           /* Fond noir uni */
     border: 6px solid #cc99ff;         /* Bordure intérieure violette */
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 30px;
     position: relative;
-    z-index: 1;                        /* Devant le scintillement */
+    z-index: 1;                        /* Devant les étoiles */
 }
 
 /* ⭐ Lignes scintillantes internes */
@@ -78,6 +77,7 @@
 
 
 
+
 <div class="cadre-vertical">
 
     <div class="cadre-interieur">
@@ -102,6 +102,7 @@
     </div>
 
 </div>
+
 
 
 
