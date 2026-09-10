@@ -83,7 +83,7 @@ body {
     box-shadow:0 0 12px rgba(0,0,0,0.18);
 }
 
-/* --- PHOTO (UNE SEULE VERSION, PETITE) --- */
+/* --- PHOTO --- */
 .faune-photo {
     background:none;
     padding:0;
@@ -93,14 +93,14 @@ body {
 }
 
 .faune-photo img {
-    width: 45%;          /* PETITE comme tu l’avais avant */
-    max-width: 350px;    /* limite élégante */
-    height: auto;
-    display: block;
-    margin: -4px auto 6px auto; /* réduit l’espace sous l’image */
-    transform: translateY(-25px) rotate(-3deg); /* inclinaison douce */
-    border-radius: 0;
-    box-shadow: none;    /* transparence parfaite */
+    width:45%;
+    max-width:350px;
+    height:auto;
+    display:block;
+    margin:-4px auto 6px auto;
+    transform:translateY(-25px) rotate(-3deg);
+    border-radius:0;
+    box-shadow:none;
 }
 
 /* --- TEXTE --- */
@@ -108,16 +108,10 @@ body {
     font-size:17pt;
     color:#5a4a3a;
     line-height:1.7;
+    margin-top:-15px;     /* remonte le texte vers l’image */
+    text-align:center;    /* centre parfaitement la phrase */
     margin-bottom:40px;
 }
-    .faune-text {
-    margin-top: -15px;     /* remonte le texte vers l’image */
-    text-align: center;    /* centre parfaitement la phrase */
-    font-size: 17pt;       /* même taille que faune-text */
-    color: #5a4a3a;        /* même couleur */
-    line-height: 1.7;      /* même hauteur de ligne */
-}
-
 
 /* --- NOTE NATURE --- */
 .faune-note {
@@ -176,10 +170,6 @@ body {
 
 <div class="scene-faune">
 
-
-
-
-    
     <!-- HÉRISSON DEVANT -->
     <img src="images/herisson.png" class="herisson" alt="Hérisson">
 
@@ -190,7 +180,7 @@ body {
             Nature & Animaux — Faune sauvage
         </div>
 
-        <!-- ⭐ IMAGE DU TRONC DANS LE CADRE (PETITE, LA BONNE) ⭐ -->
+        <!-- IMAGE DU TRONC -->
         <div class="faune-photo">
             <img src="images/tronc-animaux.png" alt="Tronc et animaux">
         </div>
@@ -198,8 +188,6 @@ body {
         <p class="faune-text">
             Beauté, douceur, respect… un espace dédié au vivant.
         </p>
-
-        
 
         <div class="faune-note">
             🌱 Note nature :  
@@ -214,10 +202,7 @@ body {
         <div class="faune-separator"></div>
 
         <p class="faune-signature">
-            <span>@fred</span><br>
-            <a href="https://fred-hub159.github.io/pourquejemesouvienne">
-                https://fred-hub159.github.io/pourquejemesouvienne
-            </a>
+            <span>Frédéric</span>
         </p>
 
     </div>
@@ -225,3 +210,4 @@ body {
 
 </body>
 </html>
+
