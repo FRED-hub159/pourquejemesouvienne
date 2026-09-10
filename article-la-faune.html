@@ -1,263 +1,209 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>La Faune - Nos amis les animaux</title>
+<meta charset="UTF-8">
+<title>Nature & Animaux — Coups de coeur</title>
 
-    <meta name="description" content="Article qui reprend tout ce qu'il y a à savoir pour la sauvegarde des animaux">
+<style>
+body {
+    background:#f7f3e9;
+    font-family:"Book Antiqua", Palatino;
+}
 
-    <!-- Police Yellowtail -->
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+/* --- CONTENEUR GLOBAL --- */
+.scene-faune {
+    width:92%;
+    max-width:900px;
+    margin:80px auto;
+    position:relative;
+}
+
+/* --- TRONC + ANIMAUX DERRIÈRE --- */
+.tronc-back {
+    position:absolute;
+    top:-40px;
+    left:50%;
+    transform:translateX(-50%) scale(0.55);
+    width:600px;
+    height:auto;
+    z-index:-1;
+    opacity:0.85;
+}
+
+/* --- TRONC + ANIMAUX DEVANT (RACCOON / SKUNK) --- */
+.tronc-front {
+    position:absolute;
+    bottom:-30px;
+    right:20px;
+    transform:scale(0.45);
+    width:600px;
+    height:auto;
+    z-index:3;
+    opacity:0.95;
+}
+
+/* --- HÉRISSON DEVANT --- */
+.herisson {
+    position:absolute;
+    bottom:-20px;
+    left:10px;
+    transform:scale(0.40);
+    width:400px;
+    height:auto;
+    z-index:4;
+}
+
+/* --- CADRE ORGANIQUE --- */
+.cadre-organique {
+    background:rgba(255,255,255,0.90);
+    padding:45px;
+    border-radius:70px 50px 80px 60px;
+    border:4px solid #c7b89a;
+    box-shadow:0 0 30px rgba(0,0,0,0.30);
+    position:relative;
+    z-index:2;
+}
+
+/* --- TITRE --- */
+.faune-title {
+    background:#e8dfcf;
+    padding:18px 28px;
+    border-radius:30px;
+    border:1px solid #b8a892;
+    font-size:26pt;
+    font-weight:bold;
+    color:#5a4a3a;
+    text-align:center;
+    margin-bottom:40px;
+    box-shadow:0 0 12px rgba(0,0,0,0.18);
+}
+
+/* --- PHOTO --- */
+.faune-photo {
+    background:#f7f3e9;
+    padding:18px;
+    border:2px solid #d2c6b8;
+    border-radius:22px;
+    box-shadow:0 0 18px rgba(0,0,0,0.25);
+    margin-bottom:35px;
+}
+.faune-photo img {
+    width:100%;
+    border-radius:18px;
+    transform:rotate(-2deg);
+    box-shadow:0 0 15px rgba(0,0,0,0.30);
+}
+
+/* --- TEXTE --- */
+.faune-text {
+    font-size:17pt;
+    color:#5a4a3a;
+    line-height:1.7;
+    margin-bottom:40px;
+}
+
+/* --- NOTE NATURE --- */
+.faune-note {
+    background:#f7f3e9;
+    padding:22px;
+    border-left:8px solid #7a8f6a;
+    border-radius:18px;
+    font-size:15pt;
+    color:#4a3f35;
+    font-style:italic;
+    box-shadow:0 0 14px rgba(0,0,0,0.15);
+    margin-bottom:45px;
+}
+
+/* --- SÉPARATEUR ANIMÉ (GIF) --- */
+.faune-gif {
+    width:100%;
+    text-align:center;
+    margin:40px 0;
+}
+.faune-gif img {
+    max-width:100%;
+    height:auto;
+    max-height:120px;
+}
+
+/* --- SÉPARATEUR --- */
+.faune-separator {
+    width:75%;
+    height:4px;
+    background:linear-gradient(to right, #7a8f6a, #c7b89a);
+    margin:45px auto;
+    border-radius:4px;
+}
+
+/* --- SIGNATURE --- */
+.faune-signature {
+    text-align:center;
+    margin-top:25px;
+}
+.faune-signature span {
+    font-family:Yellowtail;
+    color:#3d2f24;
+    font-size:28px;
+    text-shadow:1px 1px 1px #bfbfbf;
+}
+.faune-signature a {
+    color:#1DA1F2;
+    font-size:15px;
+    text-decoration:none;
+}
+</style>
 </head>
 
-<body style="background-color:#f7f3e9; margin:0; padding:0; font-family:Verdana;">
+<body>
 
-<!-- ⭐ MENU HAUT ⭐ -->
-<div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
-  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
-  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
-  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
-  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
-</div>
-<!-- ⭐ TITRE PRINCIPAL : FAUNE ⭐ -->
+<div class="scene-faune">
 
-    <header>
-   
-<div style="text-align:center; font-family:Georgia, serif; font-size:24px; margin-top:20px; margin-bottom:6px;">
-    <h1>Faune</h1>
-</div>
-<!-- ⭐ DATE DE PUBLICATION ⭐ -->
+    <!-- TRONC + ANIMAUX DERRIÈRE -->
+    <img src="images/tronc-animaux.png" class="tronc-back" alt="Décor forêt">
 
-<p style="text-align:center; font-family:Georgia, serif; font-size:18px; margin-top:0; margin-bottom:15px;">
-    Publié le 10/09/2026
-</p>
+    <!-- TRONC + ANIMAUX DEVANT -->
+    <img src="images/tronc-animaux.png" class="tronc-front" alt="Animaux devant">
 
+    <!-- HÉRISSON DEVANT -->
+    <img src="images/herisson.png" class="herisson" alt="Hérisson">
 
+    <!-- CADRE ORGANIQUE -->
+    <div class="cadre-organique">
 
-</div>
-
-        </header>
-
-
-    <body style="background:#f7f3e9; font-family:'Book Antiqua', Palatino;">
-
-<!-- 🐾🌿 BANDEAU NATURE -->
-<div style="
-    width:100%;
-    background:linear-gradient(135deg, #f7f3e9, #e7efe4);
-    padding:35px 0;
-    text-align:center;
-    border-bottom:3px solid #c7b89a;
-">
-    <h1 style="
-        font-size:30pt;
-        font-weight:bold;
-        color:#6a5f3a;
-        margin:0;
-    ">
-        🐾 Nature & Animaux — Coups de cœur
-    </h1>
-
-    <div style="
-        font-size:15pt;
-        color:#6a5f3a;
-        margin-top:10px;
-        opacity:0.85;
-    ">
-        Beauté, douceur, respect… un espace dédié au vivant.
-    </div>
-</div>
-
-<!-- 🐾🌿 CADRE 1 : CONTENU NATURE (VERSION SIGNATURE + TA SIGNATURE) -->
-<div style="
-    background:#ffffff;
-    padding:30px;
-    margin:40px auto;
-    width:92%;
-    max-width:780px;
-    border-radius:18px;
-    border:2px solid #c7b89a;
-    box-shadow:0 0 18px rgba(0,0,0,0.18);
-">
-
-    <!-- 🐾🌿 PHOTO DU JOUR -->
-    <h2 style="
-        text-align:center;
-        font-weight:bold;
-        color:#6a5f3a;
-        margin-bottom:20px;
-        font-size:22pt;
-    ">
-        📸 Photo du jour
-    </h2>
-
-    <img src="images/ton-image.jpg"
-         style="width:100%; border-radius:14px; margin-bottom:25px; box-shadow:0 0 12px rgba(0,0,0,0.15);">
-
-    <!-- 🐾🌿 TEXTE INTRO -->
-    <p style="font-size:15pt; color:#6a5f3a; line-height:1.5;">
-        La nature nous offre chaque jour des instants précieux.  
-        Animaux, paysages, insectes, saisons…  
-        Voici un espace pour partager ces merveilles.
-    </p>
-
-    <!-- 🐾🌿 VIDÉO DÉCOUVERTE -->
-    <h2 style="
-        text-align:center;
-        font-weight:bold;
-        color:#6a5f3a;
-        margin-top:40px;
-        margin-bottom:20px;
-        font-size:22pt;
-    ">
-        🎥 Vidéo découverte
-    </h2>
-
-    <div style="text-align:center; margin:25px 0;">
-        <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/XXXXXXXX"
-                style="border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.25);"
-                allowfullscreen>
-        </iframe>
-    </div>
-
-    <!-- 🐾🌿 SÉPARATEUR -->
-    <div style="width:60%; height:2px; background:#c7b89a; margin:40px auto;"></div>
-
-    <!-- 🐾🌿 INFOS NATURE -->
-    <h2 style="
-        text-align:center;
-        font-weight:bold;
-        color:#6a5f3a;
-        margin-bottom:20px;
-        font-size:22pt;
-    ">
-        🌿 Infos Nature
-    </h2>
-
-    <div style="
-        background:#f7f3e9;
-        border-left:6px solid #c7b89a;
-        padding:15px 20px;
-        border-radius:10px;
-        margin-bottom:20px;
-        color:#6a5f3a;
-        font-size:14pt;
-    ">
-        Ici, tu peux ajouter une information scientifique, une anecdote,  
-        une découverte, un fait étonnant sur les animaux ou la nature.
-    </div>
-
-    <!-- 🐾🌿 SÉPARATEUR FINAL DU CADRE 1 -->
-    <div style="width:60%; height:2px; background:#c7b89a; margin:40px auto;"></div>
-
-    <!-- ⭐ TA SIGNATURE PERSONNELLE DANS LE CADRE 1 ⭐ -->
-    <p style="text-align: center; margin-top: 25px;">
-        <span style="
-            font-family: Yellowtail;
-            color: #3d2f24;
-            font-size: 26px;
-            text-shadow: 1px 1px 1px #bfbfbf;
-        ">
-            @fred
-        </span>
-        <br>
-        <a href="https://fred-hub159.github.io/pourquejemesouvienne"
-           style="color:#1DA1F2; font-size:14px; text-decoration:none;">
-            https://fred-hub159.github.io/pourquejemesouvienne
-        </a>
-    </p>
-
-</div> <!-- 🐾🌿 FIN CADRE 1 -->
-
-
-
-        <!-- 🐾🌿 CADRE 2 : FORMULAIRE COMMENTAIRES -->
-<div style="
-    background:#ffffff;
-    padding:30px;
-    margin:40px auto;
-    width:92%;
-    max-width:780px;
-    border-radius:18px;
-    border:2px solid #c7b89a;
-    box-shadow:0 0 18px rgba(0,0,0,0.18);
-">
-
-    <h2 style="
-        text-align:center;
-        font-weight:bold;
-        color:#6a5f3a;
-        margin-bottom:20px;
-        font-size:22pt;
-    ">
-        ✏️ Laisser un commentaire
-    </h2>
-
-    <form action="https://formspree.io/f/xljrlnye" method="POST">
-
-        <label>Votre nom :</label>
-        <input type="text" name="name" required
-               style="width:100%; padding:10px; border-radius:8px; border:1px solid #c7b89a; margin-bottom:15px;">
-
-        <label>Votre message :</label>
-        <textarea name="message" required
-                  style="width:100%; height:150px; padding:10px; border-radius:8px; border:1px solid #c7b89a; margin-bottom:15px;"></textarea>
-
-        <div style="text-align:center;">
-            <button type="submit"
-                    style="padding:10px 20px; background:#c7b89a; color:white; border:none; border-radius:8px; font-weight:bold;">
-                Envoyer
-            </button>
+        <div class="faune-title">
+            Nature & Animaux — Faune sauvage
         </div>
-    </form>
 
-</div> <!-- 🐾🌿 FIN CADRE 2 -->
+        <div class="faune-photo">
+            <img src="images/ton-image.jpg" alt="Faune sauvage">
+        </div>
 
+        <p class="faune-text">
+            Beauté, douceur, respect… un espace dédié au vivant.
+        </p>
 
-        <!-- 🐾🌿 CADRE 3 : COMMENTAIRES PUBLIÉS -->
-<div style="
-    background:#ffffff;
-    padding:30px;
-    margin:40px auto;
-    width:92%;
-    max-width:780px;
-    border-radius:18px;
-    border:2px solid #c7b89a;
-    box-shadow:0 0 18px rgba(0,0,0,0.18);
-">
+        <div class="faune-note">
+            🌱 Note nature :  
+            Ajoute ici une observation, une anecdote ou une découverte sur la faune.
+        </div>
 
-    <h2 style="
-        text-align:center;
-        font-weight:bold;
-        color:#6a5f3a;
-        margin-bottom:20px;
-        font-size:22pt;
-    ">
-        💬 Commentaires publiés
-    </h2>
+        <!-- GIF ANIMÉ -->
+        <div class="faune-gif">
+            <img src="images/barre-automne-ecureuilSonnetteCenterblog.gif" alt="Séparateur animé">
+        </div>
 
-    <!-- Exemple -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#7a5f3a;">Pseudo</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <div class="faune-separator"></div>
+
+        <p class="faune-signature">
+            <span>@fred</span><br>
+            <a href="https://fred-hub159.github.io/pourquejemesouvienne">
+                https://fred-hub159.github.io/pourquejemesouvienne
+            </a>
+        </p>
+
     </div>
-
-    <div style="width:60%; height:1px; background:#c7b89a; margin:20px auto;"></div>
-
-    <!-- Tu peux répéter autant de blocs que tu veux -->
-
-</div> <!-- 🐾🌿 FIN CADRE 3 -->
-
-
-        <div style="
-    text-align:center;
-    font-size:13pt;
-    color:#6a5f3a;
-    margin-top:20px;
-    font-weight:bold;
-">
-    © 2026 — Pour que je me souvienne
 </div>
+
+</body>
+</html>
