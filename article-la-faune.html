@@ -236,64 +236,7 @@ body {
     text-decoration:none;
 }
 
-    .commentaire-simple,
-.publies-simple {
-    width:85%;
-    margin:40px auto;
-    padding:20px;
-    background:#f7f3e9;
-    border-radius:12px;
-    box-shadow:0 0 10px rgba(0,0,0,0.15);
-    font-family:"Book Antiqua", Palatino;
-    color:#5a4a3a;
-}
 
-.commentaire-simple h2,
-.publies-simple h2 {
-    text-align:center;
-    margin-top:0;
-}
-
-.commentaire-simple input,
-.commentaire-simple textarea {
-    width:100%;
-    padding:10px;
-    margin-top:10px;
-    border-radius:8px;
-    border:1px solid #999;
-    box-sizing:border-box;
-}
-
-.commentaire-simple button {
-    margin-top:15px;
-    padding:10px 20px;
-    border:none;
-    border-radius:8px;
-    background:#e0e0e0;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.commentaire-item {
-    margin-bottom:15px;
-}
-
-.commentaire-item a {
-    color:#1DA1F2;
-    text-decoration:none;
-}
-
-.date-commentaire {
-    font-size:85%;
-    color:#555;
-}
-
-hr {
-    width:60%;
-    margin:20px auto;
-    border:0;
-    border-top:1px solid #ccc;
-}
 
 </style>
 </head>
@@ -381,49 +324,4 @@ hr {
     </a>
 </p>
 
-<!-- ⭐ FORMULAIRE SIMPLE ⭐ -->
-<div class="commentaire-simple">
 
-    <h2>Laisser un commentaire</h2>
-
-    <form action="https://formspree.io/f/xljrlnye" method="POST">
-
-        <label>Votre nom, pseudo ou URL :</label>
-        <input type="text" name="nom" required placeholder="Ex : Marie, Magalou, https://monblog.com">
-
-        <label>Votre message :</label>
-        <textarea name="message" required></textarea>
-
-        <input type="hidden" name="article" value="Nature & Animaux - Coups de coeur">
-        <input type="hidden" name="page" id="pageField">
-
-        <script>
-            document.getElementById("pageField").value = window.location.href;
-        </script>
-
-        <button type="submit">Envoyer</button>
-
-    </form>
-
-</div>
-
-        <!-- ⭐ COMMENTAIRES PUBLIES SIMPLES ⭐ -->
-<div class="publies-simple">
-
-    <h2>Commentaires publiés</h2>
-
-    <div class="commentaire-item">
-        <strong><a href="https://……">NOM</a></strong><br>
-        TEXTE DU COMMENTAIRE<br>
-        <span class="date-commentaire">Posté le : JJ/MM/AAAA à HH:MM</span>
-    </div>
-
-    <hr>
-
-    <div class="commentaire-item">
-        <strong><a href="https://……">NOM</a></strong><br>
-        TEXTE DU COMMENTAIRE<br>
-        <span class="date-commentaire">Posté le : JJ/MM/AAAA à HH:MM</span>
-    </div>
-
-</div>
