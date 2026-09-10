@@ -184,14 +184,17 @@ body {
     font-size:15px;
     text-decoration:none;
 }
-    /* --- RÉDUCTION DE L’IMAGE DU TRONC --- */
+ /* --- IMAGE DU TRONC DANS LE CADRE (petite + débordement) --- */
 .faune-photo img {
-    width: 45%;
-    max-width: 300px;
+    width: 28%;
+    max-width: 220px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: -25px auto -25px auto; /* déborde au-dessus et en dessous */
+    transform: rotate(-4deg); /* légère inclinaison */
+    z-index: 5;
 }
+
 
 </style>
 </head>
