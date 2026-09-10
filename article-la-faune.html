@@ -8,33 +8,6 @@
 
     <!-- Police Yellowtail -->
     <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-</head>
-
-<body style="background-color:#f7f3e9; margin:0; padding:0; font-family:Verdana;">
-
-<!-- ⭐ MENU HAUT ⭐ -->
-<div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
-  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
-  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
-  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
-  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
-</div>
-<!-- ⭐ TITRE PRINCIPAL : NATURE ⭐ -->
-
-    <header>
-   
-<div style="text-align:center; font-family:Georgia, serif; font-size:24px; margin-top:20px; margin-bottom:6px;">
-    <h1>Nature</h1>
-</div>
-<!-- ⭐ DATE DE PUBLICATION ⭐ -->
-
-<p style="text-align:center; font-family:Georgia, serif; font-size:18px; margin-top:0; margin-bottom:15px;">
-    Publié le 10/09/2026
-</p>
-
-
-
-</div>
 
 <style>
 body {
@@ -62,7 +35,7 @@ body {
     opacity:0.85;
 }
 
-/* --- TRONC + ANIMAUX DEVANT (RACCOON / SKUNK) --- */
+/* --- TRONC + ANIMAUX DEVANT --- */
 .tronc-front {
     position:absolute;
     bottom:-30px;
@@ -110,19 +83,19 @@ body {
     box-shadow:0 0 12px rgba(0,0,0,0.18);
 }
 
-/* --- PHOTO --- */
+/* --- PHOTO (UNE SEULE VERSION) --- */
 .faune-photo {
     background:none;
     padding:0;
     border:none;
     border-radius:0;
     box-shadow:none;
-    margin-bottom:0;
+    margin-bottom:20px;
 }
 
 .faune-photo img {
-    width: 95%;      /* un peu plus grande */
-    max-width: none; /* plus de limite */
+    width: 95%;
+    max-width: none;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -130,9 +103,6 @@ body {
     border-radius: 0;
     box-shadow: none;
 }
-
-
-
 
 /* --- TEXTE --- */
 .faune-text {
@@ -155,7 +125,7 @@ body {
     margin-bottom:45px;
 }
 
-/* --- SÉPARATEUR ANIMÉ (GIF) --- */
+/* --- GIF ANIMÉ --- */
 .faune-gif {
     width:100%;
     text-align:center;
@@ -192,18 +162,6 @@ body {
     font-size:15px;
     text-decoration:none;
 }
- /* --- IMAGE DU TRONC DANS LE CADRE (petite + débordement) --- */
-.faune-photo img {
-    width: 28%;
-    max-width: 220px;
-    height: auto;
-    display: block;
-    margin: -25px auto -25px auto; /* déborde au-dessus et en dessous */
-    transform: rotate(-4deg); /* légère inclinaison */
-    z-index: 5;
-}
-
-
 </style>
 </head>
 
@@ -227,7 +185,11 @@ body {
             Nature & Animaux — Faune sauvage
         </div>
 
-    
+        <!-- ⭐ IMAGE DU TRONC DANS LE CADRE (la bonne) ⭐ -->
+        <div class="faune-photo">
+            <img src="images/tronc-animaux.png" alt="Tronc et animaux">
+        </div>
+
         <p class="faune-text">
             Beauté, douceur, respect… un espace dédié au vivant.
         </p>
