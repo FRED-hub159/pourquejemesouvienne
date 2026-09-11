@@ -345,59 +345,148 @@ hr {
 
 </div>
 
-<!-- ⭐ FORMULAIRE SIMPLE ⭐ -->
-<div class="commentaire-simple">
+<!-- ⭐ ÉPISODES (fond beige) ⭐ -->
+<div style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
 
-    <h2>Laisser un commentaire</h2>
+    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
+
+    <div style="display:flex; gap:40px; justify-content:center;">
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
+    <div>Coeur de coeur précédent</div>
+</a>
+
+        </a>
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/art-et-beaute.png" style="width:80px; border-radius:6px;">
+    <div>Coeur de coeur suivant</div>
+</a>
+
+
+    </div>
+</div>
+
+<!-- ⭐ CADRE BLANC 2 : FORMULAIRE COMMENTAIRES ⭐ -->
+<div class="comment-form" style="padding:20px; background:#ffffff; border:1px solid #dcdcdc; border-radius:6px;">
+
+    <h2 style="text-align:center; margin-top:0;">Laisser un commentaire</h2>
 
     <form action="https://formspree.io/f/xljrlnye" method="POST">
 
-        <label>Votre nom :</label>
-        <input type="text" name="nom" required placeholder="Votre nom ou pseudo">
-
-        <label>Votre email :</label>
-        <input type="email" name="email" required placeholder="Votre adresse email">
+        <label>Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; border:1px solid #999;">
 
         <label>Votre message :</label>
-        <textarea name="message" required placeholder="Votre commentaire…"></textarea>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; border:1px solid #999;"></textarea>
 
+        <input type="hidden" name="article" value="Art et Beauté">
+
+        <!-- ⭐ Envoie automatiquement l’URL de la page ⭐ -->
         <input type="hidden" name="page" id="pageField">
 
         <script>
             document.getElementById("pageField").value = window.location.href;
         </script>
 
-        <button type="submit">Envoyer</button>
+        <div style="text-align:center;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; border:none; border-radius:8px; font-weight:bold;">
+                Envoyer
+            </button>
+        </div>
 
     </form>
 
 </div>
+<!-- ⭐ FIN CADRE BLANC 2 ⭐ -->
 
-<!-- ⭐ COMMENTAIRES PUBLIES SIMPLES ⭐ -->
-<div class="publies-simple">
 
-    <h2>Commentaires publiés</h2>
+<!-- ⭐ CADRE BLANC 3 : COMMENTAIRES PUBLIÉS ⭐ -->
+<div class="comments-box">
 
-    <div class="commentaire-item">
-        <strong><a href="https://……">NOM</a></strong><br>
-        TEXTE DU COMMENTAIRE<br>
-        <span class="date-commentaire">Posté le : JJ/MM/AAAA à HH:MM</span>
-    </div>
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
 
-    <hr>
+  <!-- Exemple de commentaire -->
+    
+     <div style="margin-bottom:15px; color:#000;">
+    <strong style="color:#1DA1F2;">
+        <a href="https://florence-marquise.vefblog.net/" style="color:#1DA1F2; text-decoration:none;">
+            moigigi
+        </a>
+    </strong><br>
 
-    <div class="commentaire-item">
-        <strong><a href="https://……">NOM</a></strong><br>
-        TEXTE DU COMMENTAIRE<br>
-        <span class="date-commentaire">Posté le : JJ/MM/AAAA à HH:MM</span>
-    </div>
+    sublime peinture avec de yeux magnifiques.<br>
+       
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 08/09/2026 à 14:36
+    </span>
 
 </div>
 
-<!-- FOOTER -->
-<footer style="text-align:center; margin-top:20px;">
+            <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    
+    <div style="margin-bottom:15px; color:#000;">
+    <strong style="color:#1DA1F2;">
+        <a href="https://florence-marquise.vefblog.net/" style="color:#1DA1F2; text-decoration:none;">
+            Florence-marquise
+        </a>
+    </strong><br>
+
+    Bonjour cher Fred,<br>
+        Cette peinture est superbe ! Merci de nous faire découvrir l'oeuvre de cette artiste polonaise. Je ne l'ai pas vu sur Facebook, pourtant j'y vais tous les jours mais on ne peut pas tout voir.<br>
+        Passe une bonne journée, bisous à toi et calins à Cannelle.<br>
+        Florence<br>
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 07/09/2026 à 07:53
+    </span>
+
+</div>
+
+        <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    
+    <!-- Exemple de commentaire -->
+    <div style="margin-bottom:15px; color:#000;">
+    <strong style="color:#1DA1F2;">
+        <a href="https://albert-danielle.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+            bebert33
+        </a>
+    </strong><br>
+
+    pb ?????<br>
+        impossible sur l'autre article ? l'oeuvre est superbe ici !!!<br>
+        bonjour Fred , ah oui ça moi c'est Boney M , j'adore ce groupe et leur version +++ ! merci pour les 3 versions que j'ai écouté ! bon dimanche a+<br>
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 06/09/2026 à 08:16
+    </span>
+
+</div>
+     <div class="reponse-officielle">
+    <span style="font-weight:bold; color:#b08a5c;">
+        ✒ Réponse de l’auteur — mise à jour le 06 septembre 2026
+    </span><br><br>
+
+    Chère bebert33,<br>
+    Merci de m'avoir averti. A présent, c'est opérationel car j'ai corrigé le code.<br>
+    
+</div>
+
+<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+<!-- ⭐ FIN CADRE BLANC 3 ⭐ -->
+</div> <!-- fermeture correcte du cadre blanc -->
+
+<!-- Footer -->
+<footer style="text-align:center; margin-top:40px; color:#555;">
     © 2026 — Pour que je me souvienne
 </footer>
 
-</body>
 </html>
