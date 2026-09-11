@@ -367,36 +367,38 @@ hr {
 
     </div>
 
-<!-- ⭐ CADRE BLANC 2 : FORMULAIRE COMMENTAIRES ⭐ -->
-<div class="comment-form" style="padding:20px; background:#ffffff; border:1px solid #dcdcdc; border-radius:6px;">
+<!-- ⭐ FORMULAIRE + COMMENTAIRES ⭐-->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
 
-    <h2 style="text-align:center; margin-top:0;">Laisser un commentaire</h2>
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
 
-    <form action="https://formspree.io/f/xljrlnye" method="POST">
+   <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
 
-        <label>Votre nom, pseudo ou URL :</label>
-        <input type="text" name="nom" required
-               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; border:1px solid #999;">
+    <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+    <input type="text" name="nom" required
+           style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+           placeholder="Ex : Marie, Magalou, https://monblog.com">
 
-        <label>Votre message :</label>
-        <textarea name="message" required
-                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; border:1px solid #999;"></textarea>
+    <label style="display:block; margin-top:10px;">Votre message :</label>
+    <textarea name="message" required
+              style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
 
-        <input type="hidden" name="article" value="Art et Beauté">
+    <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
+    <input type="hidden" name="article" value="Nature & Animaux - Coups de coeur">
 
-        <!-- ⭐ Envoie automatiquement l’URL de la page ⭐ -->
-        <input type="hidden" name="page" id="pageField">
+    <!-- ⭐ Ligne magique : envoie automatiquement l’URL de la page ⭐ -->
+    <input type="hidden" name="page" id="pageField">
 
-        <script>
-            document.getElementById("pageField").value = window.location.href;
-        </script>
+    <script>
+        document.getElementById("pageField").value = window.location.href;
+    </script>
 
-        <div style="text-align:center;">
-            <button type="submit"
-                    style="padding:10px 20px; background:#e0e0e0; border:none; border-radius:8px; font-weight:bold;">
-                Envoyer
-            </button>
-        </div>
+    <div style="text-align:center; margin-top:10px;">
+        <button type="submit"
+                style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+            Envoyer
+        </button>
+    </div>
 
     </form>
 
