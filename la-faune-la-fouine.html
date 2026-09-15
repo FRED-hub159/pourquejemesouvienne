@@ -1,1 +1,460 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nature & Animaux - Coups de coeur</title>
+    <meta name="description" content="Rubrique qui parle de la faune, de la nature et de sa préservation">
+
+    <!-- Police Yellowtail -->
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+<style>
+body {
+    background:#f7f3e9;
+    font-family:"Book Antiqua", Palatino;
+    margin:0;
+    padding:0;
+}
+
+/* --- CONTENEUR GLOBAL --- */
+.scene-faune {
+    width:92%;
+    max-width:900px;
+    margin:80px auto;
+    position:relative;
+}
+
+/* --- TRONC + ANIMAUX DERRIÈRE --- */
+.tronc-back {
+    position:absolute;
+    top:-40px;
+    left:50%;
+    transform:translateX(-50%) scale(0.55);
+    width:600px;
+    height:auto;
+    z-index:-1;
+    opacity:0.85;
+}
+
+/* --- TRONC + ANIMAUX DEVANT --- */
+.tronc-front {
+    position:absolute;
+    bottom:-30px;
+    right:20px;
+    transform:scale(0.45);
+    width:600px;
+    height:auto;
+    z-index:3;
+    opacity:0.95;
+}
+
+/* --- CADRE ORGANIQUE --- */
+.cadre-organique {
+    background:rgba(255,255,255,0.90);
+    padding:25px 45px 30px 45px;
+    border-radius:70px 50px 80px 60px;
+    border:4px solid #c7b89a;
+    box-shadow:0 0 30px rgba(0,0,0,0.30);
+    position:relative;
+    z-index:2;
+}
+
+/* --- HÉRISSON DEVANT --- */
+.herisson {
+    position:absolute;
+    bottom:20px;
+    left:10px;
+    transform:scale(0.40);
+    width:400px;
+    height:auto;
+    z-index:4;
+}
+    
+/* --- TITRE --- */
+.faune-title {
+    background:#e8dfcf;
+    padding:18px 28px;
+    border-radius:30px;
+    border:1px solid #b8a892;
+    font-size:26pt;
+    font-weight:bold;
+    color:#5a4a3a;
+    text-align:center;
+    margin-bottom:40px;
+    box-shadow:0 0 12px rgba(0,0,0,0.18);
+}
+
+/* --- PHOTO --- */
+.faune-photo {
+    background:none;
+    padding:0;
+    margin:0 auto 20px auto;
+    border:none;
+    box-shadow:none;
+}
+
+.faune-photo img {
+    width:45%;
+    max-width:350px;
+    height:auto;
+    display:block;
+    margin:-4px auto 6px auto;
+    transform:translateY(-25px) rotate(-3deg);
+    border-radius:0;
+    box-shadow:none;
+}
+
+/* --- TEXTE --- */
+.faune-text {
+    font-size:17pt;
+    color:#5a4a3a;
+    line-height:1.7;
+    margin-top:-15px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+/* --- ESPACE FAUNE --- */
+.faune-espace {
+    background:#f7f3e9;
+    padding:18px 22px;
+    margin:25px auto 35px auto;
+    border-radius:18px;
+    width:85%;
+    box-shadow:0 0 12px rgba(0,0,0,0.12);
+    text-align:center;
+    font-size:14pt;
+    color:#5a4a3a;
+    font-family:"Book Antiqua", Palatino;
+    line-height:1.6;
+}
+
+.faune-texte { margin-bottom:25px; }
+.faune-video { margin:30px 0; }
+
+.faune-images img {
+    width:45%;
+    max-width:300px;
+    margin:10px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+}
+
+/* --- NOTE NATURE --- */
+.faune-note {
+    background:#f7f3e9;
+    padding:22px;
+    border-left:8px solid #7a8f6a;
+    border-radius:18px;
+    font-size:15pt;
+    color:#4a3f35;
+    font-style:italic;
+    box-shadow:0 0 14px rgba(0,0,0,0.15);
+    margin-bottom:45px;
+}
+
+/* --- GIF ANIMÉ --- */
+.faune-gif {
+    width:100%;
+    text-align:center;
+    margin:120px 0 40px 0;
+}
+
+.faune-gif img {
+    max-width:100%;
+    height:auto;
+    max-height:120px;
+}
+
+/* --- SÉPARATEUR --- */
+.faune-separator {
+    width:75%;
+    height:4px;
+    background:linear-gradient(to right, #7a8f6a, #c7b89a);
+    margin:45px auto;
+    border-radius:4px;
+}
+
+/* --- SIGNATURE --- */
+.faune-signature {
+    text-align:center;
+    margin-top:25px;
+}
+.faune-signature span {
+    font-family:Yellowtail;
+    color:#3d2f24;
+    font-size:28px;
+    text-shadow:1px 1px 1px #bfbfbf;
+}
+.faune-signature a {
+    color:#1DA1F2;
+    font-size:15px;
+    text-decoration:none;
+}
+
+/* --- COMMENTAIRES --- */
+.commentaire-simple,
+.publies-simple {
+    width:92%;
+    max-width:900px;
+    margin:40px auto;
+    padding:25px;
+    background:#ffffff;
+    border-radius:18px;
+    border:2px solid #c7b89a;
+    box-shadow:0 0 18px rgba(0,0,0,0.15);
+    font-family:"Book Antiqua", Palatino;
+    color:#5a4a3a;
+}
+
+.commentaire-simple h2,
+.publies-simple h2 {
+    text-align:center;
+    margin-top:0;
+}
+
+.commentaire-simple input,
+.commentaire-simple textarea {
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:8px;
+    border:1px solid #999;
+    box-sizing:border-box;
+}
+
+.commentaire-simple button {
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#e0e0e0;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.commentaire-item {
+    margin-bottom:15px;
+}
+
+.commentaire-item a {
+    color:#1DA1F2;
+    text-decoration:none;
+}
+
+.date-commentaire {
+    font-size:85%;
+    color:#555;
+}
+
+hr {
+    width:60%;
+    margin:20px auto;
+    border:0;
+    border-top:1px solid #ccc;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ⭐ MENU HAUT ⭐ -->
+<div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
+  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
+  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
+  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
+  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
+</div>
+
+<!-- ⭐ TITRE PRINCIPAL + DATE ⭐ -->
+<header>
+    <div style="text-align:center; font-family:Georgia, serif; font-size:24px; margin-top:20px; margin-bottom:6px;">
+        <h1>Faune</h1>
+    </div>
+    <p style="text-align:center; font-family:Georgia, serif; font-size:18px; margin-top:0; margin-bottom:15px;">
+        Publié le 10/09/2026
+    </p>
+</header>
+
+<div class="scene-faune">
+
+    <!-- HÉRISSON DEVANT -->
+    <img src="images/herisson.png" class="herisson" alt="Hérisson">
+
+    <!-- CADRE ORGANIQUE -->
+    <div class="cadre-organique">
+
+        <div class="faune-title">
+            Nature & Animaux — Coups de coeur
+        </div>
+
+        <!-- IMAGE DU TRONC -->
+        <div class="faune-photo">
+            <img src="images/tronc-animaux.png" alt="Tronc et animaux">
+        </div>
+
+        <p class="faune-text">
+           <center><h2>Beauté, douceur, respect… un espace dédié au vivant</h2></center>
+        </p>
+
+        <!-- ⭐ ESPACE POUR TEXTE / IMAGES / VIDÉO ⭐ -->
+        <div class="faune-espace">
+
+            <div class="faune-texte">
+                ✦✦✦  
+                Voici un exemple de texte que tu pourras remplacer.  
+                Tu peux écrire 10, 20, 50 lignes si tu veux.  
+                Le cadre s’adaptera automatiquement.  
+                ✦✦✦
+            </div>
+
+            <div class="faune-video">
+                <iframe width="90%" height="315" 
+                    src="https://www.youtube.com/embed/XXXXXXXXXXX" 
+                    title="Vidéo YouTube" frameborder="0" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="faune-images">
+                <img src="images/monimage1.png" alt="Image 1">
+                <img src="images/monimage2.png" alt="Image 2">
+            </div>
+
+        </div>
+
+        <div class="faune-note">
+            <center>🌱 La faune, c'est la Terre qui respire</center>
+        </div>
+
+        <div class="faune-gif">
+            <img src="images/barre-automne-ecureuilSonnetteCenterblog.gif" alt="Séparateur animé">
+        </div>
+
+        <div class="faune-separator"></div>
+
+        <!-- Signature -->
+        <p class="faune-signature">
+            <span>@fred</span><br>
+            <a href="https://fred-hub159.github.io/pourquejemesouvienne">
+                https://fred-hub159.github.io/pourquejemesouvienne
+            </a>
+        </p>
+
+    </div> <!-- FIN DU CADRE ORGANIQUE -->
+
+</div>
+
+<!-- ⭐ ÉPISODES (fond beige) ⭐ -->
+<div style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
+
+    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
+
+    <div style="display:flex; gap:40px; justify-content:center;">
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/faune.jpg" style="width:80px; border-radius:6px;">
+    <div>Article précédent</div>
+</a>
+
+        </a>
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/faune.jpg" style="width:80px; border-radius:6px;">
+    <div>Article suivant</div>
+</a>
+
+
+    </div>
+
+<!-- ⭐ FORMULAIRE + COMMENTAIRES ⭐-->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+   <form action="https://formspree.io/f/xljrlnye" method="POST" style="color:#000;">
+
+    <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+    <input type="text" name="nom" required
+           style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+           placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+    <label style="display:block; margin-top:10px;">Votre message :</label>
+    <textarea name="message" required
+              style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+    <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
+    <input type="hidden" name="article" value="Nature & Animaux - Coups de coeur">
+
+    <!-- ⭐ Ligne magique : envoie automatiquement l’URL de la page ⭐ -->
+    <input type="hidden" name="page" id="pageField">
+
+    <script>
+        document.getElementById("pageField").value = window.location.href;
+    </script>
+
+    <div style="text-align:center; margin-top:10px;">
+        <button type="submit"
+                style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+            Envoyer
+        </button>
+    </div>
+
+    </form>
+
+</div>
+<!-- ⭐ FIN CADRE BLANC 2 ⭐ -->
+
+
+<!-- ⭐ COMMENTAIRES PUBLIES ⭐ -->
+<div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+
+    <!-- ⭐ Exemple de commentaire ⭐ -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://……" style="color:#1DA1F2; text-decoration:none;">
+                NOM
+            </a>
+        </strong><br>
+
+        TEXTE DU COMMENTAIRE<br>
+
+        <span style="font-size:85%; color:#555;">
+            Posté le : JJ/MM/AAAA à HH:MM
+        </span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+
+    <!-- ⭐ Tu peux répéter ce bloc autant de fois que nécessaire ⭐ -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://……" style="color:#1DA1F2; text-decoration:none;">
+                NOM
+            </a>
+        </strong><br>
+
+        TEXTE DU COMMENTAIRE<br>
+
+        <span style="font-size:85%; color:#555;">
+            Posté le : JJ/MM/AAAA à HH:MM
+        </span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- ⭐ Fin des commentaires ⭐ -->
+</div>
+</div>
+
+<!-- Footer -->
+<footer style="text-align:center; margin-top:40px; color:#555;">
+    © 2026 — Pour que je me souvienne
+</footer>
+
+</html>
