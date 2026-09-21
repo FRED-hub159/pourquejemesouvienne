@@ -215,6 +215,161 @@
 
 </div>
 
+<!-- ⭐ ÉPISODES (fond beige) ⭐ -->
+<div style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
+
+    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
+
+    <div style="display:flex; gap:40px; justify-content:center;">
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/Personnage-pointant-le-bas.gif" style="width:80px; border-radius:6px;">
+    <div>Livre précédent</div>
+</a>
+
+        
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/Personnage-pointant-le-bas.gif" style="width:80px; border-radius:6px;">
+    <div>Livre suivant</div>
+</a>
+
+
+    </div>
+</div>
+    
+
+    <!-- ⭐ FORMULAIRE ⭐ -->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+<form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
+<input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3">
+
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+        <!-- ⭐ Champ caché : titre de l’article ⭐ -->
+        <input type="hidden" name="article" value="Livre - Maître Haram et le Roi Salomon">
+
+        <!-- ⭐ Envoie automatique de l’URL de la page ⭐ -->
+        <input type="hidden" name="page" id="pageField">
+
+        <script>
+            document.getElementById("pageField").value = window.location.href;
+        </script>
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+
+<!-- ⭐ COMMENTAIRES PUBLIES ⭐ -->
+<div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+
+    <!-- ⭐ Exemple de commentaire ⭐ -->
+
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://sellena-crea.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+           <!-- ⭐  SELLENA ⭐ -->
+            </a>
+        </strong><br>
+
+       <!-- ⭐  coucou, j'adore la fille qui hurle sur le mec dans la rue MDR.<br>
+        Bon dimanche.<br> ⭐ -->
+
+        <span style="font-size:85%; color:#555;">
+         <!-- ⭐   Posté le : 20/09/2026 à 14:47 ⭐ -->
+        </span>
+    </div>
+
+   <!-- ⭐ <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div> ⭐ -->
+    
+    
+        <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://albert-danielle.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+           <!-- ⭐  Bebert33 ⭐ -->
+            </a>
+        </strong><br>
+
+        <!-- ⭐ Ah oui Fred la version originale est incontournable mais cette version est si bien chantée que je l'ai écouté avec plaisir eh oui hihihi merci bon dimanche à+<br> ⭐ -->
+
+        <span style="font-size:85%; color:#555;">
+           <!-- ⭐ Posté le : 20/09/2026 à 14:44 ⭐ -->
+        </span>
+    </div>
+
+   <!-- ⭐ <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div> ⭐ -->
+    
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://marinette_11.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+           <!-- ⭐  Marinette ⭐ -->
+            </a>
+        </strong><br>
+
+       <!-- ⭐  Coucou Fred,<br>
+        Me revoilà sur cette jolie chanson d'Édith Piaf.<br>
+        En parodie elle est magnifique également, et je ne connaissais pas.<br>
+        J'espère que cette fois cela va fonctionner...<br>
+        Bonne nuit.<br>
+        Bizouillettes d'Marinette.<br> ⭐ -->
+
+        <span style="font-size:85%; color:#555;">
+          <!-- ⭐  Posté le : 19/09/2026 à 01:02 ⭐ -->
+        </span>
+    </div>
+
+   <!-- ⭐ <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div> ⭐ -->
+
+
+    <!-- ⭐ Tu peux répéter ce bloc autant de fois que nécessaire ⭐ -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://1jourphoto.canalblog.com/" style="color:#1DA1F2; text-decoration:none;">
+             CathyRose
+            </a>
+        </strong><br>
+
+     Bon j'avoue que je préfère l'original, même si cette version est amusante !<br>
+        Belle soirée Frédéric<br>
+        Cathy<br>
+
+        <span style="font-size:85%; color:#555;">
+          Posté le : 18/09/2026 à 20:06
+        </span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- ⭐ Fin des commentaires ⭐ -->
+</div>
+
+     <!-- FOOTER -->
+ <footer style="text-align:center; margin-top:20px;">
+    © 2026 — Pour que je me souvienne
+</footer>
+
 </body>
 </html>
 
