@@ -183,14 +183,20 @@
             </button>
         </div>
 
+<script>
+document.querySelector("form").addEventListener("submit", function() {
+    // Efface les champs après l’envoi
+    setTimeout(() => {
+        document.querySelector("form").reset();
+    }, 100);
+});
+</script>
+
+
+        
     </form>
 
 </div>
-
-
-
-
-
 
     
     <!-- ⭐ FOOTER ⭐ -->
