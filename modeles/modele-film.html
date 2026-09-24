@@ -32,6 +32,19 @@
   <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
 </div>
 
+<!-- ⭐ TITRE PRINCIPAL : CINEMA ⭐ -->
+
+    <header>
+   
+<div style="text-align:center; font-family:Georgia, serif; font-size:24px; margin-top:20px; margin-bottom:6px;">
+    <h1>Cinéma</h1>
+</div>
+<!-- ⭐ DATE DE PUBLICATION ⭐ -->
+
+<p style="text-align:center; font-family:Georgia, serif; font-size:18px; margin-top:0; margin-bottom:15px;">
+    Publié le 17/04/2021
+</p>
+    
 <!-- CADRE CINÉMA ROUGE -->
 <div style="background-color:#940001;
             border:3px solid #000;
@@ -122,6 +135,30 @@
 
 </div>
 
+        <!-- ⭐ ÉPISODES (fond beige) ⭐ -->
+<div style="width:92%; max-width:700px; margin:20px auto; padding-top:15px; border-top:1px solid #ccc;">
+
+    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
+
+    <div style="display:flex; gap:40px; justify-content:center;">
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/pop-corn.jpg" style="width:80px; border-radius:6px;">
+    <div>Film précédent</div>
+</a>
+
+        </a>
+
+       <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+    <img src="images/pop-corn.jpg" style="width:80px; border-radius:6px;">
+    <div>Film suivant</div>
+</a>
+
+
+    </div>
+</div>
+
+
 <!-- FORMULAIRE + COMMENTAIRES -->
 <div style="margin-top:50px; padding:20px; display:flex; justify-content:center;">
     <div style="background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999;">
@@ -129,8 +166,7 @@
         <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
 
 <form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
-<input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3
-">
+<input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3">
 
             <label style="display:block; margin-top:10px;">Votre nom :</label>
             <input type="text" name="nom" required
@@ -140,8 +176,8 @@
             <textarea name="message" required
                       style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
 
-              <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
-        <input type="hidden" name="article" value="Article – Le temps d’avant (Métiers)">
+      <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
+        <input type="hidden" name="article" value="Anna et le Roi">
 
     <!-- ⭐ Ligne magique : envoie automatiquement l’URL de la page ⭐ -->
     <input type="hidden" name="page" id="pageField">
@@ -162,52 +198,55 @@
     </div>
 </div>
 
-<!-- COMMENTAIRES PUBLIÉS (Modèle vierge) -->
+<!-- ⭐ COMMENTAIRES PUBLIES ⭐ -->
 <div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
 
     <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
 
-    <!-- COMMENTAIRE 1 -->
+
+    <!-- ⭐ Exemple de commentaire ⭐ -->
     <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo1</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <strong style="color:#1DA1F2;">
+            <a href="https://……" style="color:#1DA1F2; text-decoration:none;">
+                NOM
+            </a>
+        </strong><br>
+
+        TEXTE DU COMMENTAIRE<br>
+
+        <span style="font-size:85%; color:#555;">
+            Posté le : JJ/MM/AAAA à HH:MM
+        </span>
     </div>
+
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
-    <!-- COMMENTAIRE 2 -->
+
+    <!-- ⭐ Tu peux répéter ce bloc autant de fois que nécessaire ⭐ -->
     <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo2</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <strong style="color:#1DA1F2;">
+            <a href="https://……" style="color:#1DA1F2; text-decoration:none;">
+                NOM
+            </a>
+        </strong><br>
+
+        TEXTE DU COMMENTAIRE<br>
+
+        <span style="font-size:85%; color:#555;">
+            Posté le : JJ/MM/AAAA à HH:MM
+        </span>
     </div>
+
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
-    <!-- COMMENTAIRE 3 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo3</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- COMMENTAIRE 4 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo4</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
-
-    <!-- COMMENTAIRE 5 -->
-    <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo5</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
-    </div>
-
+    <!-- ⭐ Fin des commentaires ⭐ -->
 </div>
+</div>
+
+     <!-- FOOTER -->
+ <footer style="text-align:center; margin-top:20px;">
+    © Frédéric — Pour que je me souvienne
+</footer>
 
 </body>
 </html>
-
