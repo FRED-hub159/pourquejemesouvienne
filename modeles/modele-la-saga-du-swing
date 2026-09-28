@@ -1,13 +1,11 @@
 
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-<title>La saga du swing – épisode 1 | Pour que je me souvienne</title>
+<title>Les crooners - Au-delà des modes et du temps / La saga du swing et du charme – épisode 1 | Pour que je me souvienne</title>
 
-<meta name="description" content="Premier épisode de la saga du swing : histoire du swing, anecdotes musicales, photos rétro et souvenirs autour des orchestres et danseurs de l’époque.">
+<meta name="description" content="Premier épisode de la saga du swing et des crooners : histoire du swing, anecdotes musicales, photos rétro et souvenirs autour des orchestres et danseurs de l’époque.">
 
     <style>
         body {
@@ -107,7 +105,8 @@
 
     <!-- TITRE DE L’ARTICLE -->
     <header>
-<h1 style="margin-top:0px;">La saga du Swing et du charme - Partie 1</h1>
+<h1 style="margin-top:0px;">Les crooners - Au-delà des modes et du temps<br>
+    La saga du swing et du charme – épisode 1</h1>
         <div class="date" style="margin-bottom: 10px;">Publié le : 06/03/2021</div>
 
     </header>
@@ -242,9 +241,6 @@
             <img src="images/DANIME-CROONER.png" alt="Crooner animé" class="image-article">
         </center>
 
-    </div>
-    <!-- FIN TEXTES JUSTIFIÉS -->
-
 <!-- Signature -->
 <p style="text-align: center; margin-top: 25px;">
     <span style="
@@ -261,8 +257,32 @@
         https://fred-hub159.github.io/pourquejemesouvienne
     </a>
 </p>
+    
+    </div>
+    <!-- FIN TEXTES JUSTIFIÉS -->
 
-</div> <!-- fermeture du div qui remplace le CENTER majuscule -->
+
+<!-- ⭐ BLOC UNIVERSAL ⭐ -->
+<div style="margin-top:40px; text-align:center;">
+
+  <h3 style="font-size:110%; color:#000; margin-bottom:15px; font-family:Georgia, serif;">
+    Vous aimerez aussi :
+  </h3>
+
+  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px;">
+
+    <!-- VIGNETTE ÉPISODE 2 -->
+    <div style="width:150px; text-align:center;">
+      <img src="images/Ligne-de-crooners.png" alt="" style="width:100%; border-radius:6px;">
+      <div style="margin-top:8px;">
+        <a href="article-la-saga-du-swing-02.html" style="color:#1DA1F2; text-decoration:none; font-family:Georgia, serif;">
+          Les crooners: La saga du swing et du charme – épisode 2
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
    <!-- FORMULAIRE + COMMENTAIRES -->
@@ -274,10 +294,9 @@
     Les commentaires sont soumis à modération et doivent être approuvés avant publication.
 </p>
 
-
-<form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
-<input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3
-">
+    
+    <form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
+<input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3">
 
         <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
         <input type="text" name="nom" required
@@ -288,9 +307,8 @@
         <textarea name="message" required
                   style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
 
-       
-  <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
-        <input type="hidden" name="article" value="Article – Le temps d’avant (Métiers)">
+     <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
+        <input type="hidden" name="article" value="Article 1 – La saga du swing">
 
     <!-- ⭐ Ligne magique : envoie automatiquement l’URL de la page ⭐ -->
     <input type="hidden" name="page" id="pageField">
@@ -311,78 +329,163 @@
 </div>
 
 
-  <!-- COMMENTAIRES PUBLIÉS -->
+    <!-- COMMENTAIRES PUBLIÉS -->
 <div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
 
     <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
 
     <!-- COMMENTAIRE 1 -->
     <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo1</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <strong style="color:#1DA1F2;">Magalou</strong>
+        C’est un bon début !<br>
+        <span style="font-size: 85%; color:#555;">Posté le : 14/08/2026</span>
     </div>
+
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
     <!-- COMMENTAIRE 2 -->
     <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo2</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <strong>
+            <a href="https://musik-stories.blogspot.com/" target="_blank"
+               style="color:#1DA1F2; text-decoration:none;">
+                Pixelie25
+            </a> :
+        </strong>
+
+        Hello !<br><br>
+
+        Ce qui est étonnant avec cet univers musical, c'est qu'il souffre d'une sorte de "ringardisation" un peu méprisante et pourtant, les crooners séduisent toujours !<br><br>
+
+        Tu te rappelles sûrement mon petit billet sur V, voix additionnelle du groupe de K-pop, BTS ?<br>
+        En Corée du sud il (au Japon aussi mais peut-être pas aussi fort) il y a un véritable engouement pour ce répertoire qui chez nous tombe dans l'oubli, comme le montre la récente constitution du groupe Forestella.<br>
+        Je n'exclus pas un retour des crooners par la porte asiatique. Après tout, le charme est une valeur éternelle.<br><br>
+
+        Bon week-end<br><br>
+
+        <span style="font-size: 85%; color:#555;">Posté le : 12/07/2024 à 14:37</span>
     </div>
+
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
     <!-- COMMENTAIRE 3 -->
     <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo3</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <strong style="color:#1DA1F2;">
+            <a href="https://naturaimer.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                Marisarah
+            </a>
+        </strong>
+        Ah j'adore ce genre de musique et surtout les claquettes !<br><br>
+
+        <span style="font-size: 85%; color:#555;">Posté le : 18/08/2023 à 15:45</span>
     </div>
+
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
     <!-- COMMENTAIRE 4 -->
     <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo4</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <strong>
+            <a href="https://monica-breiz.eklablog.fr/" target="_blank"
+               style="color:#1DA1F2; text-decoration:none;">
+                Monica-breiz
+            </a> :
+        </strong>
+
+        Bonjour<br><br>
+
+        de superbes danseurs, j'adore cette musique et les tenues de ce temps-là.  
+        Donc encore si tu en as d'autres…  
+        Bonne journée  
+        Kénavo Fred<br><br>
+
+        <span style="font-size: 85%; color:#555;">Posté le : 09/03/2021 à 12:15</span>
     </div>
+
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
     <!-- COMMENTAIRE 5 -->
     <div style="margin-bottom:15px; color:#000;">
-        <strong style="color:#1DA1F2;">Pseudo5</strong><br>
-        Votre commentaire ici…<br>
-        <span style="font-size:85%; color:#555;">Posté le : JJ/MM/AAAA</span>
+        <strong style="color:#1DA1F2;">
+            <a href="https://blogababa.eklablog.com/" target="_blank" style="color:#1DA1F2; text-decoration:none;">
+                babacmoi
+            </a>
+        </strong>
+        J'ai connu cette époque après-guerre et ce duo de chanteurs danseurs était mythique.  
+        Les claquettes de Fred Astaire étaient un spectacle couru.<br><br>
+
+        Les gens aimaient s'amuser avec classe. Regardons comment ils étaient habillés même pour un bal populaire.  
+        Autre temps, autres mœurs…<br><br>
+
+        Bon week-end<br><br>
+
+        <span style="font-size: 85%; color:#555;">Posté le : 18/08/2023 à 09:43</span>
     </div>
+
     <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
+ <!-- COMMENTAIRE 6 -->
+<div style="margin-bottom:15px; color:#000;">
+
+    <a href="http://florence-marquise.vefblog.net/" target="_blank"
+       style="color:#1DA1F2; text-decoration:none; font-weight:bold;">
+        FlorenceMarquise
+    </a>
+    <br>
+
+    Bonjour cher Fred,<br><br>
+
+    Intéressant article sur les crooners et la saga du swing. J'en apprends avec toi, merci.  
+    J'aime bien la vidéo.<br><br>
+
+    Fernand et moi allons bien. Il est en bonne forme, son diabète se stabilise, c'est cool.  
+    Il a des piqûres d'insuline matin, midi et soir (plus tard il aura peut-être seulement celle du matin).  
+    Je suis encore fatiguée mais j'ai accumulé de la fatigue et du stress avec ce qui est arrivé à mon mari, une cure de vitamines me fera du bien.<br><br>
+
+    Passe une bonne journée et un agréable week-end, bisous<br><br>
+
+    <span style="font-size: 85%; color:#555;">Posté le : 18/08/2023 à 07:41</span>
 </div>
 
 
 
-<!-- BLOC UNIVERSAL -->
-<div style="margin-top:40px; text-align:center;">
+<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
 
-  <h3 style="font-size:110%; color:#000; margin-bottom:15px; font-family:Georgia, serif;">
-    Vous aimerez aussi :
-  </h3>
 
-  <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px;">
 
-    <!-- VIGNETTE ÉPISODE 2 -->
-    <div style="width:150px; text-align:center;">
-<img src="images/visuel-neutre.jpg" alt="" style="width:100%; border-radius:6px;">
-      <div style="margin-top:8px;">
-        <a href="article-la-saga-du-swing-02.html" style="color:#1DA1F2; text-decoration:none; font-family:Georgia, serif;">
-          La saga du Swing – épisode 2
-        </a>
-      </div>
+    <!-- COMMENTAIRE 7 -->
+<div style="margin-bottom:15px; color:#000;">
+    <strong style="color:#1DA1F2;">CapT Marinette</strong>
+
+    Coucou Fred,<br><br>
+
+    J'avoue que je n'ai pas connu, mais la musique de mes parents m'enchante et me fascine…  
+    Donc ENCORE…  
+    Bon week-end.  
+    Bizouilles d'Marinette..<br><br>
+
+    <span style="font-size: 85%; color:#555;">Posté le : 18/08/2023 à 02:54</span>
+</div>
+
+<!-- ⭐ LIGNE DE SÉPARATION ENTRE COMMENTAIRES ⭐ -->
+<div style="border-bottom:1px solid #ccc; width:90%; margin:10px auto;"></div>
+
+<!-- ⭐ FERMETURE DU GRAND RECTANGLE BLANC DES COMMENTAIRES ⭐ -->
+</div>
+<!-- ⚠️ Ce </div> ferme le bloc blanc qui commence par :
+<div style="margin-top:20px; background:#ffffff; padding:25px; ...">
+-->
+
+
     </div>
 
   </div>
 </div>
 
-<!-- FOOTER -->
-<footer> © Frédéric — Pour que je me souvienne </footer>
+<!-- ⭐ FOOTER ⭐ -->
+<footer style="text-align:center; margin-top:20px;">
+    © Frédéric — Pour que je me souvienne
+</footer>
+
 </body>
 </html>
+
+
