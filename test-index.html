@@ -21,3 +21,217 @@
   <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
 </div>
 <!-- ⭐ TITRE PRINCIPAL : Index ⭐ -->
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="lV69iShGVZIf3MBMioP9exdlr1ICFN1M-Ga1VXuAIa8">
+
+    <title>Pour que je me souvienne</title>
+
+    <style>
+        body {
+            font-family: "Georgia", serif;
+            background-color: #f7f3e9;
+            color: #3d2f24;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* TITRE + LIGNE DÉCORATIVE */
+        h1 {
+            margin-top: 40px;
+            color: #5a3e2b;
+            font-size: 2.4em;
+            letter-spacing: 1px;
+        }
+
+        .decor {
+            width: 120px;
+            height: 4px;
+            background: #b08a5c;
+            margin: 10px auto 25px;
+            border-radius: 2px;
+        }
+
+        /* IMAGE AVEC BORDURE DOUCE */
+        img {
+            max-width: 55%;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            border: 4px solid #e8dcc7;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* SOUS-TITRE */
+        h2 {
+            color: #5a3e2b;
+            margin-top: 30px;
+            font-size: 1.5em;
+        }
+
+        /* CADRE ÉLÉGANT POUR LE MENU */
+        .menu {
+            max-width: 420px;
+            margin: 20px auto 40px;
+            padding: 20px;
+            background: #f7f3e9;
+            border: 2px solid #d2c4b2;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .menu a {
+            display: inline-block;
+            margin: 10px;
+            font-size: 1.1em;
+            color: #5a3e2b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            margin: 40px 0 20px;
+            font-size: 0.9em;
+            color: #7a6a5f;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ⭐ TITRE ⭐ -->
+    
+    <h1>Bienvenue sur mon site privé</h1>
+    <div class="decor"></div>
+    <!-- ⭐ IMAGE PRINCIPALE ⭐ -->
+   
+    <img src="portrait-fred.png" alt="Portrait">
+    <!-- ⭐ SOUS-TITRE ⭐ -->
+  
+    <h2>Accès rapide</h2>
+    <!-- ⭐ DERNIERS ARTICLES (version compacte) ⭐ -->
+
+<div style="max-width:600px; margin:30px auto 10px; padding:15px; background:#fff; 
+            border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+
+    <h2 style="text-align:center; font-size:1.3em; color:#5a3e2b; margin:0 0 10px;">
+        Derniers articles
+    </h2>
+
+    <ul style="list-style:none; padding:0; margin:0; font-size:1.05em;">
+         </li>
+     <li style="margin-bottom:8px;">
+            <a href="stop-ou-encore-kim-wilde-7.html"
+               style="color:#1DA1F2; text-decoration:none;">
+              Musique - Stop ou Encore - Kim Wilde (7è jour)
+            </a>
+        </li>
+        <li style="margin-bottom:8px;">
+            <a href="stop-ou-encore-kim-wilde-bonus.html" 
+               style="color:#1DA1F2; text-decoration:none;">
+               Musique - Stop ou Encore - Kim Wilde (Les Bonus)
+            </a>
+        </li>
+    </ul>
+</div>
+
+    
+<!-- CONTACT ÉLÉGANT -->
+<div style="
+    margin:30px auto;
+    background:#f7f3e9;
+    padding:20px 25px;
+    border-radius:12px;
+    width:92%;
+    max-width:600px;
+    box-sizing:border-box;
+    border:1px solid #ccc;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+">
+
+    <h2 style="text-align:center; color:#000; margin-bottom:20px; font-size:22px;">
+        📩 Me contacter
+    </h2>
+
+    <form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
+
+        <!-- CLÉ VALIDE -->
+        <input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3">
+
+        <!-- Nom -->
+        <div style="display:flex; align-items:center; margin-bottom:12px;">
+            <label style="width:120px; font-weight:bold;">Nom *</label>
+            <input type="text" name="nom" required
+                   style="flex:1; padding:8px; border-radius:6px; border:1px solid #ccc;">
+        </div>
+
+        <!-- Email -->
+        <div style="display:flex; align-items:center; margin-bottom:12px;">
+            <label style="width:120px; font-weight:bold;">Email *</label>
+            <input type="email" name="email" required
+                   style="flex:1; padding:8px; border-radius:6px; border:1px solid #ccc;">
+        </div>
+
+        <!-- Titre -->
+        <div style="display:flex; align-items:center; margin-bottom:12px;">
+            <label style="width:120px; font-weight:bold;">Titre *</label>
+            <input type="text" name="titre" required
+                   style="flex:1; padding:8px; border-radius:6px;
+                          border:1px solid #ccc; border-top-color:#f7f3e9;">
+        </div>
+
+        <!-- Message -->
+        <div style="display:flex; align-items:flex-start; margin-bottom:12px;">
+            <label style="width:120px; font-weight:bold; margin-top:4px;">Message *</label>
+            <textarea name="message" required
+                      style="flex:1; height:120px; padding:8px; border-radius:6px; border:1px solid #ccc;"></textarea>
+        </div>
+
+        <div style="text-align:center; margin-top:15px;">
+            <button type="submit"
+                    style="
+                        padding:8px 20px;
+                        background:#1DA1F2;
+                        color:#fff;
+                        border:none;
+                        border-radius:6px;
+                        font-weight:bold;
+                        cursor:pointer;
+                        transition:0.2s;
+                    "
+                    onmouseover="this.style.background='#4db3ff';"
+                    onmouseout="this.style.background='#1DA1F2';">
+                envoyer
+            </button>
+        </div>
+
+<script>
+document.querySelector("form").addEventListener("submit", function() {
+    // Efface les champs après l’envoi
+    setTimeout(() => {
+        document.querySelector("form").reset();
+    }, 100);
+});
+</script>
+
+
+        
+    </form>
+
+</div>
+
+    
+    <!-- ⭐ FOOTER ⭐ -->
+    
+    <footer>
+        © Frédéric — Pour que je me souvienne
+    </footer>
+
+</body>
+</html>
