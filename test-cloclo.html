@@ -1,27 +1,42 @@
+<style>
+@keyframes clocloHalo {
+    0% {
+        box-shadow:
+            0 0 35px rgba(180, 120, 255, 0.45),
+            0 0 55px rgba(220, 120, 255, 0.35),
+            0 0 75px rgba(255, 150, 220, 0.30);
+    }
+    50% {
+        box-shadow:
+            0 0 45px rgba(200, 140, 255, 0.55),
+            0 0 65px rgba(240, 140, 255, 0.45),
+            0 0 95px rgba(255, 170, 240, 0.40);
+    }
+    100% {
+        box-shadow:
+            0 0 35px rgba(180, 120, 255, 0.45),
+            0 0 55px rgba(220, 120, 255, 0.35),
+            0 0 75px rgba(255, 150, 220, 0.30);
+    }
+}
+</style>
+
 <div style="
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
     border-radius: 40px;
 
-    /* Bordure podium Cloclo : lumière + paillettes douces */
+    /* Bordure podium violette + paillettes */
     border: 12px solid transparent;
     background: linear-gradient(135deg,
-        rgba(255,255,255,0.55),     /* lumière blanche */
-        rgba(210,210,255,0.45),     /* bleu pastel scène */
-        rgba(230,200,255,0.45),     /* violet pastel */
-        rgba(255,200,230,0.45)      /* rose pastel */
+        rgba(200,150,255,0.55),
+        rgba(180,120,255,0.55),
+        rgba(220,150,255,0.55)
     ) border-box;
 
-    /* Halo lumineux doux (effet projecteurs) */
-    box-shadow:
-        0 0 35px rgba(255,255,255,0.45),     /* halo blanc projecteur */
-        0 0 55px rgba(150,120,255,0.25),     /* halo violet scène */
-        0 0 75px rgba(255,120,200,0.20),     /* halo rose-magenta doux */
-
-        /* Micro‑paillettes (effet podium) */
-        inset 0 0 12px rgba(255,255,255,0.35),
-        inset 0 0 22px rgba(200,200,255,0.25);
+    /* Halo animé (effet scintillant Cloclo) */
+    animation: clocloHalo 3s infinite ease-in-out;
 ">
 
     <div style="
