@@ -1,44 +1,23 @@
 
-<div style="padding-right: 10px; padding-left: 1px; max-width: 900px; margin: 0 auto;">
+<div style="
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 40px;
 
-  <div style="padding: 4px; width: 100%; border-radius: 40px;
-              background-image: url('https://fred-hub159.github.io/pourquejemesouvienne/images/spirales.gif');
-              background-repeat: repeat;
-              max-width: 900px; margin: 0 auto;">
+    /* fond intérieur blanc */
+    background: #ffffff;
 
-    <div style="padding: 20px; border-radius: 40px; box-shadow: inset 1px 2px 55px #000000;
-                background-image: url('https://fred-hub159.github.io/pourquejemesouvienne/images/texture-intermediaire.gif');
-                background-color: #000000;
-                max-width: 900px; margin: 0 auto;">
+    /* ombres pour la profondeur */
+    box-shadow:
+        inset 0 0 55px #000,
+        0 0 25px #000;
 
-      <div style="padding: 4px; box-shadow: 1px 1px 5px #000000;
-                  background-image: url('https://fred-hub159.github.io/pourquejemesouvienne/images/spirales.gif');
-                  max-width: 900px; margin: 0 auto;">
-
-        <div style="padding: 70px; border-radius: 50px;
-                    box-shadow: inset 1px 1px 50px #000000;
-                    background-image: url('https://fred-hub159.github.io/pourquejemesouvienne/images/texture-intermediaire.gif');
-                    max-width: 900px; margin: 0 auto;">
-
-          <div style="padding: 4px; border-radius: 50px;
-                      box-shadow: 1px 1px 45px #000000;
-                      background-image: url('https://fred-hub159.github.io/pourquejemesouvienne/images/spirales.gif');
-                      max-width: 900px; margin: 0 auto;">
-
-            <div style="border-radius: 50px; box-shadow: inset 0px 0px 25px #000000;
-                        background-image: url('https://fred-hub159.github.io/pourquejemesouvienne/images/texture-interieure.gif');
-                        background-color: #000000;
-                        max-width: 900px; margin: 0 auto;">
-
-              <div style="padding: 1px;">
-                <!-- Contenu intérieur -->
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    /* bordure en spirales */
+    border: 20px solid transparent;
+    border-image: url('https://fred-hub159.github.io/pourquejemesouvienne/images/spirales.gif') 40 round;
+">
+    <!-- ton contenu intérieur -->
 </div>
+
 
