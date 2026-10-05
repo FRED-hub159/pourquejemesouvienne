@@ -1,22 +1,27 @@
-
 <div style="
     max-width: 900px;
     margin: 0 auto;
     padding: 40px;
     border-radius: 40px;
 
-    /* Bordure podium Cloclo : or → argent */
+    /* Bordure podium Cloclo : lumière + paillettes douces */
     border: 12px solid transparent;
-    background: linear-gradient(90deg,
-        rgba(255, 215, 0, 0.55),      /* or doux */
-        rgba(230, 230, 230, 0.55)     /* argent doux */
+    background: linear-gradient(135deg,
+        rgba(255,255,255,0.55),     /* lumière blanche */
+        rgba(210,210,255,0.45),     /* bleu pastel scène */
+        rgba(230,200,255,0.45),     /* violet pastel */
+        rgba(255,200,230,0.45)      /* rose pastel */
     ) border-box;
 
-    /* Halo lumineux doux (pas néon) */
+    /* Halo lumineux doux (effet projecteurs) */
     box-shadow:
-        0 0 35px rgba(255, 215, 0, 0.35),     /* halo or */
-        0 0 55px rgba(120, 0, 200, 0.25),     /* halo violet doux */
-        0 0 75px rgba(255, 0, 150, 0.20);     /* halo magenta doux */
+        0 0 35px rgba(255,255,255,0.45),     /* halo blanc projecteur */
+        0 0 55px rgba(150,120,255,0.25),     /* halo violet scène */
+        0 0 75px rgba(255,120,200,0.20),     /* halo rose-magenta doux */
+
+        /* Micro‑paillettes (effet podium) */
+        inset 0 0 12px rgba(255,255,255,0.35),
+        inset 0 0 22px rgba(200,200,255,0.25);
 ">
 
     <div style="
@@ -40,6 +45,3 @@
         </div>
     </div>
 </div>
-
-
-
