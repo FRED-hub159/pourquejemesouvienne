@@ -8,10 +8,12 @@
     /* Fond intérieur blanc */
     background: #ffffff;
 
-    /* Ombres pour la profondeur */
+    /* Ombres dégradées bleu → violet → magenta */
     box-shadow:
-        inset 0 0 55px #000,
-        0 0 25px #000;
+        inset 0 0 45px rgba(0, 80, 255, 0.45),
+        inset 0 0 90px rgba(120, 0, 200, 0.35),
+        inset 0 0 140px rgba(255, 0, 150, 0.30),
+        0 0 25px rgba(0, 0, 0, 0.25);
 
     /* Bordure en spirales */
     border: 20px solid transparent;
@@ -22,61 +24,21 @@
         padding: 20px;
         border-radius: 30px;
         background: url('https://fred-hub159.github.io/pourquejemesouvienne/images/texture-intermediaire.gif') repeat;
-        box-shadow: inset 0 0 40px #000;
+        box-shadow: inset 0 0 40px rgba(0,0,0,0.4);
     ">
 
         <div style="
             padding: 20px;
             border-radius: 20px;
             background: url('https://fred-hub159.github.io/pourquejemesouvienne/images/texture-interieure.gif') repeat;
-            box-shadow: inset 0 0 25px #000;
+            box-shadow: inset 0 0 25px rgba(0,0,0,0.4);
         ">
 
             <div style="background:#ffffff; padding:20px; border-radius:15px;">
-
-                <!-- ⭐ TON TEXTE -->
-                <p style="font-size:18px; line-height:1.5;">
-                    Voici un exemple de texte que tu pourras remplacer par ton propre contenu.
-                    Tu peux écrire autant de paragraphes que tu veux ici.
-                </p>
-
-<!-- ⭐ 2 VIDÉOS YOUTUBE AVEC ESPACE ENTRE ELLES -->
-<div style="margin:20px 0;">
-
-    <!-- Vidéo 1 -->
-    <div style="margin-bottom:25px;">
-        <iframe width="100%" height="315"
-            src="https://www.youtube.com/embed/ID_DE_LA_VIDEO_1"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </div>
-
-    <!-- Vidéo 2 -->
-    <div style="margin-bottom:25px;">
-        <iframe width="100%" height="315"
-            src="https://www.youtube.com/embed/ID_DE_LA_VIDEO_2"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-    </div>
-
-</div>
-
-
-                <!-- ⭐ 3 IMAGES -->
-                <div style="text-align:center; margin-top:20px;">
-                    <img src="images/image1.jpg" style="max-width:100%; border-radius:10px; margin-bottom:15px;">
-                    <img src="images/image2.jpg" style="max-width:100%; border-radius:10px; margin-bottom:15px;">
-                    <img src="images/image3.jpg" style="max-width:100%; border-radius:10px;">
-                </div>
-
+                <!-- Ton contenu intérieur -->
             </div>
 
         </div>
     </div>
 </div>
-
 
