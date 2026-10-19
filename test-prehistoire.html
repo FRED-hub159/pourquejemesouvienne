@@ -1,5 +1,265 @@
-background:#f5e8c8;
-border:4px solid #8b6b39;
-border-radius:12px;
-box-shadow:0 0 15px rgba(0,0,0,0.25);
-``
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Préhistoire - Pour que je me souvienne</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
+background:#e7d2a3;
+color:#3a2a15;
+line-height:1.7;
+}
+
+/* BANNIÈRE */
+
+.hero{
+height:500px;
+background:url("images/prehistoire.jpg") center center/cover no-repeat;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:3.5rem;
+text-shadow:2px 2px 8px black;
+}
+
+.hero-content p{
+font-size:1.3rem;
+margin-top:10px;
+}
+
+/* CONTENEUR */
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+margin-top:-60px;
+position:relative;
+z-index:5;
+}
+
+.parchemin{
+background:#f7ebca;
+padding:40px;
+border-radius:15px;
+box-shadow:0 0 30px rgba(0,0,0,0.30);
+border:3px solid #92703e;
+}
+
+/* TITRES */
+
+h2{
+color:#6a3d0f;
+margin-top:40px;
+margin-bottom:15px;
+padding-bottom:10px;
+border-bottom:2px solid #b89358;
+}
+
+h3{
+color:#6a3d0f;
+margin-bottom:10px;
+}
+
+.introduction{
+text-align:center;
+font-size:1.1rem;
+margin-bottom:30px;
+}
+
+.citation{
+text-align:center;
+font-style:italic;
+font-size:1.2rem;
+padding:25px;
+color:#5a4320;
+}
+
+/* BLOCS */
+
+.bloc{
+background:#fff9ec;
+padding:20px;
+margin:20px 0;
+border-left:6px solid #8b6b39;
+border-radius:8px;
+}
+
+.fiche{
+background:#efe0bb;
+padding:20px;
+border:2px solid #b89358;
+border-radius:10px;
+}
+
+.timeline{
+background:#efe0bb;
+padding:20px;
+border-radius:10px;
+}
+
+.timeline p{
+margin:10px 0;
+}
+
+.carte{
+background:#fff9ec;
+padding:20px;
+border-radius:10px;
+border:1px solid #b89358;
+}
+
+ul{
+padding-left:25px;
+}
+
+/* EXPÉDITION */
+
+.expedition{
+background:#fff9ec;
+padding:25px;
+border-radius:10px;
+border-left:8px solid #8b6b39;
+margin-top:15px;
+}
+
+.lire{
+display:inline-block;
+margin-top:15px;
+background:#6a3d0f;
+color:white;
+padding:10px 16px;
+text-decoration:none;
+border-radius:5px;
+}
+
+.lire:hover{
+background:#8b5520;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:40px;
+padding:25px;
+background:#5b3d1a;
+color:white;
+text-align:center;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+height:350px;
+}
+
+.hero-content h1{
+font-size:2.3rem;
+}
+
+.parchemin{
+padding:25px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="hero-content">
+
+<h1>🏛️ Musée Virtuel de la Préhistoire</h1>
+
+<p>📔 Carnet d'Exploration du Temps</p>
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="parchemin">
+
+<div class="introduction">
+
+<h2>Bienvenue dans la Préhistoire</h2>
+
+<p>
+
+Cette section de « Pour que je me souvienne » est consacrée aux grandes
+découvertes de la Préhistoire : dinosaures, évolution humaine,
+archéologie et paléontologie.
+
+Chaque découverte est présentée comme une nouvelle page de notre
+Carnet d'Exploration du Temps.
+
+</p>
+
+</div>
+
+<div class="citation">
+
+« Chaque fossile retrouvé est un message envoyé depuis des millions d'années. »
+
+</div>
+
+<h2>📰 Dernière découverte</h2>
+
+<div class="expedition">
+
+<h3>🦕 Une nouvelle espèce de dinosaure géant découverte dans le Sahara au Niger</h3>
+
+<p>
+
+Au cœur du Sahara nigérien, des chercheurs ont mis au jour les restes
+d'un gigantesque dinosaure jusqu'alors inconnu de la science.
+
+Cette découverte enrichit notre connaissance des écosystèmes anciens
+de l'Afrique et rappelle que le Sahara fut autrefois une région
+riche en vie animale et végétale.
+
+</p>
+
+<a class="lire" href="expedition-001.html">
+Lire l'expédition complète
+</a>
+
+</div>
+
+<h2>📜 Journal des Exp
