@@ -196,4 +196,171 @@ Votre texte de conclusion...
   
 </div>
 
+   <!-- FORMULAIRE + COMMENTAIRES -->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+<p style="text-align:center; color:#000; font-size:15px; margin-bottom:15px;">
+    Les commentaires sont soumis à modération et doivent être approuvés avant publication.
+</p>
+
+    
+    <form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
+<input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3">
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+     <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
+        <input type="hidden" name="article" value=" Jazz & Blues au cinéma (3)">
+
+    <!-- ⭐ Ligne magique : envoie automatiquement l’URL de la page ⭐ -->
+    <input type="hidden" name="page" id="pageField">
+
+    <script>
+        document.getElementById("pageField").value = window.location.href;
+    </script>
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+
+<!-- ⭐ COMMENTAIRES PUBLIES ⭐ -->
+<div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+
+   
+     <!-- ⭐ Modèle de commentaire ⭐ -->
+
+    
+    
+            <div style="margin-bottom:15px; color:#000; text-align:left;">
+    <strong style="color:#1DA1F2;">
+            <a href="https://florence-marquise.vefblog.net/" style="color:#1DA1F2; text-decoration:none;">
+                Florence-marquise
+            </a>
+        </strong><br>
+
+    Bonjour cher Fred,<br>
+                Encore un article intéressant à lire et bien rédigé.<br>
+                J'aime bien les vidéos, j'adore le film d'animation "Les Aristochats" que j'ai en DVD.<br>
+                Passe un bon lundi et une agréable semaine, bisous.<br>
+                Florence<br>
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 02/11/2026 à 07:12
+    </span>
+</div>
+
+<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>    
+    
+    
+    <div style="margin-bottom:15px; color:#000; text-align:left;">
+    <strong style="color:#1DA1F2;">
+            <a href="https://berenice-la-ballade.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+                Berenice
+            </a>
+        </strong><br>
+
+    Bonjour J apprends beaucoup avec tes billets, et le jazz super, me rappelle ma jeunesse Bonne soirée Amitiés Bon weekend Merci de tes visites<br>
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 31/10/2026 à 18:38
+    </span>
+</div>
+
+<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+    
+    
+    <div style="margin-bottom:15px; color:#000; text-align:left;">
+    <strong style="color:#1DA1F2;">
+            <a href="https://sellena-crea.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+                Selena
+            </a>
+        </strong><br>
+
+    Hello Fred, une bien belle publication, bravo.<br>
+                    On apprend beaucoup avec toi et c'est intéressant.<br>
+                    Bon WE et merci de tes visites.<br>
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 31/10/2026 à 15:48
+    </span>
+</div>
+
+<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+    
+    
+    <div style="margin-bottom:15px; color:#000; text-align:left;">
+    <strong style="color:#1DA1F2;">
+            <a href="https://marinette_11.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+                Capt Marinette
+            </a>
+        </strong><br>
+
+    Coucou Fred,<br>
+                    Merci également pour tes passages.<br>
+                    Je viens de me régaler en regardant tes vidéos, d'une part pour le jazz et d'une autre pour les films que j'ai eu l'occasion de regarder dans mon plus jeune âge..<br>
+                    Ton récit est intéressant qui apprend beaucoup, mais hélas je ne me rappellerai pas de tout..<br>
+                    Bon week-end également.<br>
+                    Marinette..<br>
+
+    <span style="font-size:85%; color:#555;">
+        Posté le : 31/10/2026 à 11:43
+    </span>
+</div>
+
+<div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+    
+    
+    <!-- ⭐ Exemple de commentaire ⭐ -->
+<div style="margin-bottom:15px; color:#000; text-align:left;">
+    <strong style="color:#1DA1F2;">
+            <a href="https://papydompointcom.eklablog.com/" style="color:#1DA1F2; text-decoration:none;">
+                Dominique
+            </a>
+        </strong><br>
+
+
+    bravo pour cette magnifique page de jazz, où je découvre tous ces films.<br>
+    Quand je pense que je n'ai jamais vu les Aristochats !
+
+    <br><br>
+    <span style="font-size:85%; color:#555;">
+        Posté le : 31/10/2026 à 11:29
+    </span>
+</div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+
+   
+
+    <!-- ⭐ Fin des commentaires ⭐ -->
+</div>
+
+
+     <!-- FOOTER -->
+ <footer style="text-align:center; margin-top:20px;">
+    © Frédéric — Pour que je me souvienne
 </footer>
+
+</body>
+</html>
