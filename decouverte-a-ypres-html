@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Des soldats sortent de l'oubli à Ypres</title>
 
+<style>
+    body {
+        margin:0;
+        padding:0;
+        font-family:Georgia, serif;
+        background-color:#f7f3e9;   /* couleur de ton site */
+        color:#000;
+    }
+
+    /* Barre de navigation */
+    .nav {
+        text-align:center;
+        padding:12px 0;
+        font-size:90%;
+    }
+
+    .nav a {
+        color:#1DA1F2;              /* ton bleu clair */
+        text-decoration:none;
+        margin:0 8px;
+    }
+
+    .nav a:hover {
+        text-decoration:underline;
+    }
+
+    /* Bloc blanc de l’article */
+    .contenu {
+        background:#ffffff;
+        width:92%;
+        max-width:700px;
+        margin:30px auto;
+        padding:25px;
+        border-radius:12px;
+        border:2px solid #999;
+        box-sizing:border-box;
+    }
+
+    /* Image du thème */
+    .theme-img {
+        width:110px;                /* petite image */
+        display:block;
+        margin:0 auto 15px auto;
+        border-radius:8px;
+    }
+
+    /* Image du sujet */
+    .sujet-img {
+        width:100%;
+        max-width:450px;
+        display:block;
+        margin:20px auto;
+        border-radius:10px;
+    }
+
+    /* Bloc “Vous aimerez aussi” */
+    .suite {
+        width:92%;
+        max-width:700px;
+        margin:20px auto;
+        padding-top:15px;
+        border-top:1px solid #ccc;
+    }
+
+    footer {
+        text-align:center;
+        margin-top:40px;
+        color:#000;                 /* texte noir */
+        font-size:90%;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<div style="text-align:center; margin-top:35px; margin-bottom:-5px; font-family:Georgia, serif; font-size:120%; font-weight:bold;">
+  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
+  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
+  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
+  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
+</div>
+
+    <!-- ⭐ TITRE PRINCIPAL : HISTOIRE ⭐ -->
+
+    <header>
+   
+<div style="text-align:center; font-family:Georgia, serif; font-size:24px; margin-top:20px; margin-bottom:6px;">
+    <h1>Histoire</h1>
+</div>
+<!-- ⭐ DATE DE PUBLICATION ⭐ -->
+
+<p style="text-align:center; font-family:Georgia, serif; font-size:18px; margin-top:0; margin-bottom:15px;">
+    Publié le 11/11/2026
+</p>
+
+
+
+</div>
+
+<!-- CONTENU -->
+<div class="contenu">
+
+    <!-- IMAGE DU THÈME (petite) -->
+    <img src="images/Gemini_Generated_Image_ya3vrkya3vrkya3v.png" alt="Thème" class="theme-img">
+
+    <h2 style="text-align:center; margin-top:0;">
+        Archéologie :<br>
+        Des soldats sortent de l'oubli à Ypres
+    </h2>
+
+    <!-- IMAGE DU SUJET -->
+
+    <img src="images/soldats-a-ypres.jpg" alt="Une photo d'archives, une photo des tranchées aujourd'hui et d'un casque militaire" class="sujet-img">
+<p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px; font-size:120%; font-weight:bold;">
+    En Belgique, à Ypres, les dépouilles d'au moins 141 militaires de la Première Guerre mondiale ont été retrouvées lors de fouilles archéologiques.
+</p>
+
+    
+   <!-- Texte justifié -->
+<p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px;">
+Pendant un an et demi, des archéologues ont exploré un ancien champ de bataille situé sur le terrain d'un golf en cours d'agrandissement.
+    </p>    
+   
+
+<!-- Texte justifié -->
+<p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px;">
+Ils y ont découvert les restes de soldats français, allemands et probablement britanniques, ainsi que des milliers de traces laissées par les combats.
+   </p>
+
+<!-- Texte justifié -->
+<p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px;">
+Parmi les découvertes : une tranchée française de 1914 remarquablement conservée, des tunnels allemands, des armes et de nombreux objets personnels.<br>
+Un sabre d'officier français et un fusil Lebel ont notamment été retrouvés.
+    </p>
+
+</p>
+    
+<!-- Texte justifié -->
+<p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px;">
+Mais au-delà de ces vestiges, ce sont surtout 141 hommes dont les restes ont été exhumés, plus d'un siècle après leur disparition.
+</p>
+
+     <!-- IMAGE DU SUJET -->
+    <img src="images/noms-soldats-ypres.png" alt="Un mur reprenant des milliers de noms de soldats tombés à Ypres" class="sujet-img">
+
+
+<!-- Texte justifié -->
+<p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px; font-size:120%; font-weight:bold;">
+    Les spécialistes poursuivent leurs recherches pour tenter de déterminer leur identité. Tous doivent recevoir une sépulture digne.
+</p>
+
+    <!-- Texte justifié -->
+<p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px;">
+À quelques jours du 11 Novembre, cette découverte nous rappelle combien de soldats de la Grande Guerre reposent encore loin de chez eux, parfois sans que leurs familles aient jamais su où ils étaient tombés.
+</p>
+
+    <!-- Texte justifié -->
+   <p style="text-align:justify; text-indent:25px; margin-top:15px; margin-bottom:15px; font-size:120%; font-weight:bold;">
+    Une pensée pour ces hommes et pour toutes les générations qui continuent de faire vivre leur mémoire. 
+</p>
+
+    <h2 style="text-align:center; margin-top:0;">
+        𝐇𝐨𝐧𝐧𝐞𝐮𝐫 𝐞𝐭 𝐑𝐞𝐬𝐩𝐞𝐜𝐭
+    </h2>
+
+    
+     <!-- Texte vers la source de l'info, centré -->
+   <p style="text-align:center; margin-top:15px;">
+    (Article de 
+    <a href="https://www.rtl.be/actu/belgique/societe/les-corps-dau-moins-141-soldats-de-la-grande-guerre-decouverts-lors-de-fouilles/2026-11-06/article/805782"
+       style="color:#1DA1F2; text-decoration:none;" target="_blank">
+        RTL info
+    </a>)
+
+        <!-- Signature -->
+     <p style="text-align: center; margin-top: 25px;">
+        <span style="
+            font-family: Yellowtail;
+            color: #3d2f24;
+            font-size: 26px;
+            text-shadow: 1px 1px 1px #bfbfbf;
+        ">
+            @fred
+        </span>
+        <br>
+        <a href="https://fred-hub159.github.io/pourquejemesouvienne"
+           style="color:#1DA1F2; font-size:14px; text-decoration:none;">
+            https://fred-hub159.github.io/pourquejemesouvienne
+        </a>
+</p>
+
+    
+</div> <!-- FIN DU CADRE BLANC -->
+
+
+<!-- BLOC “VOUS AIMEREZ AUSSI” EN DEHORS DU CADRE BLANC -->
+<div class="suite">
+
+    <strong style="display:block; text-align:center;">Vous aimerez aussi :</strong><br><br>
+
+    <div style="display:flex; gap:40px; align-items:center; justify-content:center;">
+
+        <!-- Découverte précédente -->
+        <a href="#" onclick="return false;" style="color:#1DA1F2; text-decoration:none; text-align:center;">
+            <img src="images/Gemini_Generated_Image_ya3vrkya3vrkya3v.png" alt=""
+                 style="width:80px; border-radius:6px; display:block; margin:auto;">
+            <div style="margin-top:8px;">Découverte précédente</div>
+        </a>
+
+        <!-- Découverte suivante -->
+        <a href="nouvelle-espece-de-dinosaure.html"  style="color:#1DA1F2; text-decoration:none; text-align:center;">
+            <img src="images/Gemini_Generated_Image_ya3vrkya3vrkya3v.png" alt=""
+                 style="width:80px; border-radius:6px; display:block; margin:auto;">
+            <div style="margin-top:8px;">Découverte suivante</div>
+        </a>
+
+    </div>
+
+</div> <!-- FIN DU BLOC “VOUS AIMEREZ AUSSI” -->
+
+
+
+<!-- FORMULAIRE DE COMMENTAIRES (RECTANGLE BLANC SÉPARÉ) -->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+<p style="text-align:center; color:#000; font-size:15px; margin-bottom:15px;">
+    Les commentaires sont soumis à modération et doivent être approuvés avant publication.
+</p>
+
+    
+    <form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
+    <input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3">
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+      <!-- ⭐ Champ que tu utilises déjà (A adapter en fonction du titre de l'article) ⭐ -->
+        <input type="hidden" name="article" value="Des soldats sortent de l'oubli à Ypres">
+
+    <!-- ⭐ Ligne magique : envoie automatiquement l’URL de la page ⭐ -->
+    <input type="hidden" name="page" id="pageField">
+
+    <script>
+        document.getElementById("pageField").value = window.location.href;
+    </script>
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+
+<!-- COMMENTAIRES PUBLIES (AUTRE RECTANGLE BLANC SÉPARÉ) -->
+<div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+   
+ <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://……" style="color:#1DA1F2; text-decoration:none;">
+              <!-- ⭐   NOM ⭐ -->
+            </a>
+        </strong><br>
+
+     <!-- ⭐    TEXTE DU COMMENTAIRE<br> ⭐ -->
+
+        <span style="font-size:85%; color:#555;">
+         <!-- ⭐    Posté le : JJ/MM/AAAA à HH:MM ⭐ -->
+        </span>
+    </div>
+
+
+
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+   <!-- ⭐ Lorsqu'un membre n'a pas de blog  ⭐ -->
+
+
+ <div style="margin-bottom:15px; color:#000;">
+    <strong style="color:#1DA1F2;">
+         <!-- ⭐   Magalou (pas de bloc) ⭐ -->
+    </strong><br>
+     <!-- ⭐   Encore!<br> ⭐ -->
+      <!-- ⭐  <span style="font-size:85%; color:#555;">Posté le : 26/09/2026 à 10:18</span> ⭐ -->
+</div>
+
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div> 
+
+</div> <!-- FIN DU GRAND RECTANGLE BLANC DES COMMENTAIRES -->
+
+
+<!-- ESPACE POUR DÉCOLLER LE FOOTER DU RECTANGLE BLANC -->
+<div style="margin-top:40px;"></div>
+
+<!-- FOOTER SUR LE FOND BEIGE -->
+<div style="text-align:center; margin-top:0; font-size:110%; color:#3d2f24;">
+    © Frédéric — Pour que je me souvienne
+</div>
+
+</body>
+</html>
