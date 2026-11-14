@@ -71,7 +71,7 @@ img{
     position:absolute;
 
     top:24%;
-    left:15,5%;
+    left:15.5%;
 
     width:67%;
     height:43%;
@@ -85,29 +85,7 @@ img{
     border-radius:20px;
 }
 
-/* effet verre de tube cathodique */
 
-.tv-screen::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-
-    pointer-events:none;
-
-    background:
-    radial-gradient(
-        ellipse at center,
-        transparent 65%,
-        rgba(0,0,0,0.25) 100%
-    );
-    z-index:2;
-}
 
 /* reflet du verre */
 
@@ -132,7 +110,10 @@ img{
     );
     z-index:3;
 }
-    .tv-screen::after{
+    
+/* assombrissement des bords */
+
+.tv-screen::after{
 
     content:"";
 
@@ -149,8 +130,10 @@ img{
     radial-gradient(
         ellipse at center,
         transparent 65%,
-        rgba(0,0,0,0.18) 100%
+        rgba(0,0,0,0.25) 100%
     );
+
+    z-index:2;
 }
 
 .tv-screen iframe,
