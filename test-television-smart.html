@@ -69,13 +69,13 @@ img{
 
     position:absolute;
 
-    top:7%;
+    top:3%;
 
-    left:5%;
+    left:2%;
 
-    width:90%;
+    width:96%;
 
-    height:80%;
+    height:85%;
 
     overflow:hidden;
 
@@ -83,36 +83,13 @@ img{
 
     z-index:1;
 
-    border-radius:4px;
+    border-radius:2px;
 }
 
 
 
     
-/* assombrissement des bords */
 
-.tv-screen::after{
-
-    content:"";
-
-    position:absolute;
-
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-
-    pointer-events:none;
-
-    background:
-    radial-gradient(
-        ellipse at center,
-        transparent 65%,
-        rgba(0,0,0,0.25) 100%
-    );
-
-    z-index:2;
-}
 
 .tv-screen iframe,
 .tv-screen video{
@@ -122,15 +99,8 @@ img{
 }
 
 .tv-image{
-
-    width:100%;
-
-    position:relative;
-
-    z-index:10;
-
-    border:5px solid red;
-   
+    opacity:1;
+    border:none;
 }
 
 footer{
