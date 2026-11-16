@@ -5,34 +5,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Télévision</title>
+
+    <meta name="description" content="Télévision : séries, streaming, documentaires, souvenirs télévisés et découvertes du petit écran.">
+    
+
+<title>Télévision - Pour que je me souvienne</title>
 
 <style>
 
 body{
-    background:#0f172a;
-    color:white;
-    font-family:Georgia, serif;
-    line-height:1.8;
+    background-color:#f7f3e9;
     margin:0;
-}
-
-header{
-    text-align:center;
-    padding:60px 20px;
-    background:linear-gradient(135deg,#13233f,#1f3f68);
-    border-bottom:4px solid #d4af37;
-}
-
-header h1{
-    margin:0;
-    font-size:3rem;
-    letter-spacing:3px;
-}
-
-header p{
-    color:#d4af37;
-    font-style:italic;
+    padding:0;
+    font-family:Verdana, sans-serif;
 }
 
 .container{
@@ -41,18 +26,52 @@ header p{
     padding:40px;
 }
 
+
+.hero-tv{
+
+    max-width:900px;
+
+    margin:30px auto;
+}
+
+.hero-tv img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:8px;
+}
+
+.article-tv{
+
+    max-width:900px;
+
+    margin:20px auto 40px auto;
+
+    background:#f8f8f8;
+
+    border-left:8px solid #8b0000;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.10);
+}
+    
+
 h2{
     color:#d4af37;
     border-left:5px solid #d4af37;
     padding-left:15px;
+    font-family:Georgia, serif;
 }
 
 img{
     max-width:100%;
     border-radius:10px;
 }
-
-
 
 /* ===================================== */
 /* VERSION TELE SMART VALIDE */
@@ -69,9 +88,9 @@ img{
 
     position:absolute;
 
-    top:23.5%;
+    top:23.2%;
 
-    left:6.5%;
+    left:6%;
 
     width:89%;
 
@@ -84,6 +103,8 @@ img{
     z-index:1;
 
     border-radius:2px;
+
+    box-shadow: inset 0 0 3px #000;
 }
 
 
@@ -113,62 +134,253 @@ footer{
     color:#aaa;
 }
 
+
+/* ===================================== */
+/* VERSION MOBILE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+    h1{
+        font-size:38px !important;
+    }
+
+    .hero-tv{
+        margin:15px;
+    }
+
+    .article-tv{
+        margin:15px;
+        padding:20px;
+    }
+
+    .tv-smart{
+        max-width:100%;
+        margin:20px auto;
+    }
+
+    .tv-screen{
+        top:23.5%;
+        left:6.5%;
+        width:89%;
+        height:49%;
+    }
+
+    .container{
+        padding:15px;
+    }
+
+    h2{
+        font-size:1.4em;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    h1{
+        font-size:30px !important;
+    }
+
+    .article-tv{
+        padding:15px;
+    }
+
+    .tv-smart{
+        max-width:100%;
+    }
+
+}
+
+
+    
+
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>📺 TÉLÉVISION</h1>
-<p>Du noir et blanc au streaming</p>
-</header>
+<div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
+  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
+  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
+  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
+  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
+</div>
 
-<div class="container">
+<h1 style="font-family:Georgia, serif; text-align:center; font-size:52px; margin-top:30px;">
+Télévision
+</h1>
 
-<h2>Un exemple d'article</h2>
-
-<p>
-Ici vous placez votre texte.
-Vous pouvez raconter l'histoire de la télévision,
-présenter une série ou partager un souvenir.
+<p style="text-align:center; font-family:Georgia, serif; font-size:18px;">
+Publié le 14 février 2026
 </p>
 
-<div class="tv-smart">
 
-    <div class="tv-screen">
+ <div class="hero-tv">
+    <img src="images/anniversaire-television.jpg"
+         alt="100 ans de télévision">
+</div>
 
-        <iframe
-        width="100%"
-        height="500"
-        src="https://www.youtube.com/embed/dRo-9avrhN0?si=0dMRcsV-IpQPzjWl"
-        title="Vidéo YouTube"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
+<div class="article-tv">
+
+    <h2>Titre de l'article</h2>
+
+    <p>
+        Ici vous placez votre introduction.
+        Cette partie apparaîtra avant la télévision.
+    </p>
+
+    <div class="tv-smart">
+
+        <div class="tv-screen">
+
+            <iframe
+                width="100%"
+                height="500"
+                src="https://www.youtube.com/embed/dRo-9avrhN0"
+                title="Vidéo YouTube"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <img
+            src="images/tv-smart.png"
+            alt="Smart TV"
+            class="tv-image">
 
     </div>
 
+    <p>
+        Votre texte principal continue ici après la vidéo.
+    </p>
+
     <img
-        src="images/tv-smart.png"
-        alt="Smart TV "
-        class="tv-image">
+        src="images/television.jpg"
+       alt="Image illustrant l'article"
+
+    <p>
+        Suite de l'article...
+    </p>
 
 </div>
 
+    <!-- ⭐ SIGNATURE @fred ⭐ -->
 
-<h2>Photos</h2>
-
-<img src="images/television.jpg" alt="Télévision ancienne">
-
-<p>
-Ajoutez ici d'autres textes,
-photos ou vidéos selon vos besoins.
+<p style="text-align: center; margin-top: 20px;">
+    <span style="
+        font-family: 'Yellowtail', cursive;
+        color: #ffffff;
+        font-size: 26px;
+        text-shadow: 2px 1px 1px #000000;
+    ">
+        @fred
+    </span>
+    <br>
+    <a href="https://fred-hub159.github.io/pourquejemesouvienne"
+       style="color: #bdddec; font-size: 14px; text-decoration: none;">
+        https://fred-hub159.github.io/pourquejemesouvienne
+    </a>
 </p>
 
 </div>
+</div>
+</div>
 
-<footer>
-Pour que je me souvienne
+<!-- ⭐ FORMULAIRE ⭐ -->
+<div style="margin-top:30px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Laisser un commentaire</h2>
+
+<p style="text-align:center; color:#000; font-size:15px; margin-bottom:15px;">
+    Les commentaires sont soumis à modération et doivent être approuvés avant publication.
+</p>
+
+    
+    <form action="https://api.web3forms.com/submit" method="POST" style="color:#000;">
+<input type="hidden" name="access_key" value="f7e36439-a640-4aac-9d79-cb32c03ca5e3
+">
+
+        <label style="display:block; margin-top:10px;">Votre nom, pseudo ou URL :</label>
+        <input type="text" name="nom" required
+               style="width:100%; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"
+               placeholder="Ex : Marie, Magalou, https://monblog.com">
+
+        <label style="display:block; margin-top:10px;">Votre message :</label>
+        <textarea name="message" required
+                  style="width:100%; height:150px; padding:10px; border-radius:8px; margin-bottom:15px; box-sizing:border-box; border:1px solid #999;"></textarea>
+
+        <!-- ⭐ Champ caché : titre de l’article ⭐ -->
+        <input type="hidden" name="article" value="Article – Le temps d’avant (Métiers)">
+
+        <!-- ⭐ Envoie automatique de l’URL de la page ⭐ -->
+        <input type="hidden" name="page" id="pageField">
+
+        <script>
+            document.getElementById("pageField").value = window.location.href;
+        </script>
+
+        <div style="text-align:center; margin-top:10px;">
+            <button type="submit"
+                    style="padding:10px 20px; background:#e0e0e0; color:#000; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+                Envoyer
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+
+<!-- ⭐ COMMENTAIRES PUBLIES ⭐ -->
+<div style="margin-top:20px; background:#ffffff; padding:25px; border-radius:12px; width:92%; max-width:700px; box-sizing:border-box; border:2px solid #999; margin-left:auto; margin-right:auto;">
+
+    <h2 style="text-align:center; color:#000; margin-top:0;">Commentaires publiés</h2>
+
+
+    <!-- ⭐ Exemple de commentaire ⭐ -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://……" style="color:#1DA1F2; text-decoration:none;">
+                NOM
+            </a>
+        </strong><br>
+
+        TEXTE DU COMMENTAIRE<br>
+
+        <span style="font-size:85%; color:#555;">
+            Posté le : JJ/MM/AAAA à HH:MM
+        </span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+
+    <!-- ⭐ Tu peux répéter ce bloc autant de fois que nécessaire ⭐ -->
+    <div style="margin-bottom:15px; color:#000;">
+        <strong style="color:#1DA1F2;">
+            <a href="https://……" style="color:#1DA1F2; text-decoration:none;">
+                NOM
+            </a>
+        </strong><br>
+
+        TEXTE DU COMMENTAIRE<br>
+
+        <span style="font-size:85%; color:#555;">
+            Posté le : JJ/MM/AAAA à HH:MM
+        </span>
+    </div>
+
+    <div style="width:60%; height:1px; background:#ccc; margin:20px auto;"></div>
+
+    <!-- ⭐ Fin des commentaires ⭐ -->
+</div>
+</div>
+
+     <!-- FOOTER -->
+ <footer style="text-align:center; margin-top:20px;">
+    © Frédéric — Pour que je me souvienne
 </footer>
 
 </body>
