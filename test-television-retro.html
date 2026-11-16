@@ -9,22 +9,12 @@
 
 <style>
 
-<body style="background-color:#f7f3e9; margin:0; padding:0; font-family:Verdana;">
-
-<div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
-  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
-  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
-  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
-  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
-</div>
-
-<h1 style="font-family: Georgia, serif; text-align:center;">
-Titre de votre page
-</h1>
-
-<p style="text-align:center;">
-Date éventuelle
-</p>
+body{
+    background-color:#f7f3e9;
+    margin:0;
+    padding:0;
+    font-family:Verdana, sans-serif;
+}
 
 .container{
     max-width:1100px;
@@ -36,6 +26,7 @@ h2{
     color:#d4af37;
     border-left:5px solid #d4af37;
     padding-left:15px;
+    font-family:Georgia, serif;
 }
 
 img{
@@ -43,10 +34,8 @@ img{
     border-radius:10px;
 }
 
-
-
 /* ===================================== */
-/* VERSION TELE RETRO VALIDE */
+/* VERSION TELE RETRO VALIDEE */
 /* ===================================== */
 
 .tv-retro{
@@ -73,10 +62,7 @@ img{
     z-index:1;
 
     border-radius:10px;
-
 }
-
-
 
 /* reflet du verre */
 
@@ -99,9 +85,10 @@ img{
         rgba(255,255,255,0.10),
         transparent 35%
     );
+
     z-index:3;
 }
-    
+
 /* assombrissement des bords */
 
 .tv-screen::after{
@@ -138,22 +125,38 @@ img{
     position:relative;
     width:100%;
     display:block;
-    z-index:0;
-    opacity:0.5;
+    z-index:2;
+    opacity:1;
+    pointer-events:none;
 }
 
 footer{
     text-align:center;
     padding:30px;
-    color:#aaa;
+    color:#666;
+    font-family:Georgia, serif;
 }
 
 </style>
+
 </head>
 
 <body>
 
+<div style="text-align:center; margin-top:20px; font-size:120%; font-family:Georgia, serif; font-weight:bold;">
+  <a href="index.html" style="color:#000; text-decoration:none; margin-right:15px;">Accueil</a>
+  <a href="communaute.html" style="color:#000; text-decoration:none; margin-right:15px;">Communauté</a>
+  <a href="apropos.html" style="color:#000; text-decoration:none; margin-right:15px;">À propos</a>
+  <a href="archives.html" style="color:#000; text-decoration:none;">Archives</a>
+</div>
 
+<h1 style="font-family:Georgia, serif; text-align:center; font-size:52px; margin-top:30px;">
+Télévision
+</h1>
+
+<p style="text-align:center; font-family:Georgia, serif; font-size:18px;">
+Publié le ...
+</p>
 
 <div class="container">
 
@@ -172,11 +175,11 @@ présenter une série ou partager un souvenir.
         <iframe
         width="100%"
         height="500"
-        src="https://www.youtube.com/embed/LZlspBn_hxE?si=qmunqhQT_F7K8Qro"
+        src="https://www.youtube.com/embed/LZlspBn_hxE"
         title="Vidéo YouTube"
         frameborder="0"
         allowfullscreen>
-    </iframe>
+        </iframe>
 
     </div>
 
@@ -186,7 +189,6 @@ présenter une série ou partager un souvenir.
         class="tv-image">
 
 </div>
-
 
 <h2>Photos</h2>
 
