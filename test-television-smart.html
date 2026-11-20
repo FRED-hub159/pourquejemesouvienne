@@ -74,6 +74,166 @@ img{
 }
 
 /* ===================================== */
+/* VERSION TELE RETRO VALIDEE */
+/* ===================================== */
+
+.tv-retro{
+    position:relative;
+    width:100%;
+    max-width:700px;
+    margin:40px auto;
+}
+
+.tv-screen{
+
+    position:absolute;
+
+    top:25%;
+    left:16.5%;
+
+    width:65%;
+    height:43%;
+
+    overflow:hidden;
+
+    background:black;
+
+    z-index:1;
+
+    border-radius:10px;
+}
+
+/* reflet du verre */
+
+.tv-screen::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    pointer-events:none;
+
+    background:
+    linear-gradient(
+        130deg,
+        rgba(255,255,255,0.10),
+        transparent 35%
+    );
+
+    z-index:3;
+}
+
+/* assombrissement des bords */
+
+.tv-screen::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    pointer-events:none;
+
+    background:
+    radial-gradient(
+        ellipse at center,
+        transparent 65%,
+        rgba(0,0,0,0.25) 100%
+    );
+
+    z-index:2;
+}
+
+.tv-screen iframe,
+.tv-screen video{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
+.tv-image{
+    position:relative;
+    width:100%;
+    display:block;
+    z-index:0;
+    opacity:1;
+    pointer-events:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+    font-family:Georgia, serif;
+}
+
+/* ===================================== */
+/* VERSION MOBILE - TV RETRO */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+    h1{
+        font-size:38px !important;
+    }
+
+    .hero-tv{
+        margin:15px;
+    }
+
+    .article-tv{
+        margin:15px;
+        padding:20px;
+    }
+
+    .tv-retro{
+        max-width:100%;
+        margin:20px auto;
+    }
+
+    .tv-screen{
+
+        top:25%;
+        left:16.5%;
+
+        width:65%;
+        height:43%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    h1{
+        font-size:30px !important;
+    }
+
+    .article-tv{
+        padding:15px;
+    }
+
+    .tv-retro{
+        max-width:100%;
+    }
+
+}
+
+
+
+</style>
+
+</head>
+
+/* ===================================== */
 /* VERSION TELE SMART VALIDE */
 /* ===================================== */
 
@@ -253,14 +413,14 @@ L’Europe ne développe quant à elle la couleur que plus tard. En France, les 
         </div>
 
 
-    <div class="tv-smart">
+      <div class="tv-retro">
 
         <div class="tv-screen">
 
             <iframe
                 width="100%"
                 height="500"
-                src="https://www.youtube.com/embed/dRo-9avrhN0"
+                src="https://www.youtube.com/embed/_cabEkOqgFY?si=uKUWa2xBJ7DSNJPZ"
                 title="Vidéo YouTube"
                 frameborder="0"
                 allowfullscreen>
@@ -269,8 +429,8 @@ L’Europe ne développe quant à elle la couleur que plus tard. En France, les 
         </div>
 
         <img
-            src="images/tv-smart.png"
-            alt="Smart TV"
+            src="images/tv-retro.png"
+            alt="Télévision rétro"
             class="tv-image">
 
     </div>
